@@ -1,21 +1,99 @@
 {
-  "generated_at": "2026-06-18T20:28:58.231675+00:00",
+  "generated_at": "2026-06-18T20:43:44.237172+00:00",
   "stats": {
-    "total": 472,
+    "total": 473,
     "by_source": {
       "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 272
+      "ThreatFox": 273
     },
     "by_threat_type": {
       "payload": 132,
       "malware_download": 100,
-      "botnet_cc": 110,
+      "botnet_cc": 111,
       "payload_delivery": 130
     },
-    "generated_at": "2026-06-18T20:28:58.231675+00:00"
+    "generated_at": "2026-06-18T20:43:44.237172+00:00"
   },
   "items": [
+    {
+      "id": "5abbb50cea16962a",
+      "source": "MalwareBazaar",
+      "ioc": "c80fae666fb0fb486b7a53becfecb54023b78e891f465a2c755aa91463e88459",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-06-18 20:42:41",
+      "reference": "https://bazaar.abuse.ch/sample/c80fae666fb0fb486b7a53becfecb54023b78e891f465a2c755aa91463e88459/"
+    },
+    {
+      "id": "868a8aa0d5aec3e1",
+      "source": "MalwareBazaar",
+      "ioc": "8f68e46bf8e963a293e48e96978ccf606b2043d775219e31f7b332f761f8aa7f",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-06-18 20:42:39",
+      "reference": "https://bazaar.abuse.ch/sample/8f68e46bf8e963a293e48e96978ccf606b2043d775219e31f7b332f761f8aa7f/"
+    },
+    {
+      "id": "20e83878eeeddfa0",
+      "source": "URLhaus",
+      "ioc": "http://116.10.132.23:44553/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, arm, elf, Mozi",
+      "confidence": 50,
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-18 20:42:34 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3867082/"
+    },
+    {
+      "id": "ef48c89f47efecf0",
+      "source": "MalwareBazaar",
+      "ioc": "806120006faf26a31758a797e20128e4060f93e152b70bf570cab81f6f1911e0",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "sh",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "sh"
+      ],
+      "first_seen": "2026-06-18 20:38:55",
+      "reference": "https://bazaar.abuse.ch/sample/806120006faf26a31758a797e20128e4060f93e152b70bf570cab81f6f1911e0/"
+    },
+    {
+      "id": "1aa3d65d20b59bb9",
+      "source": "MalwareBazaar",
+      "ioc": "71f0dfc67018dd72f64ea4590eca2c43de4dd4acf7b29d2bad470ac6022a27a7",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-06-18 20:34:44",
+      "reference": "https://bazaar.abuse.ch/sample/71f0dfc67018dd72f64ea4590eca2c43de4dd4acf7b29d2bad470ac6022a27a7/"
+    },
     {
       "id": "7762bc0cce2e9834",
       "source": "MalwareBazaar",
@@ -877,7 +955,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "elf, Ngioweb, ua-wget",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "elf",
         "Ngioweb",
@@ -1028,7 +1106,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "elf, Ngioweb, ua-wget",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "elf",
         "Ngioweb",
@@ -1111,7 +1189,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "elf, Ngioweb, ua-wget",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "elf",
         "Ngioweb",
@@ -2313,7 +2391,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -2676,21 +2754,6 @@
       ],
       "first_seen": "2026-06-18 15:32:08 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3866983/"
-    },
-    {
-      "id": "dab95da8ef55bafc",
-      "source": "URLhaus",
-      "ioc": "https://jam3b5k6.enfejarland.com/?ublib=0484f84f-c5dd-47de-a8e3-91e0e616ea5e",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ClearFake",
-      "confidence": 50,
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-06-18 15:32:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3866982/"
     },
     {
       "id": "7bca429c1e3560d4",
@@ -3240,76 +3303,19 @@
       "reference": "https://bazaar.abuse.ch/sample/bb4e08d8d96ace12a659a07d0ede31546e121176321b1d0f8cd15fe0f62127c0/"
     },
     {
-      "id": "073286df6e47c0f7",
-      "source": "MalwareBazaar",
-      "ioc": "afd4b76a1c8586d6c9ceeeca30bca4a00778b097a957890c5dbafd76ae8bf918",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "njrat",
-      "confidence": 100,
+      "id": "f62e347f43575839",
+      "source": "ThreatFox",
+      "ioc": "103.83.87.182:2222",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "XWorm",
+      "confidence": 75,
       "tags": [
-        "ACRStealer",
-        "AsgardProtector",
-        "de-pumped",
-        "exe",
-        "not-njRAT",
-        "proxy-aiddroneheat-top"
+        "XWorm"
       ],
-      "first_seen": "2026-06-18 14:08:13",
-      "reference": "https://bazaar.abuse.ch/sample/afd4b76a1c8586d6c9ceeeca30bca4a00778b097a957890c5dbafd76ae8bf918/"
-    },
-    {
-      "id": "2903d9d9b8f01d37",
-      "source": "MalwareBazaar",
-      "ioc": "1ad7863265eb6cb743f541301b8c728a93fe315c50577f18b8d26ac26de356d3",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "7z",
-      "malware": "njrat",
-      "confidence": 100,
-      "tags": [
-        "7z",
-        "ACRStealer",
-        "AsgardProtector",
-        "file-pumped",
-        "proxy-aiddroneheat-top",
-        "pw-6072"
-      ],
-      "first_seen": "2026-06-18 14:06:48",
-      "reference": "https://bazaar.abuse.ch/sample/1ad7863265eb6cb743f541301b8c728a93fe315c50577f18b8d26ac26de356d3/"
-    },
-    {
-      "id": "a083bddea3f2e0ac",
-      "source": "MalwareBazaar",
-      "ioc": "dfef36469751fbd84b2009a869a05ea71f1b4c3f808ace18d405a15c8d17ae00",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "ps1",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "Kimsuky",
-        "ps1"
-      ],
-      "first_seen": "2026-06-18 14:06:39",
-      "reference": "https://bazaar.abuse.ch/sample/dfef36469751fbd84b2009a869a05ea71f1b4c3f808ace18d405a15c8d17ae00/"
-    },
-    {
-      "id": "d5307cd67fea3ac9",
-      "source": "MalwareBazaar",
-      "ioc": "aa87d302ef084bc37bdd794fb1f7c600fd438e132e5dd8f51865ef475c7b9a43",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "DarkTortilla",
-      "confidence": 100,
-      "tags": [
-        "DarkTortilla",
-        "exe"
-      ],
-      "first_seen": "2026-06-18 14:04:00",
-      "reference": "https://bazaar.abuse.ch/sample/aa87d302ef084bc37bdd794fb1f7c600fd438e132e5dd8f51865ef475c7b9a43/"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1833875/"
     },
     {
       "id": "acec072d9beb3810",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T20:43:44.237172+00:00",
+  "generated_at": "2026-06-18T20:46:28.836638+00:00",
   "stats": {
     "total": 473,
     "by_source": {
@@ -13,9 +13,24 @@
       "botnet_cc": 111,
       "payload_delivery": 130
     },
-    "generated_at": "2026-06-18T20:43:44.237172+00:00"
+    "generated_at": "2026-06-18T20:46:28.836638+00:00"
   },
   "items": [
+    {
+      "id": "6e9c50e2aefc7701",
+      "source": "MalwareBazaar",
+      "ioc": "7fe68248774d7a86354a5abc7fdd822d2b5114a06479e6466a7ac05eee0f2326",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "sh",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "sh"
+      ],
+      "first_seen": "2026-06-18 20:44:47",
+      "reference": "https://bazaar.abuse.ch/sample/7fe68248774d7a86354a5abc7fdd822d2b5114a06479e6466a7ac05eee0f2326/"
+    },
     {
       "id": "5abbb50cea16962a",
       "source": "MalwareBazaar",
@@ -3286,21 +3301,6 @@
       ],
       "first_seen": "2026-06-18 14:09:38",
       "reference": "https://bazaar.abuse.ch/sample/c669a2e29833f02b28d5506a3922f3bcf2b506472f2f6bc43610b30b6f724467/"
-    },
-    {
-      "id": "02c2fee0dbb722d5",
-      "source": "MalwareBazaar",
-      "ioc": "bb4e08d8d96ace12a659a07d0ede31546e121176321b1d0f8cd15fe0f62127c0",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "unknown",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "KongTuke"
-      ],
-      "first_seen": "2026-06-18 14:08:53",
-      "reference": "https://bazaar.abuse.ch/sample/bb4e08d8d96ace12a659a07d0ede31546e121176321b1d0f8cd15fe0f62127c0/"
     },
     {
       "id": "f62e347f43575839",

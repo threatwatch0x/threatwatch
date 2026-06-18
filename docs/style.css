@@ -623,3 +623,107 @@ input:focus-visible {
 }
 
 .attack-pct { color: var(--ink-faint); }
+
+/* ─── Geo / ASN stats ────────────────────────────────────────────────────────── */
+
+.geo-section {
+  border-bottom: 1px solid var(--line);
+  padding: 28px 24px;
+}
+
+.geo-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.geo-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 720px) {
+  .geo-stats-grid { grid-template-columns: 1fr; }
+}
+
+.geo-col { display: flex; flex-direction: column; gap: 8px; }
+
+.geo-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.84rem;
+}
+
+.geo-flag { font-size: 1rem; width: 24px; text-align: center; }
+
+.geo-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+  min-width: 36px;
+}
+
+.geo-asn-label {
+  min-width: 180px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.74rem;
+}
+
+.geo-bar-wrap {
+  flex: 1;
+  height: 5px;
+  background: var(--line-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.geo-bar {
+  height: 100%;
+  background: var(--signal);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.geo-bar-asn { background: #8fb4ff; }
+
+.geo-count {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* ─── Tabel geo kolom ────────────────────────────────────────────────────────── */
+
+.cell-geo {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+
+.cell-dim { color: var(--ink-faint); }
+
+.asn-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--line);
+  color: var(--ink-faint);
+  margin-left: 4px;
+}
+
+.lookup-hit-geo {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-dim);
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}

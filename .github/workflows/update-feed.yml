@@ -35,6 +35,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch feeds
+      - name: Copy feed to docs
+      - name: cp data/feed.json docs/feed.json
         env:
           ABUSECH_AUTH_KEY: ${{ secrets.ABUSECH_AUTH_KEY }}
         run: python3 scripts/fetch_feeds.py

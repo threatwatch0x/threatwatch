@@ -3,7 +3,7 @@
  * en rendert stats + een filterbare/zoekbare tabel.
  */
 
-const FEED_URL = "../data/feed.json";
+const FEED_URL = "feed.json";
 
 let state = {
   items: [],

@@ -68,6 +68,50 @@
     </div>
   </section>
 
+  <!-- IOC LOOKUP -->
+  <section class="lookup-section">
+    <div class="lookup-inner">
+      <div class="lookup-label">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="6.5" cy="6.5" r="5" stroke="var(--signal)" stroke-width="1.5"/>
+          <line x1="10.5" y1="10.5" x2="14.5" y2="14.5" stroke="var(--signal)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        IOC lookup
+      </div>
+      <div class="lookup-bar">
+        <input
+          type="text"
+          id="lookup-input"
+          placeholder="Plak een IP, domein, URL of hash om direct te checken…"
+          aria-label="IOC lookup"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button id="lookup-btn">Check</button>
+      </div>
+      <div id="lookup-result" class="lookup-result" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ATT&CK HEATMAP -->
+  <section class="attack-section">
+    <div class="attack-inner">
+      <div class="attack-header">
+        <div class="lookup-label">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="6" height="6" rx="1" stroke="var(--signal)" stroke-width="1.5"/>
+            <rect x="9" y="1" width="6" height="6" rx="1" stroke="var(--signal)" stroke-width="1.5" opacity="0.5"/>
+            <rect x="1" y="9" width="6" height="6" rx="1" stroke="var(--signal)" stroke-width="1.5" opacity="0.5"/>
+            <rect x="9" y="9" width="6" height="6" rx="1" stroke="var(--signal)" stroke-width="1.5" opacity="0.3"/>
+          </svg>
+          MITRE ATT&amp;CK activiteit
+        </div>
+        <p class="attack-sub">Welke dreigingstypes domineren de huidige feed.</p>
+      </div>
+      <div id="attack-heatmap" class="attack-heatmap"></div>
+    </div>
+  </section>
+
   <section class="panel">
     <div class="panel-header">
       <h2>Threat feed</h2>
@@ -150,7 +194,7 @@
     Uitsluitend voor defensief gebruik &mdash; threat hunting, blocklisting en onderzoek.
   </p>
   <p class="footer-links">
-    <a href="https://github.com" target="_blank" rel="noopener">Bron op GitHub</a>
+    <a href="https://github.com/threatwatch0x/threatwatch" target="_blank" rel="noopener">Bron op GitHub</a>
     <span aria-hidden="true">·</span>
     <a href="https://threatfox.abuse.ch" target="_blank" rel="noopener">ThreatFox</a>
     <span aria-hidden="true">·</span>

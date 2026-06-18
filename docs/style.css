@@ -431,3 +431,195 @@ input:focus-visible {
 .footer p { margin: 0 0 8px; }
 .footer-links a { color: var(--ink-dim); }
 .footer-links span { color: var(--ink-faint); margin: 0 6px; }
+
+/* ─── IOC Lookup ─────────────────────────────────────────────────────────────── */
+
+.lookup-section {
+  background: var(--bg-raised);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 28px 24px;
+}
+
+.lookup-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.lookup-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--signal);
+  margin-bottom: 12px;
+}
+
+.lookup-bar {
+  display: flex;
+  gap: 10px;
+  max-width: 780px;
+}
+
+#lookup-input {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 11px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+}
+#lookup-input::placeholder { color: var(--ink-faint); }
+
+#lookup-btn {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--signal);
+  background: var(--signal-dim);
+  color: var(--signal);
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+#lookup-btn:hover { background: var(--signal); color: var(--bg); }
+
+.lookup-result {
+  margin-top: 14px;
+  max-width: 780px;
+  font-size: 0.86rem;
+}
+
+.lookup-clean {
+  display: block;
+  color: var(--signal);
+  font-family: var(--font-mono);
+  margin-bottom: 4px;
+}
+
+.lookup-warning { color: var(--amber); font-family: var(--font-mono); }
+
+.lookup-note {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 0.78rem;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+}
+
+.lookup-found { display: flex; flex-direction: column; gap: 8px; }
+
+.lookup-found-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--amber);
+  letter-spacing: 0.04em;
+}
+
+.lookup-hit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  flex-wrap: wrap;
+}
+
+.lookup-hit-ioc {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--ink);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lookup-hit-malware { color: var(--ink-dim); font-size: 0.84rem; }
+.lookup-hit-conf { font-family: var(--font-mono); font-size: 0.78rem; color: var(--signal); }
+.lookup-more { color: var(--ink-faint); font-size: 0.78rem; font-family: var(--font-mono); margin: 4px 0 0; }
+
+/* ─── ATT&CK Heatmap ─────────────────────────────────────────────────────────── */
+
+.attack-section {
+  border-bottom: 1px solid var(--line);
+  padding: 28px 24px;
+}
+
+.attack-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.attack-header { margin-bottom: 18px; }
+.attack-sub { color: var(--ink-faint); font-size: 0.84rem; margin: 6px 0 0; }
+
+.attack-heatmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.attack-cell {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-panel);
+  padding: 14px 14px 14px 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.attack-cell-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--cell-color, var(--signal));
+  opacity: var(--intensity, 1);
+}
+
+.attack-cell-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.attack-tactic {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--cell-color, var(--signal));
+  opacity: calc(var(--intensity) + 0.3);
+}
+
+.attack-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.attack-count {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+}
+
+.attack-pct { color: var(--ink-faint); }

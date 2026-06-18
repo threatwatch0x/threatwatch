@@ -2,88 +2,79 @@
 
 Open, transparant dashboard boven drie gratis abuse.ch threat-intelligence
 feeds: **ThreatFox** (C2-infrastructuur), **URLhaus** (malware-distributie-URL's)
-en **MalwareBazaar** (malwaresamples). Geen eigen scanning, geen black box —
-alleen aggregatie van publiek beschikbare, community-vetted IOC's, automatisch
-bijgewerkt en gepubliceerd als statisch dashboard via GitHub Pages.
+en **MalwareBazaar** (malwaresamples). Geen eigen scanning, geen black box.
+Alleen aggregatie van publiek beschikbare, community-vetted IOC's, automatisch
+bijgewerkt en gepubliceerd via GitHub Pages.
 
-Gemaakt naar voorbeeld van commerciële CTI-platforms zoals etugen.io en
-SOCRadar, maar volledig open: elke regel code en elke databron is inzichtelijk.
+Gebouwd als persoonlijk CSIRT-hulpmiddel. Geen X-posting, geen externe
+afhankelijkheden buiten abuse.ch en ip-api.com.
+
+Live: https://threatwatch0x.github.io/threatwatch/
+
+## Wat het doet
+
+- Haalt elke 30 minuten nieuwe IOC's op via de officiele abuse.ch API's
+- Normaliseert alles naar één formaat en verrijkt IP-gebaseerde IOC's met ASN en geo-data
+- Publiceert een statisch dashboard met zoekbalk, bronfilters, ATT&CK heatmap, top landen en top ASN's
+- IOC lookup: plak een IP, domein, hash, ASN of landcode en zie direct of het bekend is
 
 ## Hoe het werkt
 
 ```
-scripts/fetch_feeds.py   →  haalt IOC's op via de officiële abuse.ch API's,
-                             normaliseert ze naar één formaat, schrijft
-                             data/feed.json
+scripts/fetch_feeds.py     haalt IOC's op, verrijkt met ASN/geo, schrijft data/feed.json
 
-docs/index.html + app.js →  statisch dashboard dat data/feed.json inleest
-                             en rendert (stats, filters, zoekbare tabel)
+docs/index.html + app.js   statisch dashboard dat feed.json inleest en rendert
 
-.github/workflows/       →  draait fetch_feeds.py elke 30 minuten via
-update-feed.yml             GitHub Actions, commit de nieuwe data, en
-                             publiceert docs/ naar GitHub Pages
-
-scripts/post_to_x.py     →  optionele module om nieuwe high-confidence
-                             IOC's naar X te posten. Staat in dry-run
-                             totdat je de X API keys instelt.
+.github/workflows/         draait fetch_feeds.py elke 30 minuten via GitHub Actions,
+update-feed.yml            commit de nieuwe data, en publiceert docs/ naar GitHub Pages
 ```
 
 ## Setup
 
 ### 1. Auth-Key bij abuse.ch
 
-Je hebt al een account. Maak (of bekijk) je personal Auth-Key op
-<https://auth.abuse.ch/>. Deze key werkt voor ThreatFox, URLhaus én
-MalwareBazaar — het is dezelfde key voor alle drie.
+Maak een gratis account op https://auth.abuse.ch/ en genereer een Auth-Key.
+Die key werkt voor ThreatFox, URLhaus en MalwareBazaar tegelijk.
 
 ### 2. Repository secret instellen
 
-In je GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**
+Settings > Secrets and variables > Actions > New repository secret
 
 ```
 Name:  ABUSECH_AUTH_KEY
-Value: <jouw auth key>
+Value: jouw auth key
 ```
 
 ### 3. GitHub Pages activeren
 
-**Settings → Pages → Source: GitHub Actions**
+Settings > Pages > Source: GitHub Actions
 
-Na de eerste succesvolle workflow-run (handmatig te triggeren via de
-**Actions**-tab → "Update threat feed" → **Run workflow**) is het dashboard
-bereikbaar op `https://<jouw-gebruikersnaam>.github.io/<repo-naam>/`.
+Na de eerste succesvolle workflow-run is het dashboard bereikbaar op
+https://<jouw-gebruikersnaam>.github.io/<repo-naam>/
 
-### 4. Lokaal testen (optioneel)
+### 4. Lokaal testen
 
 ```bash
 pip install -r requirements.txt
 export ABUSECH_AUTH_KEY="jouw-key-hier"
 python3 scripts/fetch_feeds.py
-# open docs/index.html in de browser, of serveer lokaal:
 cd docs && python3 -m http.server 8000
 ```
 
-## X (Twitter) posting later activeren
+## Databronnen
 
-`scripts/post_to_x.py` draait nu altijd in **dry-run**: het logt alleen wat
-het zou posten, zonder iets te versturen. Zodra je X API keys hebt:
+| Bron | Type | Licentie |
+|------|------|---------|
+| ThreatFox (abuse.ch) | C2-infrastructuur, IOC's | CC0 |
+| URLhaus (abuse.ch) | Malware-distributie-URL's | CC0 |
+| MalwareBazaar (abuse.ch) | Malwaresamples | CC0 |
+| ip-api.com | ASN en geo-verrijking | Gratis voor niet-commercieel gebruik |
 
-1. `pip install tweepy` (of voeg `tweepy` toe aan `requirements.txt`)
-2. Voeg deze vier repository secrets toe:
-   `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_TOKEN_SECRET`
-3. Klaar — de workflow plukt ze automatisch op bij de volgende run.
+## Gebruik
 
-Het script post alleen IOC's met `confidence >= 75` en maximaal 3 per run,
-om geen ruis naar volgers te sturen. Pas `MIN_CONFIDENCE_TO_POST` en
-`MAX_POSTS_PER_RUN` aan in het script als je dat wilt bijstellen.
+Uitsluitend bedoeld voor defensief gebruik: threat hunting, IOC-verificatie
+bij incidenten, blocklisting en bewustwording. Niet bedoeld om
+aanvallersinfrastructuur actief te benaderen of te verstoren.
 
-## Attributie en gebruik
-
-Alle data is afkomstig van [abuse.ch](https://abuse.ch) en beschikbaar onder
-CC0. abuse.ch is een non-profit onderzoeksinitiatief van de Bern University
-of Applied Sciences — geef ze credit als je deze data verder deelt, dat
-wordt in de CTI-community gewaardeerd.
-
-Dit project is uitsluitend bedoeld voor defensief gebruik: threat hunting,
-blocklisting, onderzoek en bewustwording. Niet bedoeld om aanvallersinfra
-actief te benaderen of te verstoren.
+Alle abuse.ch data is CC0. Geef ze credit als je deze data verder deelt,
+dat wordt in de CTI-community gewaardeerd.

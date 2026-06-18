@@ -2,11 +2,8 @@ name: Update threat feed
 
 on:
   schedule:
-    # Elke 30 minuten. abuse.ch vraagt redelijk gebruik (niet vaker dan
-    # elke 5-10 min); 30 min is ruim binnen die marge en past bij het
-    # 20-min refresh-cycle van vergelijkbare commerciële platforms.
     - cron: "*/30 * * * *"
-  workflow_dispatch: {}  # handmatig kunnen triggeren via de Actions tab
+  workflow_dispatch: {}
   push:
     branches: [main]
 
@@ -35,20 +32,18 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch feeds
-      - name: Copy feed to docs
-      - name: cp data/feed.json docs/feed.json
         env:
           ABUSECH_AUTH_KEY: ${{ secrets.ABUSECH_AUTH_KEY }}
         run: python3 scripts/fetch_feeds.py
 
-
-       
+      - name: Copy feed to docs
+        run: cp data/feed.json docs/feed.json
 
       - name: Commit updated data
         run: |
           git config user.name "threatwatch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/feed.json data/history.json data/posted_ids.json 2>/dev/null || true
+          git add data/feed.json data/history.json docs/feed.json 2>/dev/null || true
           git diff --quiet --cached || git commit -m "chore: update threat feed data [skip ci]"
           git push || true
 

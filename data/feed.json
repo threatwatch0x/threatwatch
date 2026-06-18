@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T20:24:41.154814+00:00",
+  "generated_at": "2026-06-18T20:28:58.231675+00:00",
   "stats": {
     "total": 472,
     "by_source": {
@@ -13,9 +13,43 @@
       "botnet_cc": 110,
       "payload_delivery": 130
     },
-    "generated_at": "2026-06-18T20:24:41.154814+00:00"
+    "generated_at": "2026-06-18T20:28:58.231675+00:00"
   },
   "items": [
+    {
+      "id": "7762bc0cce2e9834",
+      "source": "MalwareBazaar",
+      "ioc": "22620c9c6d0c2b392ee34bd4e7905b6f161bfe25ed3dc756302aeb091a994b0e",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "vbs",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "exe",
+        "vbs"
+      ],
+      "first_seen": "2026-06-18 20:27:14",
+      "reference": "https://bazaar.abuse.ch/sample/22620c9c6d0c2b392ee34bd4e7905b6f161bfe25ed3dc756302aeb091a994b0e/"
+    },
+    {
+      "id": "eaa84964140abfe1",
+      "source": "URLhaus",
+      "ioc": "http://42.232.225.27:55066/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-18 20:24:20 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3867081/"
+    },
     {
       "id": "bd36064095e3fc9b",
       "source": "MalwareBazaar",
@@ -23,10 +57,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "elf",
-      "malware": "Unknown",
+      "malware": "Mirai",
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx-dec"
       ],
       "first_seen": "2026-06-18 20:23:34",
@@ -825,7 +860,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "elf, Ngioweb, ua-wget",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "elf",
         "Ngioweb",
@@ -2692,24 +2727,6 @@
       "reference": "https://bazaar.abuse.ch/sample/5ac51bac7018c766350db3ca8ef588296aa0f67df65fa42740cf33f94bcfdfa8/"
     },
     {
-      "id": "5573a2ceabd62c08",
-      "source": "URLhaus",
-      "ioc": "http://182.116.95.92:55705/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-06-18 15:16:27 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3866981/"
-    },
-    {
       "id": "d5ab19e1c4e3ed64",
       "source": "MalwareBazaar",
       "ioc": "c087e73a31e10615dfe40d40d77e14202fa220991d3412bff811b5a690249ca1",
@@ -3293,21 +3310,6 @@
       ],
       "first_seen": "2026-06-18 14:04:00",
       "reference": "https://bazaar.abuse.ch/sample/aa87d302ef084bc37bdd794fb1f7c600fd438e132e5dd8f51865ef475c7b9a43/"
-    },
-    {
-      "id": "5224b7a922c5132f",
-      "source": "MalwareBazaar",
-      "ioc": "23616a70f91cade4edc2c75af7d0ee35d5e87967422d7bec0073fe0b8c03cfef",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "sh",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "sh"
-      ],
-      "first_seen": "2026-06-18 13:59:10",
-      "reference": "https://bazaar.abuse.ch/sample/23616a70f91cade4edc2c75af7d0ee35d5e87967422d7bec0073fe0b8c03cfef/"
     },
     {
       "id": "acec072d9beb3810",

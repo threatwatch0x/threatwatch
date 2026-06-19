@@ -78,3 +78,4 @@ aanvallersinfrastructuur actief te benaderen of te verstoren.
 
 Alle abuse.ch data is CC0. Geef ze credit als je deze data verder deelt,
 dat wordt in de CTI-community gewaardeerd.
+# laatste handmatige sync: Fri Jun 19 07:01:44 AM UTC 2026

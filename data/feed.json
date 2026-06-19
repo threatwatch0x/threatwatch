@@ -1,45 +1,66 @@
 {
-  "generated_at": "2026-06-19T07:00:43.567311+00:00",
+  "generated_at": "2026-06-19T07:02:55.420876+00:00",
   "stats": {
-    "total": 583,
+    "total": 587,
     "by_source": {
       "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 383
+      "ThreatFox": 387
     },
     "by_threat_type": {
       "payload": 150,
       "malware_download": 100,
-      "botnet_cc": 119,
+      "botnet_cc": 123,
       "payload_delivery": 214
     },
     "by_country": {
-      "CN": 46,
+      "CN": 50,
       "NL": 30,
-      "US": 18,
-      "RU": 8,
+      "US": 15,
+      "RU": 7,
       "DE": 6,
-      "PL": 3,
       "BD": 2,
       "PH": 2,
       "SG": 2,
-      "CH": 2
+      "CH": 2,
+      "BR": 2
     },
     "top_asns": {
       "AS202412 Omegatech LTD": 14,
       "AS4837 CNC Group CHINA169 Henan Province Network": 11,
       "AS209630 LLC VASH KREDIT BANK": 9,
       "AS210644 NetCrafters OU": 7,
+      "AS38365 Beijing Baidu Netcom Science and Technology Co., Ltd.": 5,
       "AS4837 China Unicom Henan Province Network": 4,
-      "AS36352 HostPapa": 4,
       "AS37963 Aliyun Computing Co., LTD": 4,
-      "AS38365 Beijing Baidu Netcom Science and Technology Co., Ltd.": 4,
       "AS202051 NetGrid Host LTD": 4,
-      "AS4837 CNC Group CHINA169 Liaoning Province Network": 3
+      "AS4837 CNC Group CHINA169 Liaoning Province Network": 3,
+      "AS4837 China Unicom Shandong Province Network": 3
     },
-    "generated_at": "2026-06-19T07:00:43.567311+00:00"
+    "generated_at": "2026-06-19T07:02:55.420876+00:00"
   },
   "items": [
+    {
+      "id": "0f6ebf91ad3fa38f",
+      "source": "MalwareBazaar",
+      "ioc": "ef1a862d272d231ea8f68225fae205b9af64478f0b3e67bfb9c7511a20bae57b",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "upx-dec"
+      ],
+      "first_seen": "2026-06-19 07:01:57",
+      "reference": "https://bazaar.abuse.ch/sample/ef1a862d272d231ea8f68225fae205b9af64478f0b3e67bfb9c7511a20bae57b/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
     {
       "id": "1bdeeb03679ce988",
       "source": "MalwareBazaar",
@@ -50,7 +71,8 @@
       "malware": "Unknown",
       "confidence": 100,
       "tags": [
-        "elf"
+        "elf",
+        "upx"
       ],
       "first_seen": "2026-06-19 06:59:50",
       "reference": "https://bazaar.abuse.ch/sample/86279b40d44922be8ab094828cd4a18bc74fbb8f45f0573bccc89890ae2f110f/",
@@ -136,10 +158,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "elf",
-      "malware": "Unknown",
+      "malware": "Mirai",
       "confidence": 100,
       "tags": [
-        "elf"
+        "elf",
+        "Mirai"
       ],
       "first_seen": "2026-06-19 06:57:54",
       "reference": "https://bazaar.abuse.ch/sample/b6879f66c164afdb98d084b660bcf9e2297d70c1fe616007da9538f5d48cd6b2/",
@@ -3877,24 +3900,6 @@
       "country_code": "NL"
     },
     {
-      "id": "d3fc86936fc551c7",
-      "source": "MalwareBazaar",
-      "ioc": "7bb06025f3d4afe4e76395fe37265ad633545f0d8fedf24debcfc8e93af155ed",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "unknown",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-06-19 05:58:52",
-      "reference": "https://bazaar.abuse.ch/sample/7bb06025f3d4afe4e76395fe37265ad633545f0d8fedf24debcfc8e93af155ed/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "4b4a6b5226e78ca9",
       "source": "URLhaus",
       "ioc": "http://119.114.153.144:41008/bin.sh",
@@ -3963,7 +3968,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -4132,6 +4137,86 @@
       "asn_org": "TOT Mobile Co LTD",
       "country": "Thailand",
       "country_code": "TH"
+    },
+    {
+      "id": "292829c0d20e9bcc",
+      "source": "ThreatFox",
+      "ioc": "150.158.23.58:9999",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "VShell",
+      "confidence": 100,
+      "tags": [
+        "Vshell"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1834024/",
+      "ip": "150.158.23.58",
+      "asn": "AS45090",
+      "asn_org": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "22f1151d8d32a2ad",
+      "source": "ThreatFox",
+      "ioc": "192.140.175.194:8808",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "AsyncRAT",
+      "confidence": 100,
+      "tags": [
+        "asyncrat"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1834025/",
+      "ip": "192.140.175.194",
+      "asn": "AS146817",
+      "asn_org": "Hubei Feixun Network Co., Ltd",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "6cbc6c7a2e20d861",
+      "source": "ThreatFox",
+      "ioc": "106.75.236.163:8080",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "VShell",
+      "confidence": 100,
+      "tags": [
+        "Vshell"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1834023/",
+      "ip": "106.75.236.163",
+      "asn": "AS17621",
+      "asn_org": "Shanghai UCloud Information Technology Company Limited",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "cdc088f0feb76280",
+      "source": "ThreatFox",
+      "ioc": "106.13.63.211:60000",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 100,
+      "tags": [
+        "Viper"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1834022/",
+      "ip": "106.13.63.211",
+      "asn": "AS38365",
+      "asn_org": "Beijing Baidu Netcom Science and Technology Co., Ltd.",
+      "country": "China",
+      "country_code": "CN"
     },
     {
       "id": "028a85354935e391",
@@ -7711,11 +7796,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1833864/",
-      "ip": "31.76.87.105",
-      "asn": "AS202226",
-      "asn_org": "Great Flower",
-      "country": "Poland",
-      "country_code": "PL"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "96dfe6981e768c2f",
@@ -7755,11 +7840,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1833860/",
-      "ip": "209.54.102.152",
-      "asn": "AS36352",
-      "asn_org": "HostPapa",
-      "country": "United States",
-      "country_code": "US"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "7d9ea2635e7a73ad",
@@ -7777,11 +7862,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1833861/",
-      "ip": "209.54.102.152",
-      "asn": "AS36352",
-      "asn_org": "HostPapa",
-      "country": "United States",
-      "country_code": "US"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "7cce1ce31ebd3e6d",
@@ -7799,11 +7884,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1833862/",
-      "ip": "209.54.102.152",
-      "asn": "AS36352",
-      "asn_org": "HostPapa",
-      "country": "United States",
-      "country_code": "US"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "a20ef647435228d6",
@@ -7820,11 +7905,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1833859/",
-      "ip": "176.12.64.118",
-      "asn": "AS29182",
-      "asn_org": "WEBDC",
-      "country": "Russia",
-      "country_code": "RU"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "87b34ce0c25b760a",
@@ -10317,86 +10402,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1833704/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7b63199b303ef1f0",
-      "source": "ThreatFox",
-      "ioc": "43.110.37.217:2375",
-      "ioc_type": "ip:port",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "XMRIG",
-      "confidence": 80,
-      "tags": [
-        "honeypot"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1833705/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1cb9790f73db92de",
-      "source": "ThreatFox",
-      "ioc": "43.156.71.219:2375",
-      "ioc_type": "ip:port",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "XMRIG",
-      "confidence": 80,
-      "tags": [
-        "honeypot"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1833706/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1d318b49fe6ecbb6",
-      "source": "ThreatFox",
-      "ioc": "91.209.228.154:2375",
-      "ioc_type": "ip:port",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "XMRIG",
-      "confidence": 80,
-      "tags": [
-        "honeypot"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1833707/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b23d46e50ae84fdb",
-      "source": "ThreatFox",
-      "ioc": "121.43.211.216:6379",
-      "ioc_type": "ip:port",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "XMRIG",
-      "confidence": 80,
-      "tags": [
-        "honeypot"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1833708/",
       "ip": null,
       "asn": null,
       "asn_org": null,

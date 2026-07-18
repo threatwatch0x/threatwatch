@@ -1,46 +1,313 @@
 {
-  "generated_at": "2026-07-18T21:51:14.383692+00:00",
+  "generated_at": "2026-07-18T22:49:57.308356+00:00",
   "stats": {
-    "total": 755,
+    "total": 648,
     "by_source": {
       "URLhaus": 100,
       "MalwareBazaar": 100,
-      "ThreatFox": 555
+      "ThreatFox": 448
     },
     "by_threat_type": {
       "malware_download": 100,
       "payload": 202,
-      "payload_delivery": 321,
-      "botnet_cc": 131,
+      "payload_delivery": 211,
+      "botnet_cc": 134,
       "cc_skimming": 1
     },
     "by_country": {
-      "CN": 64,
-      "US": 40,
+      "CN": 65,
+      "US": 26,
       "HK": 25,
       "SG": 13,
       "NL": 12,
       "DE": 6,
-      "IN": 4,
+      "IN": 5,
+      "VN": 5,
       "PK": 4,
-      "VN": 4,
-      "FR": 3
+      "CA": 3
     },
     "top_asns": {
-      "AS31898 Oracle Corporation": 16,
-      "AS45090 Tencent Cloud Computing (Beijing) Co., Ltd": 12,
       "AS135581 Network Technology Limited": 11,
-      "AS31898 Oso Grande IP Services, LLC": 10,
+      "AS31898 Oracle Corporation": 10,
       "AS37963 Aliyun Computing Co., LTD": 10,
       "AS45090 Tencent cloud computing (Beijing) Co., Ltd.": 10,
-      "AS4837 China Unicom Henan Province Network": 8,
+      "AS4837 China Unicom Henan Province Network": 9,
+      "AS45090 Tencent Cloud Computing (Beijing) Co., Ltd": 9,
       "AS209373 pfcloude": 6,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 5,
       "AS202412 Omegatech LTD": 5,
-      "AS14061 Digital Ocean": 5
+      "AS45899 Vietnam Posts and Telecommunications Group": 5
     },
-    "generated_at": "2026-07-18T21:51:14.383692+00:00"
+    "generated_at": "2026-07-18T22:49:57.308356+00:00"
   },
   "items": [
+    {
+      "id": "52682f9d3f5f65ac",
+      "source": "URLhaus",
+      "ioc": "http://115.49.211.101:57441/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-18 22:46:30 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888428/",
+      "ip": "115.49.211.101",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "d047be311318ca16",
+      "source": "URLhaus",
+      "ioc": "http://180.245.46.51:34600/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "mirai",
+      "confidence": 100,
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-07-18 22:41:14 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888427/",
+      "ip": "180.245.46.51",
+      "asn": "AS7713",
+      "asn_org": "PT. TELKOM INDONESIA",
+      "country": "Indonesia",
+      "country_code": "ID"
+    },
+    {
+      "id": "baffd674a943e276",
+      "source": "URLhaus",
+      "ioc": "https://jtab.jbgroup21.com/80b561a9-4cc3-444a-bfa3-4f5f66318625",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "ClearFake, win-0x0cd5, windows",
+      "confidence": 50,
+      "tags": [
+        "ClearFake",
+        "win-0x0cd5",
+        "windows"
+      ],
+      "first_seen": "2026-07-18 22:33:11 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888426/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "358748b594b636e6",
+      "source": "URLhaus",
+      "ioc": "https://ynzpk.varzeshlife.ir/ae3531c5-b304-4a34-a61e-1f5857a46c65",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "ClearFake, win-0x4679, windows",
+      "confidence": 50,
+      "tags": [
+        "ClearFake",
+        "win-0x4679",
+        "windows"
+      ],
+      "first_seen": "2026-07-18 22:23:16 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888425/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "2953f2506f88c243",
+      "source": "URLhaus",
+      "ioc": "http://175.43.138.10:47103/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "mirai",
+      "confidence": 100,
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-07-18 22:22:15 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888424/",
+      "ip": "175.43.138.10",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Fujian Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "f28eb992534498fa",
+      "source": "URLhaus",
+      "ioc": "http://108.168.0.60:47365/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-18 22:07:28 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888423/",
+      "ip": "108.168.0.60",
+      "asn": "AS40788",
+      "asn_org": "Start Communications",
+      "country": "Canada",
+      "country_code": "CA"
+    },
+    {
+      "id": "f8aa1622320ead79",
+      "source": "URLhaus",
+      "ioc": "http://108.168.0.60:47365/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-18 22:05:28 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888422/",
+      "ip": "108.168.0.60",
+      "asn": "AS40788",
+      "asn_org": "Start Communications",
+      "country": "Canada",
+      "country_code": "CA"
+    },
+    {
+      "id": "c0fc98b7a6f7ce5b",
+      "source": "URLhaus",
+      "ioc": "https://4dc5hwj8.nextbahis.poker/?ublib=b79287fd-1a4c-4395-a5e9-12a719bbbded",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "ClearFake, mac-0x76c7, macOS",
+      "confidence": 50,
+      "tags": [
+        "ClearFake",
+        "mac-0x76c7",
+        "macOS"
+      ],
+      "first_seen": "2026-07-18 21:58:16 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888421/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "5832bd70eb6d6842",
+      "source": "URLhaus",
+      "ioc": "https://g9epkl53.site-asli-bedon-filter-1xbet.com/?ublib=dea575b0-75ed-46c9-8f98-a33531b6d0a9",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "ClearFake, mac-0x68dc, macOS",
+      "confidence": 50,
+      "tags": [
+        "ClearFake",
+        "mac-0x68dc",
+        "macOS"
+      ],
+      "first_seen": "2026-07-18 21:57:16 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888420/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "00077d3c1e79ad0b",
+      "source": "URLhaus",
+      "ioc": "http://117.26.110.213:38787/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, arm, elf, mirai, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-18 21:53:27 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888419/",
+      "ip": "117.26.110.213",
+      "asn": "AS4134",
+      "asn_org": "Chinanet FJ",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "659bb26414c65905",
+      "source": "URLhaus",
+      "ioc": "http://182.119.3.190:35288/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-18 21:52:33 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888418/",
+      "ip": "182.119.3.190",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "94407cc101c6a8ee",
+      "source": "URLhaus",
+      "ioc": "http://59.96.142.114:46035/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-18 21:51:24 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3888417/",
+      "ip": "59.96.142.114",
+      "asn": "AS9829",
+      "asn_org": "BSNL Internet",
+      "country": "India",
+      "country_code": "IN"
+    },
     {
       "id": "87a685909fb01e30",
       "source": "URLhaus",
@@ -48,12 +315,13 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "32-bit, arm, elf, Mozi",
+      "malware": "32-bit, arm, elf, mirai, Mozi",
       "confidence": 100,
       "tags": [
         "32-bit",
         "arm",
         "elf",
+        "mirai",
         "Mozi"
       ],
       "first_seen": "2026-07-18 21:50:32 UTC",
@@ -3771,247 +4039,6 @@
       "country_code": "US"
     },
     {
-      "id": "ae79241b0f11c888",
-      "source": "URLhaus",
-      "ioc": "http://129.121.110.105/gIP",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "mirai, ua-wget",
-      "confidence": 100,
-      "tags": [
-        "mirai",
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:18 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888332/",
-      "ip": "129.121.110.105",
-      "asn": "AS31898",
-      "asn_org": "Oso Grande IP Services, LLC",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "acc13ff7b9d3951b",
-      "source": "URLhaus",
-      "ioc": "http://129.121.114.124/NLx",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888320/",
-      "ip": "129.121.114.124",
-      "asn": "AS31898",
-      "asn_org": "Oracle Corporation",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "0731a9d7cd45c8a1",
-      "source": "URLhaus",
-      "ioc": "http://129.121.110.105/Kz59",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888321/",
-      "ip": "129.121.110.105",
-      "asn": "AS31898",
-      "asn_org": "Oso Grande IP Services, LLC",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "46cfae5728dcd35a",
-      "source": "URLhaus",
-      "ioc": "http://129.121.114.124/PYj",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888322/",
-      "ip": "129.121.114.124",
-      "asn": "AS31898",
-      "asn_org": "Oracle Corporation",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "b656f3cbc34c5da6",
-      "source": "URLhaus",
-      "ioc": "http://129.121.114.124/aaYS",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888323/",
-      "ip": "129.121.114.124",
-      "asn": "AS31898",
-      "asn_org": "Oracle Corporation",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "bd2d1783cb154079",
-      "source": "URLhaus",
-      "ioc": "http://129.121.114.124/b8r",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888324/",
-      "ip": "129.121.114.124",
-      "asn": "AS31898",
-      "asn_org": "Oracle Corporation",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "3e42915fce94f891",
-      "source": "URLhaus",
-      "ioc": "http://129.121.110.105/oNrI",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888325/",
-      "ip": "129.121.110.105",
-      "asn": "AS31898",
-      "asn_org": "Oso Grande IP Services, LLC",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "913efda3a24517f1",
-      "source": "URLhaus",
-      "ioc": "http://129.121.114.124/n2w0",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888326/",
-      "ip": "129.121.114.124",
-      "asn": "AS31898",
-      "asn_org": "Oracle Corporation",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "8bccb34d54e13d88",
-      "source": "URLhaus",
-      "ioc": "http://129.121.114.124/91Gv",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888327/",
-      "ip": "129.121.114.124",
-      "asn": "AS31898",
-      "asn_org": "Oracle Corporation",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "a95db620012ebb42",
-      "source": "URLhaus",
-      "ioc": "http://129.121.110.105/JwbV",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:14 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888293/",
-      "ip": "129.121.110.105",
-      "asn": "AS31898",
-      "asn_org": "Oso Grande IP Services, LLC",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "0440be3749a0f451",
-      "source": "URLhaus",
-      "ioc": "http://129.121.110.105/i69",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:14 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888294/",
-      "ip": "129.121.110.105",
-      "asn": "AS31898",
-      "asn_org": "Oso Grande IP Services, LLC",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "d631f721c6f092f0",
-      "source": "URLhaus",
-      "ioc": "http://129.121.110.105/YlU",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "ua-wget",
-      "confidence": 50,
-      "tags": [
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-18 18:10:14 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3888295/",
-      "ip": "129.121.110.105",
-      "asn": "AS31898",
-      "asn_org": "Oso Grande IP Services, LLC",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
       "id": "2e6660f4786072b9",
       "source": "MalwareBazaar",
       "ioc": "3bef7be824a1f94490765179dc8f4d61ac7e75528691c1131b67f2c676c63e0a",
@@ -4399,6 +4426,154 @@
       ],
       "first_seen": "2026-07-18 17:24:14",
       "reference": "https://bazaar.abuse.ch/sample/4676bcd66adef10310c42e6c812e9dfe5a6a2de497cbec0cb95b5d1b8b3f66c9/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "5bfb3258e9209a78",
+      "source": "ThreatFox",
+      "ioc": "jtab.jbgroup21.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "win-0x0cd5",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1853560/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "e67380db5ea8cec9",
+      "source": "ThreatFox",
+      "ioc": "ynzpk.varzeshlife.ir",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "win-0x4679",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1853559/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "0da4a16009cc40fd",
+      "source": "ThreatFox",
+      "ioc": "43.164.191.203:993",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 100,
+      "tags": [
+        "Viper"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1853558/",
+      "ip": "43.164.191.203",
+      "asn": "AS132203",
+      "asn_org": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "country": "South Korea",
+      "country_code": "KR"
+    },
+    {
+      "id": "47673fb028bc82dc",
+      "source": "ThreatFox",
+      "ioc": "43.143.234.164:22",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 100,
+      "tags": [
+        "Viper"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1853557/",
+      "ip": "43.143.234.164",
+      "asn": "AS45090",
+      "asn_org": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "148903d8dda89c2a",
+      "source": "ThreatFox",
+      "ioc": "221.132.16.23:22",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 100,
+      "tags": [
+        "Viper"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1853556/",
+      "ip": "221.132.16.23",
+      "asn": "AS45899",
+      "asn_org": "Vietnam Posts and Telecommunications Group",
+      "country": "Vietnam",
+      "country_code": "VN"
+    },
+    {
+      "id": "dd463d258fb73a19",
+      "source": "ThreatFox",
+      "ioc": "4dc5hwj8.nextbahis.poker",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "mac-0x76c7",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1853555/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ca4dd145c0f92a4a",
+      "source": "ThreatFox",
+      "ioc": "g9epkl53.site-asli-bedon-filter-1xbet.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "mac-0x68dc",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1853554/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -10280,155 +10455,6 @@
       "asn_org": "Aliyun Computing Co., LTD",
       "country": "China",
       "country_code": "CN"
-    },
-    {
-      "id": "14f178fad04c1586",
-      "source": "ThreatFox",
-      "ioc": "47.101.51.235:8888",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Cobalt Strike",
-      "confidence": 100,
-      "tags": [
-        "CobaltStrike"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1853293/",
-      "ip": "47.101.51.235",
-      "asn": "AS37963",
-      "asn_org": "Aliyun Computing Co., LTD",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "88b833febe5e3eaf",
-      "source": "ThreatFox",
-      "ioc": "208.87.201.226:28888",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "tags": [
-        "Viper"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1853290/",
-      "ip": "208.87.201.226",
-      "asn": "AS133199",
-      "asn_org": "Hongkonguse",
-      "country": "Hong Kong",
-      "country_code": "HK"
-    },
-    {
-      "id": "6cca67d8b7e29375",
-      "source": "ThreatFox",
-      "ioc": "208.87.201.226:5003",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "tags": [
-        "Viper"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1853291/",
-      "ip": "208.87.201.226",
-      "asn": "AS133199",
-      "asn_org": "Hongkonguse",
-      "country": "Hong Kong",
-      "country_code": "HK"
-    },
-    {
-      "id": "c61ef9a6e9d2e2d1",
-      "source": "ThreatFox",
-      "ioc": "hdz7omr1.nextbahis.blog",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "mac-0xfb64",
-        "macOS"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1853289/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "79b7b473c76e74d9",
-      "source": "ThreatFox",
-      "ioc": "i0bep9cj.medallionfoodsinctempura.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "mac-0x68dc",
-        "macOS"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1853288/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "a3f54df0feb207e0",
-      "source": "ThreatFox",
-      "ioc": "medallionfoodsinctempura.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "18July2026",
-        "ClearFake",
-        "Commandline",
-        "macOS"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1853287/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "188d81a34f2a0f13",
-      "source": "ThreatFox",
-      "ioc": "olyqj.luxurygoodscaree.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1853286/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     }
   ]
 }

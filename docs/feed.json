@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-08-07T10:51:59.725763+00:00",
+  "generated_at": "2026-08-07T11:44:41.469274+00:00",
   "stats": {
-    "total": 643,
+    "total": 647,
     "by_source": {
       "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 443
+      "ThreatFox": 447
     },
     "by_threat_type": {
       "payload": 118,
       "malware_download": 100,
-      "payload_delivery": 242,
-      "botnet_cc": 183
+      "payload_delivery": 239,
+      "botnet_cc": 190
     },
     "by_country": {
-      "CN": 79,
+      "CN": 81,
       "US": 14,
       "NL": 10,
       "PK": 6,
       "TW": 4,
       "GB": 4,
-      "DE": 4,
       "BR": 2,
       "RU": 2,
-      "NO": 2
+      "NO": 2,
+      "DE": 2
     },
     "top_asns": {
       "AS4837 China Unicom Henan Province Network": 18,
@@ -35,11 +35,116 @@
       "AS38264 Wateen Telecom Limited": 5,
       "AS202412 Omegatech LTD": 4,
       "AS9924 Taiwan Telecommunication Network Services Co., LTD.": 4,
-      "AS131486 Beijing Jingdong 360 Degree E-commerce Co., Ltd.": 4
+      "AS45090 Tencent Cloud Computing (Beijing) Co., Ltd": 4
     },
-    "generated_at": "2026-08-07T10:51:59.725763+00:00"
+    "generated_at": "2026-08-07T11:44:41.469274+00:00"
   },
   "items": [
+    {
+      "id": "345e34780fbc869a",
+      "source": "MalwareBazaar",
+      "ioc": "8e1a49fcf2383b31cc172ea86e1b3661e006b6882f32e1beefb0dd9dfb6c1790",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "jar",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "IRAHook",
+        "jar",
+        "RAT",
+        "Stealer"
+      ],
+      "first_seen": "2026-08-07 11:43:42",
+      "reference": "https://bazaar.abuse.ch/sample/8e1a49fcf2383b31cc172ea86e1b3661e006b6882f32e1beefb0dd9dfb6c1790/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "6e0afd58dddd40ad",
+      "source": "MalwareBazaar",
+      "ioc": "802dee2011a757a13f6afc236e66c6e8440bc733eb001d849286c22d43b0017e",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "2026-08-07 11:41:15",
+      "reference": "https://bazaar.abuse.ch/sample/802dee2011a757a13f6afc236e66c6e8440bc733eb001d849286c22d43b0017e/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "601d6b973116aea6",
+      "source": "MalwareBazaar",
+      "ioc": "c894ed71694fd28d60113b5594f9e61e5133a18f410960849e868b60b8beb973",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "ValleyRAT",
+      "confidence": 100,
+      "tags": [
+        "exe",
+        "SilverFox",
+        "ValleyRAT"
+      ],
+      "first_seen": "2026-08-07 11:31:35",
+      "reference": "https://bazaar.abuse.ch/sample/c894ed71694fd28d60113b5594f9e61e5133a18f410960849e868b60b8beb973/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "bcd74cd84b857487",
+      "source": "MalwareBazaar",
+      "ioc": "fd2479e51259747153a3ce46264e0f3f3fac1d6eadcc0efb915ba5f35ccc5b18",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "ConnectWise",
+      "confidence": 100,
+      "tags": [
+        "ConnectWise",
+        "exe",
+        "signed"
+      ],
+      "first_seen": "2026-08-07 11:25:41",
+      "reference": "https://bazaar.abuse.ch/sample/fd2479e51259747153a3ce46264e0f3f3fac1d6eadcc0efb915ba5f35ccc5b18/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "1f7635a6ef23c95a",
+      "source": "MalwareBazaar",
+      "ioc": "84843c8d447edf5253df7903713d158106dc4a7833bba85ecdaf7dbef7d5a1c9",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "sh",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "sh"
+      ],
+      "first_seen": "2026-08-07 11:22:42",
+      "reference": "https://bazaar.abuse.ch/sample/84843c8d447edf5253df7903713d158106dc4a7833bba85ecdaf7dbef7d5a1c9/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
     {
       "id": "2485c4e8a7b4d5bf",
       "source": "MalwareBazaar",
@@ -922,9 +1027,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "AgentTesla",
       "confidence": 100,
       "tags": [
+        "AgentTesla",
         "js"
       ],
       "first_seen": "2026-08-07 10:16:23",
@@ -1005,9 +1111,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "Formbook",
       "confidence": 100,
       "tags": [
+        "Formbook",
         "js"
       ],
       "first_seen": "2026-08-07 10:15:54",
@@ -1226,10 +1333,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "XWorm",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "XWorm"
       ],
       "first_seen": "2026-08-07 10:14:56",
       "reference": "https://bazaar.abuse.ch/sample/ef69216d58bbdb5e87757a404ab392fb4fb243ce6fdc898bde7344fa9b24e2e8/",
@@ -1246,10 +1354,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-07 10:14:52",
       "reference": "https://bazaar.abuse.ch/sample/cf4ebc8e5121ece3f32be7e760a99273d170411b74bc6aa1d2f8e8509560f90c/",
@@ -1307,9 +1416,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "vbs",
-      "malware": "Unknown",
+      "malware": "For",
       "confidence": 100,
       "tags": [
+        "For",
         "vbs"
       ],
       "first_seen": "2026-08-07 10:14:22",
@@ -1462,9 +1572,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "Formbook",
       "confidence": 100,
       "tags": [
+        "Formbook",
         "js"
       ],
       "first_seen": "2026-08-07 10:13:45",
@@ -3587,9 +3698,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "xls",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
+        "RemcosRAT",
         "xls"
       ],
       "first_seen": "2026-08-07 09:46:52",
@@ -3647,9 +3759,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "xls",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
+        "RemcosRAT",
         "xls"
       ],
       "first_seen": "2026-08-07 09:46:44",
@@ -3690,9 +3803,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "exe",
-      "malware": "Unknown",
+      "malware": "AdaptixC2",
       "confidence": 100,
       "tags": [
+        "AdaptixC2",
         "exe"
       ],
       "first_seen": "2026-08-07 09:35:39",
@@ -3920,21 +4034,19 @@
       "country_code": null
     },
     {
-      "id": "7d4fac33d38fc200",
-      "source": "MalwareBazaar",
-      "ioc": "7e1e424f3c184c3c037235494158be38a9e7b15e0bd4a97c7f854ab03a1f09ed",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "RemusStealer",
+      "id": "fa84de181b043dac",
+      "source": "ThreatFox",
+      "ioc": "braindyfender.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "exe",
-        "RemusStealer",
-        "signed"
+        "ClearFake"
       ],
-      "first_seen": "2026-08-07 08:33:20",
-      "reference": "https://bazaar.abuse.ch/sample/7e1e424f3c184c3c037235494158be38a9e7b15e0bd4a97c7f854ab03a1f09ed/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869825/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3942,19 +4054,19 @@
       "country_code": null
     },
     {
-      "id": "5116a5062861e057",
-      "source": "MalwareBazaar",
-      "ioc": "4e4e32f6259b82e6b932ab81172c22560ec2ac46e85543d4851637a63eaace3e",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "dll",
-      "malware": "Unknown",
-      "confidence": 100,
+      "id": "f819eb4793abb746",
+      "source": "ThreatFox",
+      "ioc": "windonws.com",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "ValleyRAT",
+      "confidence": 75,
       "tags": [
-        "dll"
+        "valleyrat_s2"
       ],
-      "first_seen": "2026-08-07 08:24:39",
-      "reference": "https://bazaar.abuse.ch/sample/4e4e32f6259b82e6b932ab81172c22560ec2ac46e85543d4851637a63eaace3e/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869824/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3962,24 +4074,21 @@
       "country_code": null
     },
     {
-      "id": "50122d10e4877b7e",
-      "source": "MalwareBazaar",
-      "ioc": "93fedc7b3f885aa9741fe7bbe171baded81188a5aeee3fecc636f3721587b702",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "AdaptixC2",
+      "id": "8cef25809e95e28e",
+      "source": "ThreatFox",
+      "ioc": "ocalp.lol",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown RAT",
       "confidence": 100,
       "tags": [
-        "AdaptixC2",
-        "B",
-        "dropped-by-GCleaner",
-        "exe",
-        "MIX2.file",
-        "signed"
+        "IRAHook",
+        "RAT",
+        "stealer"
       ],
-      "first_seen": "2026-08-07 08:08:01",
-      "reference": "https://bazaar.abuse.ch/sample/93fedc7b3f885aa9741fe7bbe171baded81188a5aeee3fecc636f3721587b702/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869823/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3987,19 +4096,21 @@
       "country_code": null
     },
     {
-      "id": "297055983fd13549",
-      "source": "MalwareBazaar",
-      "ioc": "6cc85324c1a7895b0544d0d8f910d3326a54c91e84c3a1c956f616f2cf876c27",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "sh",
-      "malware": "Unknown",
+      "id": "2d2cf38da89aa8c3",
+      "source": "ThreatFox",
+      "ioc": "https://ocalp.lol/ws",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown RAT",
       "confidence": 100,
       "tags": [
-        "sh"
+        "IRAHook",
+        "RAT",
+        "stealer"
       ],
-      "first_seen": "2026-08-07 08:01:44",
-      "reference": "https://bazaar.abuse.ch/sample/6cc85324c1a7895b0544d0d8f910d3326a54c91e84c3a1c956f616f2cf876c27/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869819/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -4007,22 +4118,317 @@
       "country_code": null
     },
     {
-      "id": "1bb8822b7dfac180",
-      "source": "MalwareBazaar",
-      "ioc": "75581ce98d1b37d26e52ee2fa4157ca248e5ce9ef32969489995db44f47e070d",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
+      "id": "f7d4cb2a22e2e569",
+      "source": "ThreatFox",
+      "ioc": "https://ocalp.lol/?p=",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown RAT",
       "confidence": 100,
       "tags": [
-        "ClickFix",
-        "COM-hijack",
-        "exe",
-        "loader"
+        "IRAHook",
+        "RAT",
+        "stealer"
       ],
-      "first_seen": "2026-08-07 07:49:48",
-      "reference": "https://bazaar.abuse.ch/sample/75581ce98d1b37d26e52ee2fa4157ca248e5ce9ef32969489995db44f47e070d/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869820/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "c0486a65da460281",
+      "source": "ThreatFox",
+      "ioc": "https://ocalp.lol/get/config",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown RAT",
+      "confidence": 100,
+      "tags": [
+        "IRAHook",
+        "RAT",
+        "stealer"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869821/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "d666556aec12f834",
+      "source": "ThreatFox",
+      "ioc": "https://ocalp.lol/babayla/zor/yarisirlar/",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown RAT",
+      "confidence": 100,
+      "tags": [
+        "IRAHook",
+        "RAT",
+        "stealer"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869822/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "d49135ff33f5edc3",
+      "source": "ThreatFox",
+      "ioc": "https://ocalp.lol/mods/api/log-download",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown RAT",
+      "confidence": 100,
+      "tags": [
+        "IRAHook",
+        "RAT",
+        "stealer"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869818/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "696afb79280d5d29",
+      "source": "ThreatFox",
+      "ioc": "43.139.87.203:8080",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869815/",
+      "ip": "43.139.87.203",
+      "asn": "AS45090",
+      "asn_org": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "3bc932176955f092",
+      "source": "ThreatFox",
+      "ioc": "43.139.87.203:8888",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869816/",
+      "ip": "43.139.87.203",
+      "asn": "AS45090",
+      "asn_org": "Tencent Cloud Computing (Beijing) Co., Ltd",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "b51aff712e827c2b",
+      "source": "ThreatFox",
+      "ioc": "190.255.83.163:6001",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Quasar RAT",
+      "confidence": 100,
+      "tags": [
+        "QuasarRAT"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869817/",
+      "ip": "190.255.83.163",
+      "asn": "AS3816",
+      "asn_org": "Colombia Telecomunicaciones S.a. ESP BIC",
+      "country": "Colombia",
+      "country_code": "CO"
+    },
+    {
+      "id": "9bd5de225c4b5bb9",
+      "source": "ThreatFox",
+      "ioc": "swcosh.braindifender.us",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "win-0x0cd5",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869814/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "2047a7638d1d0804",
+      "source": "ThreatFox",
+      "ioc": "slaxbvv.audizenus.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "win-0x4679",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869813/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "4df393eeca4864c8",
+      "source": "ThreatFox",
+      "ioc": "beta9.coralfabric.one",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "RevStealer",
+      "confidence": 75,
+      "tags": [
+        "RevStealer"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869812/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "38df6dbdde59e34b",
+      "source": "ThreatFox",
+      "ioc": "audizenus.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869811/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "b430ecc60522846a",
+      "source": "ThreatFox",
+      "ioc": "digitalmarketingandadvertisingagency.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "7August2026",
+        "ClearFake",
+        "Commandline",
+        "DomainShadowing",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869810/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "9604fde35224e4ca",
+      "source": "ThreatFox",
+      "ioc": "braindifender.us",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869809/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "be43ebbbdae5ed3e",
+      "source": "ThreatFox",
+      "ioc": "t622q131.therodeoroundup.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "mac-0x68dc",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869808/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ca3a01dfb175f67a",
+      "source": "ThreatFox",
+      "ioc": "braindifender.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1869807/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -4946,11 +5352,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1869755/",
-      "ip": "139.59.144.8",
-      "asn": "AS14061",
-      "asn_org": "DigitalOcean, LLC",
-      "country": "Germany",
-      "country_code": "DE"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "4819d61ae252b111",
@@ -6385,11 +6791,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1869593/",
-      "ip": "139.59.144.8",
-      "asn": "AS14061",
-      "asn_org": "DigitalOcean, LLC",
-      "country": "Germany",
-      "country_code": "DE"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "bde2161033ad853a",
@@ -10004,413 +10410,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1869534/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "e02f807b11c5e110",
-      "source": "ThreatFox",
-      "ioc": "visionfordsales.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869533/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "956199d62ae41795",
-      "source": "ThreatFox",
-      "ioc": "z9x8xddp.federationofpbos.org",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "mac-0x76c7",
-        "macOS"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869526/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "23ee28e828ca508f",
-      "source": "ThreatFox",
-      "ioc": "45.61.114.66:6000",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "XWorm",
-      "confidence": 75,
-      "tags": [
-        "XWorm"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869521/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "c5dd6e8fd87d7136",
-      "source": "ThreatFox",
-      "ioc": "107.174.142.91:8443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureLogs Stealer",
-      "confidence": 75,
-      "tags": [
-        "PureLogsStealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869520/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "5ea8c158f36889d4",
-      "source": "ThreatFox",
-      "ioc": "pblmedic.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "compromised",
-        "EXT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869487/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "11b7534c9ae00210",
-      "source": "ThreatFox",
-      "ioc": "dirtynightmare92.icu",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "EXT",
-        "macOS",
-        "stealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869495/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b959b678c4a867ae",
-      "source": "ThreatFox",
-      "ioc": "atomento10.icu",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "EXT",
-        "macOS",
-        "stealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869503/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "285c80d64b08c16e",
-      "source": "ThreatFox",
-      "ioc": "188.166.222.192:8080",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Aisuru",
-      "confidence": 100,
-      "tags": [
-        "AISURU",
-        "c2"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869509/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "8c3f651a76508843",
-      "source": "ThreatFox",
-      "ioc": "206.189.81.41:5555",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Aisuru",
-      "confidence": 100,
-      "tags": [
-        "AISURU",
-        "c2"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869514/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "3f55f5215aabeb7b",
-      "source": "ThreatFox",
-      "ioc": "109.248.151.11:465",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Remcos",
-      "confidence": 75,
-      "tags": [
-        "RAT",
-        "RemcosRAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869519/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "fac50a714b22f3b5",
-      "source": "ThreatFox",
-      "ioc": "dkqirk.triumphplumbinginc.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "win-0x0cd5",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869518/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "c2e7c4c4b16603b4",
-      "source": "ThreatFox",
-      "ioc": "triumphplumbinginc.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869517/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b9badf001c42109f",
-      "source": "ThreatFox",
-      "ioc": "soyqjhw.victoryshoescorp.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869516/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "88822354cdd12dda",
-      "source": "ThreatFox",
-      "ioc": "victoryshoescorp.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869515/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "91833b1aeda77476",
-      "source": "ThreatFox",
-      "ioc": "lrfrzrt.vicsaboveallgrillsbbq.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869513/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1b7ff0ab89ddd626",
-      "source": "ThreatFox",
-      "ioc": "ovywvh.transportationacademy.org",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "win-0x0cd5",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869512/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2779ad52ba015141",
-      "source": "ThreatFox",
-      "ioc": "transportationacademy.org",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869511/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "c1a6dbb0906eebf6",
-      "source": "ThreatFox",
-      "ioc": "vicsaboveallgrillsbbq.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "6August2026",
-        "ClearFake",
-        "Commandline",
-        "DomainShadowing",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869510/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "ee735f0ae2880c45",
-      "source": "ThreatFox",
-      "ioc": "o0o766h7.osbratstvojedinstvo.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "mac-0x68dc",
-        "macOS"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1869508/",
       "ip": null,
       "asn": null,
       "asn_org": null,

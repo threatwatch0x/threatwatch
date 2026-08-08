@@ -1,45 +1,134 @@
 {
-  "generated_at": "2026-08-08T21:29:37.833962+00:00",
+  "generated_at": "2026-08-08T21:57:47.098523+00:00",
   "stats": {
-    "total": 875,
+    "total": 871,
     "by_source": {
       "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 675
+      "ThreatFox": 671
     },
     "by_threat_type": {
       "payload": 297,
       "malware_download": 100,
-      "payload_delivery": 236,
-      "botnet_cc": 242
+      "payload_delivery": 231,
+      "botnet_cc": 243
     },
     "by_country": {
       "NL": 70,
-      "CN": 40,
+      "CN": 41,
       "US": 36,
-      "DE": 33,
+      "DE": 32,
       "HK": 15,
       "SI": 14,
       "JP": 5,
       "SG": 5,
-      "FR": 4,
-      "VN": 4
+      "BR": 4,
+      "FR": 4
     },
     "top_asns": {
       "AS51396 Pfcloud UG": 43,
       "AS213702 Qwins LTD": 19,
       "AS197769 Netiface LLC": 14,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 12,
       "AS62068 SpectraIP B.V.": 12,
-      "AS4837 CNC Group CHINA169 Henan Province Network": 11,
       "AS401626 Meowcore Softworks LLC": 9,
       "AS40662 Private Customer": 7,
       "AS4837 China Unicom Henan Province Network": 6,
       "AS45090 Tencent cloud computing (Beijing) Co., Ltd.": 6,
       "AS31898 Oracle Corporation": 5
     },
-    "generated_at": "2026-08-08T21:29:37.833962+00:00"
+    "generated_at": "2026-08-08T21:57:47.098523+00:00"
   },
   "items": [
+    {
+      "id": "94edcfa6ac07d9ad",
+      "source": "MalwareBazaar",
+      "ioc": "d05c5a998ee2b22bbe326ed96da8ee469de4f18786a278d2681eee9b4329bd1a",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "dropped-by-OffLoader",
+        "exe"
+      ],
+      "first_seen": "2026-08-08 21:52:43",
+      "reference": "https://bazaar.abuse.ch/sample/d05c5a998ee2b22bbe326ed96da8ee469de4f18786a278d2681eee9b4329bd1a/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ab70dada6ae5aeb5",
+      "source": "MalwareBazaar",
+      "ioc": "4abc52fb3e70420e020a6e7ec2a0c23af8a30deedfd0298266bf5a857af33e11",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "ClickFix",
+        "Efimer",
+        "exe"
+      ],
+      "first_seen": "2026-08-08 21:52:31",
+      "reference": "https://bazaar.abuse.ch/sample/4abc52fb3e70420e020a6e7ec2a0c23af8a30deedfd0298266bf5a857af33e11/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "1ba95519f931abca",
+      "source": "URLhaus",
+      "ioc": "http://103.31.103.204:36161/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 21:39:28 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3899975/",
+      "ip": "103.31.103.204",
+      "asn": "AS9541",
+      "asn_org": "Cyber",
+      "country": "Pakistan",
+      "country_code": "PK"
+    },
+    {
+      "id": "e05768094647e012",
+      "source": "URLhaus",
+      "ioc": "http://115.55.197.125:40668/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 21:36:35 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3899974/",
+      "ip": "115.55.197.125",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
     {
       "id": "7c5170b2a6aa757c",
       "source": "MalwareBazaar",
@@ -3424,45 +3513,6 @@
       "country_code": null
     },
     {
-      "id": "385cbfe743948219",
-      "source": "MalwareBazaar",
-      "ioc": "b8ca62117de1e97a78d766d2df489be5bc6b3414128936b0ab252f0da21f9cd8",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-08-08 17:31:56",
-      "reference": "https://bazaar.abuse.ch/sample/b8ca62117de1e97a78d766d2df489be5bc6b3414128936b0ab252f0da21f9cd8/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "4c56773eeb040712",
-      "source": "MalwareBazaar",
-      "ioc": "c964a9c1f74420abb9006a3b2e3738729517eab0c112f8e7f34864878b18fcbe",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "SalatStealer",
-      "confidence": 100,
-      "tags": [
-        "SalatStealer",
-        "upx"
-      ],
-      "first_seen": "2026-08-08 17:31:55",
-      "reference": "https://bazaar.abuse.ch/sample/c964a9c1f74420abb9006a3b2e3738729517eab0c112f8e7f34864878b18fcbe/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "e1cb018f298c13cf",
       "source": "URLhaus",
       "ioc": "http://182.116.36.226:37513/bin.sh",
@@ -4286,50 +4336,48 @@
       "country_code": "NL"
     },
     {
-      "id": "1a40e3c08e462643",
-      "source": "URLhaus",
-      "ioc": "http://59.96.136.41:41095/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 50,
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-08 17:13:29 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3899875/",
-      "ip": "59.96.136.41",
-      "asn": "AS9829",
-      "asn_org": "BSNL Internet",
-      "country": "India",
-      "country_code": "IN"
-    },
-    {
-      "id": "09dbb611acbdcd70",
-      "source": "URLhaus",
-      "ioc": "http://backup.tkspr1v.com/JQxpNSNuIKQ90.bin",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "encrypted, GuLoader, PureRAT, rat",
+      "id": "ae670d1b62d18349",
+      "source": "ThreatFox",
+      "ioc": "tidptlj.buy-goldalign.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "encrypted",
-        "GuLoader",
-        "PureRAT",
-        "rat"
+        "ClearFake",
+        "win-0x4679",
+        "Windows"
       ],
-      "first_seen": "2026-08-08 17:12:22 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3899874/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1871155/",
       "ip": null,
       "asn": null,
       "asn_org": null,
       "country": null,
       "country_code": null
+    },
+    {
+      "id": "64e948949358b17b",
+      "source": "ThreatFox",
+      "ioc": "191.252.159.33:8539",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Remus",
+      "confidence": 100,
+      "tags": [
+        "c2",
+        "d2a9afc03e8d4d0f85017c9598f91db6",
+        "Remus"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1871154/",
+      "ip": "191.252.159.33",
+      "asn": "AS27715",
+      "asn_org": "Locaweb Serviços de Internet S/A",
+      "country": "Brazil",
+      "country_code": "BR"
     },
     {
       "id": "858709438af6ca3c",
@@ -10011,42 +10059,6 @@
       "tags": [],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1870855/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "3c82d7a594d51e03",
-      "source": "ThreatFox",
-      "ioc": "93617a98e627a01092973d8f2d1829ff",
-      "ioc_type": "md5_hash",
-      "threat_type": "payload",
-      "threat_type_description": "",
-      "malware": "Venus Stealer",
-      "confidence": 95,
-      "tags": [],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1870856/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "489661642fb4ec8c",
-      "source": "ThreatFox",
-      "ioc": "2262f032e08a958b540a04c9a83adec6f004aec8df1d7537d959edf6d4e5a0f1",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "",
-      "malware": "Kuiper",
-      "confidence": 95,
-      "tags": [],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1870857/",
       "ip": null,
       "asn": null,
       "asn_org": null,

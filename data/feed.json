@@ -1,45 +1,240 @@
 {
-  "generated_at": "2026-08-12T10:03:56.232455+00:00",
+  "generated_at": "2026-08-12T11:22:09.613336+00:00",
   "stats": {
-    "total": 747,
+    "total": 744,
     "by_source": {
-      "URLhaus": 100,
       "MalwareBazaar": 100,
-      "ThreatFox": 547
+      "URLhaus": 100,
+      "ThreatFox": 544
     },
     "by_threat_type": {
-      "malware_download": 100,
       "payload": 105,
-      "botnet_cc": 262,
-      "payload_delivery": 280
+      "malware_download": 100,
+      "botnet_cc": 257,
+      "payload_delivery": 282
     },
     "by_country": {
-      "CN": 72,
-      "US": 13,
-      "DE": 9,
+      "CN": 74,
+      "US": 11,
       "PH": 8,
       "PK": 8,
+      "FR": 8,
+      "DE": 8,
+      "SG": 5,
+      "RU": 4,
       "HK": 4,
-      "FR": 4,
-      "RU": 3,
-      "TW": 3,
-      "CH": 3
+      "TW": 3
     },
     "top_asns": {
       "AS4837 CNC Group CHINA169 Henan Province Network": 25,
-      "AS4837 China Unicom Henan Province Network": 12,
+      "AS4837 China Unicom Henan Province Network": 13,
+      "AS51167 Contabo GmbH": 7,
       "AS4837 CNC Group CHINA169 Liaoning Province Network": 5,
       "AS4837 China Unicom Liaoning Province Network": 5,
       "AS38264 Wateen Telecom Limited": 5,
       "AS132199 Globe Telecom": 4,
       "AS4837 China Unicom Shandong Province Network": 4,
-      "AS202412 Omegatech LTD": 4,
-      "AS4837 China Unicom CHINA169 Shandong Province Network": 3,
-      "AS9924 Taiwan Telecommunication Network Services Co., LTD.": 3
+      "AS14061 Digitalocean": 4,
+      "AS202412 Omegatech LTD": 4
     },
-    "generated_at": "2026-08-12T10:03:56.232455+00:00"
+    "generated_at": "2026-08-12T11:22:09.613336+00:00"
   },
   "items": [
+    {
+      "id": "629116ce23e455a6",
+      "source": "MalwareBazaar",
+      "ioc": "c7a9ed85f2352d7473dbb61391b94aa1538aa883972415c6a7a62e9b5eeba1f6",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "js",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "js"
+      ],
+      "first_seen": "2026-08-12 11:13:22",
+      "reference": "https://bazaar.abuse.ch/sample/c7a9ed85f2352d7473dbb61391b94aa1538aa883972415c6a7a62e9b5eeba1f6/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "b3c3fe60f484fc24",
+      "source": "URLhaus",
+      "ioc": "http://42.235.6.8:58160/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Mozi",
+      "confidence": 100,
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-12 11:10:21 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3902791/",
+      "ip": "42.235.6.8",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "c76de151ac7352a0",
+      "source": "MalwareBazaar",
+      "ioc": "41840ab4e9a156cdaefb349a9b32e3f0d33745b08cfe8edd61abacb13882454b",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "gz",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "enthec",
+        "gz"
+      ],
+      "first_seen": "2026-08-12 11:00:11",
+      "reference": "https://bazaar.abuse.ch/sample/41840ab4e9a156cdaefb349a9b32e3f0d33745b08cfe8edd61abacb13882454b/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "8817623ccc56d316",
+      "source": "MalwareBazaar",
+      "ioc": "8649a37b00dc608622665b15e76fe3f349b8e986f779163b72e7bc1772b6977a",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "ClickFix",
+        "Efimer",
+        "exe"
+      ],
+      "first_seen": "2026-08-12 10:52:30",
+      "reference": "https://bazaar.abuse.ch/sample/8649a37b00dc608622665b15e76fe3f349b8e986f779163b72e7bc1772b6977a/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "e7663e7d7b187fe9",
+      "source": "MalwareBazaar",
+      "ioc": "824570f6c57659b61ba7f8dad31d7cd37d61d58b417bda953a5eaa0b064df328",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "C",
+        "dropped-by-GCleaner",
+        "exe",
+        "MIX1.file",
+        "signed"
+      ],
+      "first_seen": "2026-08-12 10:32:01",
+      "reference": "https://bazaar.abuse.ch/sample/824570f6c57659b61ba7f8dad31d7cd37d61d58b417bda953a5eaa0b064df328/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "1278c6aa73409280",
+      "source": "MalwareBazaar",
+      "ioc": "ed44c0375058d416da981d3cb3cf9ca4fb5e506c36a2082a0b20ade834e1cbc1",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "ClickFix",
+        "ErrTraffic",
+        "exe",
+        "signed"
+      ],
+      "first_seen": "2026-08-12 10:30:23",
+      "reference": "https://bazaar.abuse.ch/sample/ed44c0375058d416da981d3cb3cf9ca4fb5e506c36a2082a0b20ade834e1cbc1/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "563da4f90446e3b8",
+      "source": "MalwareBazaar",
+      "ioc": "4fa823c4439a01bd37c1184ba6e8d694cdef5dd77c074cbbadb2b9da0f8d4aa8",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Vidar",
+      "confidence": 100,
+      "tags": [
+        "exe",
+        "signed",
+        "Vidar"
+      ],
+      "first_seen": "2026-08-12 10:21:39",
+      "reference": "https://bazaar.abuse.ch/sample/4fa823c4439a01bd37c1184ba6e8d694cdef5dd77c074cbbadb2b9da0f8d4aa8/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3aa6b713794ae87c",
+      "source": "MalwareBazaar",
+      "ioc": "a6d07ee837cb4028afcd1e98c32a7f5f373b7b135d008ed99a6773bc34030f3a",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "exe",
+        "whack.sh"
+      ],
+      "first_seen": "2026-08-12 10:13:52",
+      "reference": "https://bazaar.abuse.ch/sample/a6d07ee837cb4028afcd1e98c32a7f5f373b7b135d008ed99a6773bc34030f3a/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "9cdc0f0ce5eea85c",
+      "source": "MalwareBazaar",
+      "ioc": "f02beda33cb97340412881e0805c32580be96de246afd46bac6b75562087ff0d",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "CoinMiner",
+      "confidence": 100,
+      "tags": [
+        "CoinMiner",
+        "exe",
+        "whack.sh"
+      ],
+      "first_seen": "2026-08-12 10:13:47",
+      "reference": "https://bazaar.abuse.ch/sample/f02beda33cb97340412881e0805c32580be96de246afd46bac6b75562087ff0d/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
     {
       "id": "d9c79887e24f6684",
       "source": "URLhaus",
@@ -103,9 +298,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:46 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902786/",
       "ip": "112.240.173.194",
@@ -121,9 +318,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:46 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902787/",
       "ip": "180.191.16.24",
@@ -139,9 +338,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:45 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902785/",
       "ip": "112.240.173.194",
@@ -213,9 +414,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:41 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902781/",
       "ip": "58.252.113.28",
@@ -231,9 +434,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:39 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902773/",
       "ip": "182.121.179.219",
@@ -249,9 +454,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:39 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902774/",
       "ip": "175.9.132.41",
@@ -267,9 +474,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:39 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902775/",
       "ip": "115.48.8.75",
@@ -285,9 +494,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:39 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902776/",
       "ip": "123.148.140.58",
@@ -321,9 +532,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:39 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902778/",
       "ip": "123.148.140.58",
@@ -339,9 +552,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:39 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902779/",
       "ip": "123.13.30.198",
@@ -393,9 +608,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:38 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902769/",
       "ip": "125.46.213.70",
@@ -411,9 +628,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:38 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902770/",
       "ip": "125.112.61.39",
@@ -429,9 +648,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:38 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902771/",
       "ip": "71.207.128.92",
@@ -465,9 +686,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:37 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902766/",
       "ip": "115.63.242.52",
@@ -483,9 +706,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:37 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902767/",
       "ip": "182.112.245.250",
@@ -501,9 +726,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:36 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902764/",
       "ip": "42.237.123.108",
@@ -519,9 +746,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:36 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902765/",
       "ip": "125.112.61.39",
@@ -537,9 +766,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:35 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902762/",
       "ip": "115.48.8.75",
@@ -555,9 +786,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:35 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902763/",
       "ip": "42.237.123.108",
@@ -573,9 +806,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902749/",
       "ip": "27.206.197.243",
@@ -591,9 +826,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902750/",
       "ip": "115.63.242.52",
@@ -609,9 +846,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902751/",
       "ip": "115.49.31.72",
@@ -627,9 +866,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902752/",
       "ip": "210.208.111.26",
@@ -681,9 +922,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902755/",
       "ip": "42.232.238.173",
@@ -699,9 +942,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902756/",
       "ip": "88.254.51.229",
@@ -717,9 +962,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902757/",
       "ip": "110.37.44.119",
@@ -735,9 +982,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902758/",
       "ip": "58.252.113.28",
@@ -753,9 +1002,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:34 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902759/",
       "ip": "110.37.44.119",
@@ -807,9 +1058,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:33 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902736/",
       "ip": "59.103.116.68",
@@ -825,9 +1078,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:33 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902737/",
       "ip": "110.37.106.220",
@@ -843,9 +1098,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:33 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902738/",
       "ip": "123.14.183.175",
@@ -879,9 +1136,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:33 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902740/",
       "ip": "115.50.50.133",
@@ -897,9 +1156,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:33 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902741/",
       "ip": "124.6.185.132",
@@ -969,9 +1230,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:33 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902745/",
       "ip": "111.164.68.144",
@@ -1005,9 +1268,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:33 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902747/",
       "ip": "115.63.14.209",
@@ -1041,9 +1306,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:32 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902734/",
       "ip": "27.206.197.243",
@@ -1059,9 +1326,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:32 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902735/",
       "ip": "140.237.37.41",
@@ -1077,9 +1346,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:31 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902733/",
       "ip": "219.155.17.247",
@@ -1131,9 +1402,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:26 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902724/",
       "ip": "180.191.122.115",
@@ -1149,9 +1422,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:26 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902725/",
       "ip": "42.231.173.181",
@@ -1185,9 +1460,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:26 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902727/",
       "ip": "182.112.245.250",
@@ -1203,9 +1480,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:26 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902728/",
       "ip": "140.237.37.41",
@@ -1221,9 +1500,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:26 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902729/",
       "ip": "115.49.31.72",
@@ -1239,9 +1520,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:26 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902730/",
       "ip": "115.50.50.133",
@@ -1275,9 +1558,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902705/",
       "ip": "182.124.253.104",
@@ -1293,9 +1578,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902706/",
       "ip": "110.39.248.117",
@@ -1311,9 +1598,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902707/",
       "ip": "219.155.225.195",
@@ -1329,9 +1618,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902708/",
       "ip": "210.208.111.26",
@@ -1347,9 +1638,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902709/",
       "ip": "219.155.225.195",
@@ -1365,9 +1658,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902710/",
       "ip": "27.215.126.58",
@@ -1383,9 +1678,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902711/",
       "ip": "180.191.16.24",
@@ -1401,9 +1698,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902712/",
       "ip": "115.63.14.209",
@@ -1419,9 +1718,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902713/",
       "ip": "175.107.16.92",
@@ -1473,9 +1774,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902716/",
       "ip": "115.63.13.28",
@@ -1491,9 +1794,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902717/",
       "ip": "42.227.174.167",
@@ -1509,9 +1814,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902718/",
       "ip": "123.12.192.200",
@@ -1545,9 +1852,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902720/",
       "ip": "111.164.68.144",
@@ -1563,9 +1872,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902721/",
       "ip": "180.191.122.115",
@@ -1581,9 +1892,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:25 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902722/",
       "ip": "210.208.110.130",
@@ -1671,9 +1984,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:24 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902698/",
       "ip": "112.198.239.2",
@@ -1707,9 +2022,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:24 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902700/",
       "ip": "124.6.185.132",
@@ -1743,9 +2060,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "mirai",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "mirai"
+      ],
       "first_seen": "2026-08-12 10:01:24 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902702/",
       "ip": "112.198.239.2",
@@ -1779,9 +2098,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-12 10:01:23 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902694/",
       "ip": "59.103.116.68",
@@ -1820,24 +2141,6 @@
       "tags": [],
       "first_seen": "2026-08-12 10:00:35 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3902691/",
-      "ip": "101.109.243.237",
-      "asn": "AS23969",
-      "asn_org": "TOT Public Company Limited",
-      "country": "Thailand",
-      "country_code": "TH"
-    },
-    {
-      "id": "22ba14d868af3749",
-      "source": "URLhaus",
-      "ioc": "http://101.109.243.237:40041/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
-      "confidence": 50,
-      "tags": [],
-      "first_seen": "2026-08-12 10:00:35 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3902692/",
       "ip": "101.109.243.237",
       "asn": "AS23969",
       "asn_org": "TOT Public Company Limited",
@@ -1914,13 +2217,14 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "exe",
-      "malware": "Unknown",
+      "malware": "Vidar",
       "confidence": 100,
       "tags": [
         "ClickFix",
         "ErrTraffic",
         "exe",
-        "signed"
+        "signed",
+        "Vidar"
       ],
       "first_seen": "2026-08-12 09:44:28",
       "reference": "https://bazaar.abuse.ch/sample/554c2e2d6f9cf520e85640600ac90f9a0d3860019f66178ca1f07012f1fc5961/",
@@ -2044,7 +2348,7 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "exe",
-      "malware": "Unknown",
+      "malware": "ValleyRAT",
       "confidence": 100,
       "tags": [
         "exe",
@@ -2067,11 +2371,12 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "exe",
-      "malware": "Unknown",
+      "malware": "RemusStealer",
       "confidence": 100,
       "tags": [
         "dropped-by-OffLoader",
         "exe",
+        "RemusStealer",
         "signed"
       ],
       "first_seen": "2026-08-12 08:52:40",
@@ -2912,9 +3217,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "DonutLoader",
       "confidence": 100,
       "tags": [
+        "DonutLoader",
         "js"
       ],
       "first_seen": "2026-08-12 08:18:53",
@@ -3785,19 +4091,19 @@
       "country_code": null
     },
     {
-      "id": "2fe3a1f093ef79ac",
-      "source": "MalwareBazaar",
-      "ioc": "9ef87247e2c4c21aa91637adb8cd6b35a8dea7a884ee9494e5b5e4afc2dd1d79",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "xlam",
-      "malware": "Unknown",
-      "confidence": 100,
+      "id": "53dec6f05b379b4d",
+      "source": "ThreatFox",
+      "ioc": "wmxdata.ddns.net",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "XWorm",
+      "confidence": 75,
       "tags": [
-        "xlam"
+        "XWorm"
       ],
-      "first_seen": "2026-08-12 07:58:54",
-      "reference": "https://bazaar.abuse.ch/sample/9ef87247e2c4c21aa91637adb8cd6b35a8dea7a884ee9494e5b5e4afc2dd1d79/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872743/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3805,20 +4111,44 @@
       "country_code": null
     },
     {
-      "id": "e88d4a9a6629dcfe",
-      "source": "MalwareBazaar",
-      "ioc": "f6d8426be30c080da3641a4f2e942e5d8c6950c9f76486489bf6074b7f090b34",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Vidar",
+      "id": "2e267fb358998265",
+      "source": "ThreatFox",
+      "ioc": "165.245.178.39:8080",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Aisuru",
       "confidence": 100,
       "tags": [
-        "exe",
-        "Vidar"
+        "AISURU",
+        "c2"
       ],
-      "first_seen": "2026-08-12 07:58:51",
-      "reference": "https://bazaar.abuse.ch/sample/f6d8426be30c080da3641a4f2e942e5d8c6950c9f76486489bf6074b7f090b34/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872742/",
+      "ip": "165.245.178.39",
+      "asn": "AS14061",
+      "asn_org": "DigitalOcean, LLC",
+      "country": "Singapore",
+      "country_code": "SG"
+    },
+    {
+      "id": "d75f74e2a8005452",
+      "source": "ThreatFox",
+      "ioc": "sightfreshshoslimsplitsmethod.us",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "12August2026",
+        "ClearFake",
+        "Commandline",
+        "DomainShadowing",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872741/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3826,20 +4156,23 @@
       "country_code": null
     },
     {
-      "id": "4bd90aa7c97526e0",
-      "source": "MalwareBazaar",
-      "ioc": "fa307f25415497d9199129e21d9511cfee130004bfb93d3caced89bb26b5cc88",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Vidar",
+      "id": "0bfb62a57ad3bd82",
+      "source": "ThreatFox",
+      "ioc": "slim--sound.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "exe",
-        "Vidar"
+        "12August2026",
+        "ClearFake",
+        "Commandline",
+        "DomainShadowing",
+        "Windows"
       ],
-      "first_seen": "2026-08-12 07:58:49",
-      "reference": "https://bazaar.abuse.ch/sample/fa307f25415497d9199129e21d9511cfee130004bfb93d3caced89bb26b5cc88/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872740/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3847,21 +4180,23 @@
       "country_code": null
     },
     {
-      "id": "77f63ac61dfaf3a9",
-      "source": "MalwareBazaar",
-      "ioc": "a296390de23c639a034c11e0a71988ddb23f70c22b6c4f5b9c249e2739242c6b",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Vidar",
+      "id": "bb2b8bce9378e1e5",
+      "source": "ThreatFox",
+      "ioc": "sliimsound.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "exe",
-        "signed",
-        "Vidar"
+        "12August2026",
+        "ClearFake",
+        "Commandline",
+        "DomainShadowing",
+        "Windows"
       ],
-      "first_seen": "2026-08-12 07:58:47",
-      "reference": "https://bazaar.abuse.ch/sample/a296390de23c639a034c11e0a71988ddb23f70c22b6c4f5b9c249e2739242c6b/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872739/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3869,19 +4204,79 @@
       "country_code": null
     },
     {
-      "id": "152ddefe2892ea85",
-      "source": "MalwareBazaar",
-      "ioc": "2ec04c542fdd51a1dd0b5875a142db7f3f21cf02f46653e66c41712e7094ca7a",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
+      "id": "a4b28ba99ace36ee",
+      "source": "ThreatFox",
+      "ioc": "178.128.80.204:8085",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
       "confidence": 100,
       "tags": [
-        "exe"
+        "CobaltStrike"
       ],
-      "first_seen": "2026-08-12 07:58:45",
-      "reference": "https://bazaar.abuse.ch/sample/2ec04c542fdd51a1dd0b5875a142db7f3f21cf02f46653e66c41712e7094ca7a/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872738/",
+      "ip": "178.128.80.204",
+      "asn": "AS14061",
+      "asn_org": "Digitalocean",
+      "country": "Singapore",
+      "country_code": "SG"
+    },
+    {
+      "id": "941772d370e2eb97",
+      "source": "ThreatFox",
+      "ioc": "117.72.100.236:8084",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "VShell",
+      "confidence": 100,
+      "tags": [
+        "Vshell"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872736/",
+      "ip": "117.72.100.236",
+      "asn": "AS141679",
+      "asn_org": "Beijing Jingdong 360 Degree E-commerce Co., Ltd.",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "12ad2c7ef418d9b6",
+      "source": "ThreatFox",
+      "ioc": "194.59.30.170:2222",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "AsyncRAT",
+      "confidence": 100,
+      "tags": [
+        "asyncrat"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872737/",
+      "ip": "194.59.30.170",
+      "asn": "AS399486",
+      "asn_org": "Virtuo Networks France SAS",
+      "country": "France",
+      "country_code": "FR"
+    },
+    {
+      "id": "5d518214e2252aa6",
+      "source": "ThreatFox",
+      "ioc": "https://psc-io.com/",
+      "ioc_type": "url",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872735/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3889,21 +4284,170 @@
       "country_code": null
     },
     {
-      "id": "17eeefc742182877",
-      "source": "MalwareBazaar",
-      "ioc": "df91b4bf1d00298e90ad6f91e8097eaa9ad63596ff00900a23d02d20cafa444d",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Efimer",
+      "id": "6db2cb3422a911f1",
+      "source": "ThreatFox",
+      "ioc": "uofx0255.getbraindefender.us",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
+        "ClearFake",
+        "mac-0xfb64",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872734/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "48673cafb557f1f1",
+      "source": "ThreatFox",
+      "ioc": "89.19.223.68:9035",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Aisuru",
+      "confidence": 100,
+      "tags": [
+        "AISURU",
+        "c2"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872733/",
+      "ip": "89.19.223.68",
+      "asn": "AS202799",
+      "asn_org": "baza-llc-spb",
+      "country": "Russia",
+      "country_code": "RU"
+    },
+    {
+      "id": "8e323292f72e4dbd",
+      "source": "ThreatFox",
+      "ioc": "yamin4d.org",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "IClickFix",
+      "confidence": 100,
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872732/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "b2fda07c296e50b7",
+      "source": "ThreatFox",
+      "ioc": "aaa.akoraofficial.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "IClickFix",
+      "confidence": 100,
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872731/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "8c3a56862b1384cb",
+      "source": "ThreatFox",
+      "ioc": "sightfressh.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "12August2026",
+        "ClearFake",
+        "Commandline",
+        "DomainShadowing",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872730/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "e99d821d5b3cb46d",
+      "source": "ThreatFox",
+      "ioc": "http://beljaro.shop:2536/profiles",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Remus",
+      "confidence": 75,
+      "tags": [
+        "Remus"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872729/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "64194065559e6664",
+      "source": "ThreatFox",
+      "ioc": "njlfltu.sight--fresh.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "win-0x4679",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872728/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7bbf3e40d937451b",
+      "source": "ThreatFox",
+      "ioc": "aaa.akoraofficial.com",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
         "ClickFix",
-        "Efimer",
-        "exe"
+        "etherhiding"
       ],
-      "first_seen": "2026-08-12 07:52:30",
-      "reference": "https://bazaar.abuse.ch/sample/df91b4bf1d00298e90ad6f91e8097eaa9ad63596ff00900a23d02d20cafa444d/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872727/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3911,19 +4455,21 @@
       "country_code": null
     },
     {
-      "id": "ee30ca5d725b4f34",
-      "source": "MalwareBazaar",
-      "ioc": "57a91106d35878b14c089e87e4aae9df85aed2875bfa2bcd2e13df8ad397cc67",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "zip",
-      "malware": "Unknown",
+      "id": "f9016607110558ab",
+      "source": "ThreatFox",
+      "ioc": "xxltkb.slim-sounds.us",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "zip"
+        "ClearFake",
+        "win-0x0cd5",
+        "Windows"
       ],
-      "first_seen": "2026-08-12 07:48:56",
-      "reference": "https://bazaar.abuse.ch/sample/57a91106d35878b14c089e87e4aae9df85aed2875bfa2bcd2e13df8ad397cc67/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872726/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3931,24 +4477,192 @@
       "country_code": null
     },
     {
-      "id": "f186ebe21f507e30",
-      "source": "MalwareBazaar",
-      "ioc": "05ea2c8c8023b899976a271b825c2ef5cb3861101d167bf37949e6ffb2ee9b71",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
+      "id": "1c009cf2ca4dd091",
+      "source": "ThreatFox",
+      "ioc": "sight--fresh.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "exe"
+        "12August2026",
+        "ClearFake",
+        "Commandline",
+        "DomainShadowing",
+        "Windows"
       ],
-      "first_seen": "2026-08-12 07:47:14",
-      "reference": "https://bazaar.abuse.ch/sample/05ea2c8c8023b899976a271b825c2ef5cb3861101d167bf37949e6ffb2ee9b71/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872725/",
       "ip": null,
       "asn": null,
       "asn_org": null,
       "country": null,
       "country_code": null
+    },
+    {
+      "id": "cece54f5db6a2d73",
+      "source": "ThreatFox",
+      "ioc": "slim-sounds.us",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872724/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "06d375deeee293e5",
+      "source": "ThreatFox",
+      "ioc": "sightfreshusa.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "12August2026",
+        "ClearFake",
+        "Commandline",
+        "DomainShadowing",
+        "Windows"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872723/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3bbd485e93a66ec3",
+      "source": "ThreatFox",
+      "ioc": "r6ud44az.eng-eng-slimsounds.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "mac-0x76c7",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872722/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "519a2048ea234c37",
+      "source": "ThreatFox",
+      "ioc": "hatkldsksd392vbc.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "TonRAT",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872721/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "c7dd0ae1ed1c0915",
+      "source": "ThreatFox",
+      "ioc": "169.58.82.229:21",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872720/",
+      "ip": "169.58.82.229",
+      "asn": "AS51167",
+      "asn_org": "Contabo GmbH",
+      "country": "France",
+      "country_code": "FR"
+    },
+    {
+      "id": "40eb83a9b52f6207",
+      "source": "ThreatFox",
+      "ioc": "169.58.121.189:22",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872718/",
+      "ip": "169.58.121.189",
+      "asn": "AS51167",
+      "asn_org": "Contabo GmbH",
+      "country": "France",
+      "country_code": "FR"
+    },
+    {
+      "id": "cb1a0cdc0595fbcb",
+      "source": "ThreatFox",
+      "ioc": "169.58.121.189:222",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872719/",
+      "ip": "169.58.121.189",
+      "asn": "AS51167",
+      "asn_org": "Contabo GmbH",
+      "country": "France",
+      "country_code": "FR"
+    },
+    {
+      "id": "89968c02545d9e50",
+      "source": "ThreatFox",
+      "ioc": "169.58.121.189:8080",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1872717/",
+      "ip": "169.58.121.189",
+      "asn": "AS51167",
+      "asn_org": "Contabo GmbH",
+      "country": "France",
+      "country_code": "FR"
     },
     {
       "id": "b9f82d9fed371712",
@@ -5202,11 +5916,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1872660/",
-      "ip": "151.241.154.218",
-      "asn": "AS399486",
-      "asn_org": "Virtuo Holdings Inc",
-      "country": "United States",
-      "country_code": "US"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "eba09074e93ffb0b",
@@ -5244,11 +5958,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1872658/",
-      "ip": "104.249.10.187",
-      "asn": "AS214961",
-      "asn_org": "Stellar Group",
-      "country": "France",
-      "country_code": "FR"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "741e09fe43557ccf",
@@ -5264,11 +5978,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1872657/",
-      "ip": "2.27.62.172",
-      "asn": "AS200051",
-      "asn_org": "Kyonix Networks Limited",
-      "country": "Germany",
-      "country_code": "DE"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "1f5fca31737eae33",
@@ -5326,11 +6040,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1872654/",
-      "ip": "107.174.20.215",
-      "asn": "AS20278",
-      "asn_org": "365 Group",
-      "country": "United States",
-      "country_code": "US"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "48d6647fa2919bae",
@@ -5388,11 +6102,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1872651/",
-      "ip": "217.60.195.74",
-      "asn": "AS209373",
-      "asn_org": "pfcloude",
-      "country": "The Netherlands",
-      "country_code": "NL"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "0e59d6dbd0f17893",
@@ -5429,11 +6143,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1872647/",
-      "ip": "213.152.161.91",
-      "asn": "AS49453",
-      "asn_org": "Global Layer network",
-      "country": "The Netherlands",
-      "country_code": "NL"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "088fec93843e0181",
@@ -9664,588 +10378,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1872444/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "62414ad0b5d89e42",
-      "source": "ThreatFox",
-      "ioc": "35.209.195.28:80",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Cobalt Strike",
-      "confidence": 100,
-      "tags": [
-        "CobaltStrike"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872445/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b48472a9f649e0a2",
-      "source": "ThreatFox",
-      "ioc": "43.225.157.17:8000",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Cobalt Strike",
-      "confidence": 100,
-      "tags": [
-        "CobaltStrike"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872443/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2934e8399d75dc22",
-      "source": "ThreatFox",
-      "ioc": "43.225.157.17:443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Cobalt Strike",
-      "confidence": 100,
-      "tags": [
-        "CobaltStrike"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872442/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "cc8c00f935d9832e",
-      "source": "ThreatFox",
-      "ioc": "lnwmrko.buy-ignitra.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872441/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "73cb6e81fbbc0223",
-      "source": "ThreatFox",
-      "ioc": "wzjhif.enus-slimsounds.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "ClearFake",
-        "win-0x0cd5",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872439/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "dcc4fe2731f4d5b0",
-      "source": "ThreatFox",
-      "ioc": "46.246.14.13:7044",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Vjw0rm",
-      "confidence": 100,
-      "tags": [
-        "Vjw0rm"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872438/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "05bd63f8bf5c5270",
-      "source": "ThreatFox",
-      "ioc": "yoouslot88.org",
-      "ioc_type": "domain",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 90,
-      "tags": [
-        "ClearFake",
-        "ClickFix",
-        "ErrTraffic",
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872436/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "bd71bf226b73699b",
-      "source": "ThreatFox",
-      "ioc": "29e0fc6e480dc73a81e1162b614c4aac0b1a2cf93159f8ff43dc2798bbd89171",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 90,
-      "tags": [
-        "ClearFake",
-        "ClickFix",
-        "ErrTraffic",
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872437/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2707d58448a148f6",
-      "source": "ThreatFox",
-      "ioc": "43.225.157.17:888",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Cobalt Strike",
-      "confidence": 100,
-      "tags": [
-        "CobaltStrike"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872435/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "5a85a23b578208f3",
-      "source": "ThreatFox",
-      "ioc": "43.225.157.17:80",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Cobalt Strike",
-      "confidence": 100,
-      "tags": [
-        "CobaltStrike"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872433/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "f376e4207c3c7aa2",
-      "source": "ThreatFox",
-      "ioc": "43.225.157.17:8080",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Cobalt Strike",
-      "confidence": 100,
-      "tags": [
-        "CobaltStrike"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872434/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "ad6e06ab294f22fd",
-      "source": "ThreatFox",
-      "ioc": "http://92.119.165.248/L1nc0In.php",
-      "ioc_type": "url",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "DCRat",
-      "confidence": 100,
-      "tags": [
-        "dcrat",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872432/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "54e203377d142be2",
-      "source": "ThreatFox",
-      "ioc": "47.122.116.54:13676",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "NjRAT",
-      "confidence": 100,
-      "tags": [
-        "njrat"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872431/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "d786a9712d2eeefc",
-      "source": "ThreatFox",
-      "ioc": "us-en-us-slimsounds.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "tags": [
-        "11August2026",
-        "ClearFake",
-        "Commandline",
-        "DomainShadowing",
-        "Windows"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872430/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "e806a0d14ac755c2",
-      "source": "ThreatFox",
-      "ioc": "91.92.243.36:56003",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "PureHVNC",
-        "PureRAT",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872428/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "5eae239503b8110b",
-      "source": "ThreatFox",
-      "ioc": "89.37.100.205:56001",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "PureHVNC",
-        "PureRAT",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872426/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "8e5a327ac4b2e47e",
-      "source": "ThreatFox",
-      "ioc": "89.37.100.205:56002",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "PureHVNC",
-        "PureRAT",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872427/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2efcfe555e416e04",
-      "source": "ThreatFox",
-      "ioc": "87.76.146.221:7771",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "AsyncRAT",
-      "confidence": 75,
-      "tags": [
-        "asyncrat",
-        "drb-ra",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872425/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "815c9895efebd93b",
-      "source": "ThreatFox",
-      "ioc": "85.137.249.185:25729",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "AdaptixC2",
-      "confidence": 75,
-      "tags": [
-        "AdaptixC2",
-        "drb-ra"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872424/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "ce10f31f5210d6da",
-      "source": "ThreatFox",
-      "ioc": "64.188.69.73:7273",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "NetSupportManager RAT",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "NetSupport",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872423/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "5de754a6ce6172e4",
-      "source": "ThreatFox",
-      "ioc": "54.171.35.227:443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Unknown malware",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "Mythic"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872422/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "4714c833be1b164a",
-      "source": "ThreatFox",
-      "ioc": "45.88.91.103:2244",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "AsyncRAT",
-      "confidence": 75,
-      "tags": [
-        "asyncrat",
-        "drb-ra",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872421/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "969b6557e8ed69b4",
-      "source": "ThreatFox",
-      "ioc": "220.154.140.4:9443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Unknown malware",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "Mythic"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872420/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "83c4ebde889d4cb5",
-      "source": "ThreatFox",
-      "ioc": "217.60.241.19:8808",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "AsyncRAT",
-      "confidence": 75,
-      "tags": [
-        "asyncrat",
-        "drb-ra",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872419/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "82a82d27e8f715c6",
-      "source": "ThreatFox",
-      "ioc": "209.99.184.151:55005",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "PureHVNC",
-        "PureRAT",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872418/",
-      "ip": "209.99.184.151",
-      "asn": "AS402253",
-      "asn_org": "HostRoyale Technologies",
-      "country": "Switzerland",
-      "country_code": "CH"
-    },
-    {
-      "id": "cb9e55a341c48998",
-      "source": "ThreatFox",
-      "ioc": "193.221.201.164:7443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Unknown malware",
-      "confidence": 75,
-      "tags": [
-        "Covenant",
-        "drb-ra"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872417/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "57886eacf7a428d9",
-      "source": "ThreatFox",
-      "ioc": "182.16.29.35:443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "drb-ra",
-        "PureHVNC",
-        "PureRAT",
-        "RAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1872415/",
       "ip": null,
       "asn": null,
       "asn_org": null,

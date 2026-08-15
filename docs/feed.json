@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-15T11:19:59.650304+00:00",
+  "generated_at": "2026-08-15T11:45:13.162771+00:00",
   "stats": {
-    "total": 1846,
+    "total": 1834,
     "by_source": {
-      "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 1646
+      "MalwareBazaar": 100,
+      "ThreatFox": 1634
     },
     "by_threat_type": {
-      "payload": 353,
       "malware_download": 100,
-      "payload_delivery": 1079,
-      "botnet_cc": 314
+      "payload": 352,
+      "payload_delivery": 1076,
+      "botnet_cc": 306
     },
     "by_country": {
-      "CN": 85,
-      "US": 13,
+      "CN": 84,
+      "US": 12,
       "PK": 11,
       "NL": 5,
       "ET": 3,
@@ -23,12 +23,12 @@
       "UA": 2,
       "DE": 2,
       "IN": 2,
-      "ID": 1
+      "FI": 1
     },
     "top_asns": {
-      "AS4837 China Unicom Liaoning Province Network": 14,
       "AS4837 China Unicom Henan Province Network": 13,
       "AS4837 CNC Group CHINA169 Henan Province Network": 13,
+      "AS4837 China Unicom Liaoning Province Network": 12,
       "AS38264 Wateen Telecom Limited": 11,
       "AS151185 Chinanet HB": 9,
       "AS4837 CNC Group CHINA169 Liaoning Province Network": 6,
@@ -37,9 +37,70 @@
       "AS4134 Chinanet FJ": 3,
       "AS17816 China Unicom Guangdong Province Network": 3
     },
-    "generated_at": "2026-08-15T11:19:59.650304+00:00"
+    "generated_at": "2026-08-15T11:45:13.162771+00:00"
   },
   "items": [
+    {
+      "id": "9868e903ec017189",
+      "source": "URLhaus",
+      "ioc": "http://27.215.124.43:44400/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "2026-08-15 11:41:05 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3904019/",
+      "ip": "27.215.124.43",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Shandong Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "1b1d95308bd3b86c",
+      "source": "MalwareBazaar",
+      "ioc": "2e54785c850529f281f91edd3f90ed866c883dd034bc7053c4068500e5bb0b92",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai"
+      ],
+      "first_seen": "2026-08-15 11:27:54",
+      "reference": "https://bazaar.abuse.ch/sample/2e54785c850529f281f91edd3f90ed866c883dd034bc7053c4068500e5bb0b92/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "0ca950c636506f3a",
+      "source": "URLhaus",
+      "ioc": "http://62.60.249.165/main_ppc",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "elf, mirai, ua-wget",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "mirai",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-15 11:26:05 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3904018/",
+      "ip": "62.60.249.165",
+      "asn": "AS203273",
+      "asn_org": "RTM GmbH",
+      "country": "Finland",
+      "country_code": "FI"
+    },
     {
       "id": "c902141f18a2f3cb",
       "source": "MalwareBazaar",
@@ -2002,42 +2063,6 @@
       "first_seen": "2026-08-15 10:01:14 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3903929/",
       "ip": "42.58.252.41",
-      "asn": "AS4837",
-      "asn_org": "China Unicom Liaoning Province Network",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "22dad3f98e5c4c99",
-      "source": "URLhaus",
-      "ioc": "http://42.86.137.34:54189/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-08-15 10:01:14 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3903930/",
-      "ip": "42.86.137.34",
-      "asn": "AS4837",
-      "asn_org": "China Unicom Liaoning Province Network",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "c1e95997018807e3",
-      "source": "URLhaus",
-      "ioc": "http://42.85.15.27:60468/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-08-15 10:01:14 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3903931/",
-      "ip": "42.85.15.27",
       "asn": "AS4837",
       "asn_org": "China Unicom Liaoning Province Network",
       "country": "China",
@@ -4082,20 +4107,84 @@
       "country_code": null
     },
     {
-      "id": "19d1ac76d9f4719f",
-      "source": "MalwareBazaar",
-      "ioc": "f4a8e4307944c6decec264820f699e4e4adee02fc71da530ad862dee959528cb",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
+      "id": "61121e30b356ba13",
+      "source": "ThreatFox",
+      "ioc": "ka3xwdti.en-us-superbrain.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "CNBackdoor",
-        "exe"
+        "ClearFake",
+        "mac-0x68dc",
+        "macOS"
       ],
-      "first_seen": "2026-08-15 00:29:30",
-      "reference": "https://bazaar.abuse.ch/sample/f4a8e4307944c6decec264820f699e4e4adee02fc71da530ad862dee959528cb/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876347/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "56b047dbc27f99af",
+      "source": "ThreatFox",
+      "ioc": "cowboyssuiteaccount.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876346/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "068bc66022e6b62f",
+      "source": "ThreatFox",
+      "ioc": "curveyield.online",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876345/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "a8ac9d14141fe18e",
+      "source": "ThreatFox",
+      "ioc": "canadianfriendsofyadsarah.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876344/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -4955,11 +5044,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1876303/",
-      "ip": "104.194.132.192",
-      "asn": "AS14956",
-      "asn_org": "RouterHosting LLC",
-      "country": "United States",
-      "country_code": "US"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "0f0f2d31f939a2a6",
@@ -10482,90 +10571,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1876047/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "bcec3da11ebac2b9",
-      "source": "ThreatFox",
-      "ioc": "43.143.118.200:8443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "tags": [
-        "Supershell"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876048/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "3d23b3284d0711e4",
-      "source": "ThreatFox",
-      "ioc": "gtg-tobacco.de",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ClearFake",
-      "confidence": 90,
-      "tags": [
-        "compromised",
-        "etherhide"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876045/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "9bc1a7d790fb486e",
-      "source": "ThreatFox",
-      "ioc": "176.98.182.218:8080",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Aisuru",
-      "confidence": 100,
-      "tags": [
-        "AISURU",
-        "c2"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876044/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "720a3c77ab535576",
-      "source": "ThreatFox",
-      "ioc": "yarpuzedebiyatdergisi.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876030/",
       "ip": null,
       "asn": null,
       "asn_org": null,

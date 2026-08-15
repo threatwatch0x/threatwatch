@@ -1,45 +1,112 @@
 {
-  "generated_at": "2026-08-15T18:28:49.244087+00:00",
+  "generated_at": "2026-08-15T18:58:09.363872+00:00",
   "stats": {
-    "total": 1895,
+    "total": 968,
     "by_source": {
       "URLhaus": 100,
       "MalwareBazaar": 100,
-      "ThreatFox": 1695
+      "ThreatFox": 768
     },
     "by_threat_type": {
       "malware_download": 100,
       "payload": 315,
-      "payload_delivery": 1206,
-      "botnet_cc": 274
+      "botnet_cc": 271,
+      "payload_delivery": 282
     },
     "by_country": {
-      "CN": 65,
+      "CN": 66,
       "US": 25,
-      "NL": 15,
+      "NL": 14,
       "IN": 8,
       "SG": 8,
       "FI": 7,
-      "PK": 7,
+      "PK": 6,
+      "HK": 6,
       "DE": 5,
-      "HK": 5,
       "ET": 4
     },
     "top_asns": {
-      "AS4837 CNC Group CHINA169 Henan Province Network": 16,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 17,
       "AS14061 DigitalOcean, LLC": 14,
       "AS211273 EGIHosting": 14,
-      "AS4837 China Unicom Henan Province Network": 13,
+      "AS4837 China Unicom Henan Province Network": 12,
       "AS151185 Chinanet HB": 10,
       "AS203273 RTM GmbH": 7,
-      "AS38264 Wateen Telecom Limited": 7,
       "AS202412 Omegatech LTD": 7,
-      "AS14061 Digital Ocean": 5,
-      "AS9829 BSNL Internet": 4
+      "AS38264 Wateen Telecom Limited": 6,
+      "AS132203 Tencent Cloud Computing": 5,
+      "AS14061 Digital Ocean": 5
     },
-    "generated_at": "2026-08-15T18:28:49.244087+00:00"
+    "generated_at": "2026-08-15T18:58:09.363872+00:00"
   },
   "items": [
+    {
+      "id": "8256b755128366f6",
+      "source": "URLhaus",
+      "ioc": "http://125.110.49.243:54807/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, arm, elf, mirai, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-15 18:46:24 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3904083/",
+      "ip": "125.110.49.243",
+      "asn": "AS4134",
+      "asn_org": "Chinanet",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "2cea2825bcd86477",
+      "source": "URLhaus",
+      "ioc": "http://113.221.8.44:56847/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "mirai",
+      "confidence": 100,
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-08-15 18:46:07 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3904082/",
+      "ip": "113.221.8.44",
+      "asn": "AS4134",
+      "asn_org": "Chinanet HN",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "329c49481da0b4d2",
+      "source": "URLhaus",
+      "ioc": "http://115.50.101.188:34800/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-15 18:29:13 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3904081/",
+      "ip": "115.50.101.188",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
     {
       "id": "5f699d564b819e63",
       "source": "URLhaus",
@@ -574,7 +641,7 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "exe",
-      "malware": "Unknown",
+      "malware": "ValleyRAT",
       "confidence": 100,
       "tags": [
         "exe",
@@ -3312,66 +3379,6 @@
       "country_code": "CN"
     },
     {
-      "id": "0b596af994839401",
-      "source": "URLhaus",
-      "ioc": "http://119.183.3.192:41382/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Mozi",
-      "confidence": 100,
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-15 10:01:27 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3903988/",
-      "ip": "119.183.3.192",
-      "asn": "AS4837",
-      "asn_org": "CNC Group CHINA169 Shandong Province Network",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "0f9a1023cc12333b",
-      "source": "URLhaus",
-      "ioc": "http://42.237.4.138:60559/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Mozi",
-      "confidence": 100,
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-15 10:01:26 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3903980/",
-      "ip": "42.237.4.138",
-      "asn": "AS4837",
-      "asn_org": "China Unicom Henan Province Network",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "41a898b0be520626",
-      "source": "URLhaus",
-      "ioc": "http://110.37.44.119:37578/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "mirai",
-      "confidence": 100,
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-08-15 10:01:26 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3903981/",
-      "ip": "110.37.44.119",
-      "asn": "AS38264",
-      "asn_org": "Wateen Telecom Limited",
-      "country": "Pakistan",
-      "country_code": "PK"
-    },
-    {
       "id": "a89ed263fa20a055",
       "source": "MalwareBazaar",
       "ioc": "32c92e3a2f50c0d2e64bfaf78c6221de95cc23d4ca22045c70c8e237c60cf29f",
@@ -4276,6 +4283,90 @@
       ],
       "first_seen": "2026-08-15 07:15:30",
       "reference": "https://bazaar.abuse.ch/sample/250f9079f4018c6c1fed92b09b91e75222790a5f59379c4b7cb3185a9014f246/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "4e4b2d37bb409921",
+      "source": "ThreatFox",
+      "ioc": "43.129.180.120:8443",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Aisuru",
+      "confidence": 100,
+      "tags": [
+        "AISURU",
+        "c2"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876789/",
+      "ip": "43.129.180.120",
+      "asn": "AS132203",
+      "asn_org": "Tencent Cloud Computing",
+      "country": "Hong Kong",
+      "country_code": "HK"
+    },
+    {
+      "id": "cb7570b9af51420a",
+      "source": "ThreatFox",
+      "ioc": "sessionx.net",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876788/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "c3d18070e1f1f7da",
+      "source": "ThreatFox",
+      "ioc": "bxb41a9q.federationofpbos.org",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "mac-0x76c7",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876787/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "245bc648c26e12f6",
+      "source": "ThreatFox",
+      "ioc": "https://cuuwa.ca/",
+      "ioc_type": "url",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876786/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -9865,91 +9956,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1876177/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "863585c4eb2fe46c",
-      "source": "ThreatFox",
-      "ioc": "162.243.79.150:8080",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Aisuru",
-      "confidence": 100,
-      "tags": [
-        "AISURU",
-        "c2"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876159/",
-      "ip": "162.243.79.150",
-      "asn": "AS14061",
-      "asn_org": "Digital Ocean",
-      "country": "United States",
-      "country_code": "US"
-    },
-    {
-      "id": "dea7d82c2ac6f526",
-      "source": "ThreatFox",
-      "ioc": "176.98.182.216:8443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Aisuru",
-      "confidence": 100,
-      "tags": [
-        "AISURU",
-        "c2"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876160/",
-      "ip": "176.98.182.216",
-      "asn": "AS202799",
-      "asn_org": "Akkumys Kadyrova",
-      "country": "The Netherlands",
-      "country_code": "NL"
-    },
-    {
-      "id": "841dd88d0ef30c97",
-      "source": "ThreatFox",
-      "ioc": "43.134.49.218:8443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Aisuru",
-      "confidence": 100,
-      "tags": [
-        "AISURU",
-        "c2"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876188/",
-      "ip": "43.134.49.218",
-      "asn": "AS132203",
-      "asn_org": "Tencent Cloud Computing",
-      "country": "Singapore",
-      "country_code": "SG"
-    },
-    {
-      "id": "78198ea25ffa30de",
-      "source": "ThreatFox",
-      "ioc": "http://111.127.232.94:58633/Mozi.m",
-      "ioc_type": "url",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Mozi",
-      "confidence": 75,
-      "tags": [
-        "elf",
-        "IoT",
-        "Mozi"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876240/",
       "ip": null,
       "asn": null,
       "asn_org": null,

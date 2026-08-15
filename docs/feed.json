@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-15T10:48:07.084731+00:00",
+  "generated_at": "2026-08-15T11:19:59.650304+00:00",
   "stats": {
-    "total": 1849,
+    "total": 1846,
     "by_source": {
-      "URLhaus": 100,
       "MalwareBazaar": 100,
-      "ThreatFox": 1649
+      "URLhaus": 100,
+      "ThreatFox": 1646
     },
     "by_threat_type": {
-      "malware_download": 100,
       "payload": 353,
-      "payload_delivery": 1075,
-      "botnet_cc": 321
+      "malware_download": 100,
+      "payload_delivery": 1079,
+      "botnet_cc": 314
     },
     "by_country": {
-      "CN": 75,
+      "CN": 85,
       "US": 13,
       "PK": 11,
       "NL": 5,
       "ET": 3,
       "BR": 2,
       "UA": 2,
-      "TW": 2,
+      "DE": 2,
       "IN": 2,
       "ID": 1
     },
@@ -30,16 +30,79 @@
       "AS4837 China Unicom Henan Province Network": 13,
       "AS4837 CNC Group CHINA169 Henan Province Network": 13,
       "AS38264 Wateen Telecom Limited": 11,
+      "AS151185 Chinanet HB": 9,
       "AS4837 CNC Group CHINA169 Liaoning Province Network": 6,
       "AS4134 Chinanet": 5,
       "AS399629 BL Networks": 4,
       "AS4134 Chinanet FJ": 3,
-      "AS17816 China Unicom Guangdong Province Network": 3,
-      "AS4837 CNC Group CHINA169 Shandong Province Network": 3
+      "AS17816 China Unicom Guangdong Province Network": 3
     },
-    "generated_at": "2026-08-15T10:48:07.084731+00:00"
+    "generated_at": "2026-08-15T11:19:59.650304+00:00"
   },
   "items": [
+    {
+      "id": "c902141f18a2f3cb",
+      "source": "MalwareBazaar",
+      "ioc": "b1dd31636a26d8811f470ccdc32b90ed291dba7cee4ff7d02a9cb01d85146126",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "ValleyRAT",
+      "confidence": 100,
+      "tags": [
+        "exe",
+        "SilverFox",
+        "Trojan/SilverFox.bm[lddel]",
+        "ValleyRAT"
+      ],
+      "first_seen": "2026-08-15 11:02:47",
+      "reference": "https://bazaar.abuse.ch/sample/b1dd31636a26d8811f470ccdc32b90ed291dba7cee4ff7d02a9cb01d85146126/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "8b833f40cd048442",
+      "source": "URLhaus",
+      "ioc": "http://60.21.174.229:40485/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "2026-08-15 10:56:05 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3904017/",
+      "ip": "60.21.174.229",
+      "asn": "AS4837",
+      "asn_org": "Unicom LN",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "dbb4bebdcf3fbfd0",
+      "source": "MalwareBazaar",
+      "ioc": "f22823bc34ba3592e6f21001f7153e970bff3562ef770786d9beeda451a4b654",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "ClickFix",
+        "Efimer",
+        "exe"
+      ],
+      "first_seen": "2026-08-15 10:52:31",
+      "reference": "https://bazaar.abuse.ch/sample/f22823bc34ba3592e6f21001f7153e970bff3562ef770786d9beeda451a4b654/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
     {
       "id": "7b35b8d075a17066",
       "source": "URLhaus",
@@ -1979,26 +2042,6 @@
       "asn_org": "China Unicom Liaoning Province Network",
       "country": "China",
       "country_code": "CN"
-    },
-    {
-      "id": "a1ac921faaaefaac",
-      "source": "URLhaus",
-      "ioc": "http://210.208.110.42:48403/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "mirai",
-      "confidence": 100,
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-08-15 10:01:14 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3903932/",
-      "ip": "210.208.110.42",
-      "asn": "AS9924",
-      "asn_org": "Taiwan Telecommunication Network Services Co., LTD.",
-      "country": "Taiwan",
-      "country_code": "TW"
     },
     {
       "id": "a89ed263fa20a055",
@@ -4060,20 +4103,19 @@
       "country_code": null
     },
     {
-      "id": "2b583b4d7bc5276f",
-      "source": "MalwareBazaar",
-      "ioc": "80cd87cbf731d14baa0698a22a0ebf8db7b305a740d0015d985e94b6b197a2f3",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "iso",
-      "malware": "Unknown",
-      "confidence": 100,
+      "id": "fd7f691f5ad2dcc1",
+      "source": "ThreatFox",
+      "ioc": "winenfejar.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 75,
       "tags": [
-        "CNBackdoor",
-        "iso"
+        "ClickFix"
       ],
-      "first_seen": "2026-08-15 00:28:59",
-      "reference": "https://bazaar.abuse.ch/sample/80cd87cbf731d14baa0698a22a0ebf8db7b305a740d0015d985e94b6b197a2f3/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876343/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -4081,21 +4123,162 @@
       "country_code": null
     },
     {
-      "id": "a687ba6394e5c61c",
-      "source": "MalwareBazaar",
-      "ioc": "7e52031a2ef388824fd6e39f25b626b09be13e33a79d291a4790affdb9b93593",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
+      "id": "c390ba68db009c7d",
+      "source": "ThreatFox",
+      "ioc": "yasbetkade.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 75,
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876342/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "92bad10098a91351",
+      "source": "ThreatFox",
+      "ioc": "cqs.gg",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876341/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "e843e50648f1454a",
+      "source": "ThreatFox",
+      "ioc": "claims24.co.uk",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876340/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "64fc26ca5e173509",
+      "source": "ThreatFox",
+      "ioc": "104.243.248.63:412",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "AsyncRAT",
       "confidence": 100,
       "tags": [
-        "cloud-flare-authenticator-link",
-        "exe",
-        "Stealc"
+        "asyncrat"
       ],
-      "first_seen": "2026-08-15 00:28:10",
-      "reference": "https://bazaar.abuse.ch/sample/7e52031a2ef388824fd6e39f25b626b09be13e33a79d291a4790affdb9b93593/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876339/",
+      "ip": "104.243.248.63",
+      "asn": "AS3223",
+      "asn_org": "Secure Internet LLC",
+      "country": "Germany",
+      "country_code": "DE"
+    },
+    {
+      "id": "26cad989f944a044",
+      "source": "ThreatFox",
+      "ioc": "111.170.148.132:18080",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 100,
+      "tags": [
+        "Viper"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876338/",
+      "ip": "111.170.148.132",
+      "asn": "AS151185",
+      "asn_org": "Chinanet HB",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "31c66a6fb81520e5",
+      "source": "ThreatFox",
+      "ioc": "http://mrlketo.shop:8932/invoices",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Remus",
+      "confidence": 75,
+      "tags": [
+        "Remus"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876337/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "5c339a21175c851b",
+      "source": "ThreatFox",
+      "ioc": "http://bravplo.click:7713/subscriptions",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Remus",
+      "confidence": 75,
+      "tags": [
+        "Remus"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876336/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "9a346e921de1b38b",
+      "source": "ThreatFox",
+      "ioc": "cabinetbedstore.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1876335/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -5072,11 +5255,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1876288/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
+      "ip": "111.170.148.132",
+      "asn": "AS151185",
+      "asn_org": "Chinanet HB",
+      "country": "China",
+      "country_code": "CN"
     },
     {
       "id": "e537dee3b17e8e8d",
@@ -5092,11 +5275,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1876286/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
+      "ip": "111.170.148.132",
+      "asn": "AS151185",
+      "asn_org": "Chinanet HB",
+      "country": "China",
+      "country_code": "CN"
     },
     {
       "id": "0719cd4be306cfb5",
@@ -5112,11 +5295,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1876287/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
+      "ip": "111.170.148.132",
+      "asn": "AS151185",
+      "asn_org": "Chinanet HB",
+      "country": "China",
+      "country_code": "CN"
     },
     {
       "id": "a78adaf9d3c7f474",
@@ -10383,204 +10566,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1876030/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "24aa3749689be377",
-      "source": "ThreatFox",
-      "ioc": "yildiz-mobilya.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876031/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1a8789d9feef185b",
-      "source": "ThreatFox",
-      "ioc": "yourplacerobe.com.au",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876032/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7b24b48f02d75c58",
-      "source": "ThreatFox",
-      "ioc": "youthmob.ro",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876033/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "956a9598a2aeded8",
-      "source": "ThreatFox",
-      "ioc": "yscableenergy.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876034/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "0006de5ef69b2011",
-      "source": "ThreatFox",
-      "ioc": "yunuscabakmak.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876035/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "da7ae78debd679f8",
-      "source": "ThreatFox",
-      "ioc": "zackmediahub.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876036/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "0c85a1f6d30fd6e1",
-      "source": "ThreatFox",
-      "ioc": "zappos.kr",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876037/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "935309e163086a13",
-      "source": "ThreatFox",
-      "ioc": "zarrinkupal.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876038/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "87b8659ff1078c02",
-      "source": "ThreatFox",
-      "ioc": "zconsulting-co.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "etherhiding",
-        "sepolia"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1876039/",
       "ip": null,
       "asn": null,
       "asn_org": null,

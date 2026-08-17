@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-17T23:21:23.239705+00:00",
+  "generated_at": "2026-08-17T23:46:57.877272+00:00",
   "stats": {
-    "total": 1493,
+    "total": 1502,
     "by_source": {
       "URLhaus": 100,
       "MalwareBazaar": 100,
-      "ThreatFox": 1293
+      "ThreatFox": 1302
     },
     "by_threat_type": {
       "malware_download": 100,
       "payload": 141,
-      "botnet_cc": 337,
-      "payload_delivery": 834,
+      "payload_delivery": 844,
+      "botnet_cc": 336,
       "cc_skimming": 81
     },
     "by_country": {
-      "CN": 44,
+      "CN": 45,
       "NL": 22,
       "HK": 16,
-      "FR": 15,
+      "FR": 14,
       "DE": 13,
-      "US": 12,
+      "US": 11,
       "SG": 10,
       "IN": 5,
       "JP": 4,
@@ -34,13 +34,56 @@
       "AS4837 CNC Group CHINA169 Liaoning Province Network": 6,
       "AS401696 HONGKONG CLOUD NETWORK TECHNOLOGY CO., LIMITED": 6,
       "AS214961 Stellar Group": 4,
-      "AS210558 1337 Services GmbH": 4,
       "AS3258 365 Group LLC": 4,
-      "AS132203 Tencent Cloud Computing": 4
+      "AS132203 Tencent Cloud Computing": 4,
+      "AS8075 Microsoft Azure Cloud (koreacentral)": 4
     },
-    "generated_at": "2026-08-17T23:21:23.239705+00:00"
+    "generated_at": "2026-08-17T23:46:57.877272+00:00"
   },
   "items": [
+    {
+      "id": "9dda95b985821aa0",
+      "source": "URLhaus",
+      "ioc": "http://124.131.167.151:34514/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-17 23:25:18 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905035/",
+      "ip": "124.131.167.151",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Shandong Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "913f95f633b97e66",
+      "source": "URLhaus",
+      "ioc": "http://179.108.89.220:33758/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "mirai",
+      "confidence": 100,
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-08-17 23:21:08 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905034/",
+      "ip": "179.108.89.220",
+      "asn": "AS263269",
+      "asn_org": "Ragtek Tecnologia",
+      "country": "Brazil",
+      "country_code": "BR"
+    },
     {
       "id": "5d3e48cdd8a7533d",
       "source": "URLhaus",
@@ -4445,50 +4488,303 @@
       "country_code": "US"
     },
     {
-      "id": "3842cd567fd3bdec",
-      "source": "URLhaus",
-      "ioc": "https://193.26.115.28/bin/support.client.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "193-26-115-28, connectwise, exe, ua-wget",
-      "confidence": 50,
+      "id": "26bc84be7acc1d13",
+      "source": "ThreatFox",
+      "ioc": "pastorpeinture.fr",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
       "tags": [
-        "193-26-115-28",
-        "connectwise",
-        "exe",
-        "ua-wget"
+        "compromised",
+        "etherhide"
       ],
-      "first_seen": "2026-08-17 15:11:08 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3904935/",
-      "ip": "193.26.115.28",
-      "asn": "AS210558",
-      "asn_org": "1337 Services GmbH",
-      "country": "United States",
-      "country_code": "US"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878715/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
-      "id": "3d28587a443936dc",
-      "source": "URLhaus",
-      "ioc": "https://94.154.32.8/Bin/ScreenConnect.ClientSetup.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "94-154-32-8, connectwise, exe, ua-wget",
-      "confidence": 100,
+      "id": "7d3d117b7c98241a",
+      "source": "ThreatFox",
+      "ioc": "nrcie.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
       "tags": [
-        "94-154-32-8",
-        "connectwise",
-        "exe",
-        "ua-wget"
+        "compromised",
+        "etherhide"
       ],
-      "first_seen": "2026-08-17 15:03:11 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3904934/",
-      "ip": "94.154.32.8",
-      "asn": "AS214961",
-      "asn_org": "Individual entrepreneur Dyachenko Valentina Ivanovna",
-      "country": "France",
-      "country_code": "FR"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878716/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "aacb036cb1480d56",
+      "source": "ThreatFox",
+      "ioc": "neos-group.ch",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhiding"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878711/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "57b1f35fe4abee5b",
+      "source": "ThreatFox",
+      "ioc": "piacereprosecco.ch",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "ClearFake",
+        "compromised"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878712/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3e86a82694145af9",
+      "source": "ThreatFox",
+      "ioc": "nomadquynh.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "ErrTraffic"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878713/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "0e11e005d0f78e20",
+      "source": "ThreatFox",
+      "ioc": "noproblimmo-by-nathanael.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "ClearFake",
+        "compromised"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878714/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "0e847612ca05dbce",
+      "source": "ThreatFox",
+      "ioc": "mechbot.ch",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhiding"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878708/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ab665511a9111923",
+      "source": "ThreatFox",
+      "ioc": "perfectcoupe.ch",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhiding"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878709/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "2ef1b5f138ab6ea8",
+      "source": "ThreatFox",
+      "ioc": "myhandyplus.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhiding"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878710/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "bfe0989c4021d6d0",
+      "source": "ThreatFox",
+      "ioc": "wazezajo.workers.dev",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "tags": [
+        "Cloudflare",
+        "gif",
+        "PHP",
+        "webshell",
+        "WordPress",
+        "workers.dev",
+        "wp-admin"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878707/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "55db4a1823bcefa8",
+      "source": "ThreatFox",
+      "ioc": "apt9clothing.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878706/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "64a45bc674642534",
+      "source": "ThreatFox",
+      "ioc": "mycolacote.ch",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878704/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "86b0c3533fcd4f15",
+      "source": "ThreatFox",
+      "ioc": "mylenelourdel.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878705/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "9a4eddc5ea538a96",
+      "source": "ThreatFox",
+      "ioc": "prod-mastery.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1878703/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "281a17dbf4537eae",
@@ -10528,286 +10824,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1878417/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "8e0fad30805546ef",
-      "source": "ThreatFox",
-      "ioc": "clinicaterezafilgueiras.com.br",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878418/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "10abf4dbb3bf0333",
-      "source": "ThreatFox",
-      "ioc": "cloud4office.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878419/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "53fb6040c89b2f76",
-      "source": "ThreatFox",
-      "ioc": "clubedovepinho.com.br",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878420/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "51b1f57da8fd9528",
-      "source": "ThreatFox",
-      "ioc": "cncpeventi.it",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878421/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1fd7267986867164",
-      "source": "ThreatFox",
-      "ioc": "cnymnvwv.xyz",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878422/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "78c04273d980206d",
-      "source": "ThreatFox",
-      "ioc": "coboliste.fr",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878423/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1e276ba15fef6f8c",
-      "source": "ThreatFox",
-      "ioc": "cod-it.tech",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878424/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "ac74300289cfd74f",
-      "source": "ThreatFox",
-      "ioc": "centrkrovly.com.ua",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878393/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b467efe45679dfd2",
-      "source": "ThreatFox",
-      "ioc": "centroagoraformacion.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878394/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "270ba2c3e0e38c5d",
-      "source": "ThreatFox",
-      "ioc": "cerealesjimenez.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878395/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "971f11c75b4fb72c",
-      "source": "ThreatFox",
-      "ioc": "cerifostervoice.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878396/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "30e4e711f6c1a809",
-      "source": "ThreatFox",
-      "ioc": "cesarinilegal.it",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878397/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "a4342b36b477ead4",
-      "source": "ThreatFox",
-      "ioc": "cesarvillage.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878398/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "115572cfc2651fec",
-      "source": "ThreatFox",
-      "ioc": "charisma-resources.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1878399/",
       "ip": null,
       "asn": null,
       "asn_org": null,

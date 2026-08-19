@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T03:45:42.663368+00:00",
+  "generated_at": "2026-08-19T04:35:38.235255+00:00",
   "stats": {
     "total": 3089,
     "by_source": {
@@ -10,16 +10,16 @@
     "by_threat_type": {
       "malware_download": 100,
       "payload": 104,
-      "payload_delivery": 2001,
-      "botnet_cc": 884
+      "botnet_cc": 884,
+      "payload_delivery": 2001
     },
     "by_country": {
-      "CN": 69,
-      "US": 24,
+      "CN": 73,
+      "US": 22,
       "SG": 20,
       "SE": 17,
-      "NL": 10,
       "DE": 9,
+      "NL": 9,
       "HK": 8,
       "TW": 4,
       "FR": 4,
@@ -34,12 +34,76 @@
       "AS45090 Tencent cloud computing (Beijing) Co., Ltd.": 7,
       "AS4837 Unicom LN": 6,
       "AS399486 Diamond IP Brokers Fzco": 6,
-      "AS132203 Aceville Pte.ltd": 5,
-      "AS4837 China Unicom Shandong Province Network": 4
+      "AS37963 Aliyun Computing Co., LTD": 5,
+      "AS132203 Aceville Pte.ltd": 5
     },
-    "generated_at": "2026-08-19T03:45:42.663368+00:00"
+    "generated_at": "2026-08-19T04:35:38.235255+00:00"
   },
   "items": [
+    {
+      "id": "4f76d22324eb8e3c",
+      "source": "URLhaus",
+      "ioc": "http://175.173.72.28:43930/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 04:17:13 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905532/",
+      "ip": "175.173.72.28",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Liaoning Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "9fb68767d8b24efb",
+      "source": "MalwareBazaar",
+      "ioc": "d6cf893a9d0d309a9babb936e1565f5aae53cdb53864d0781b2eb2156a9e74be",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "hta",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "hta"
+      ],
+      "first_seen": "2026-08-19 04:03:58",
+      "reference": "https://bazaar.abuse.ch/sample/d6cf893a9d0d309a9babb936e1565f5aae53cdb53864d0781b2eb2156a9e74be/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "edcdf70d5e1efbed",
+      "source": "MalwareBazaar",
+      "ioc": "b3cb2c56122bbd0671e71b111ebe529a41bcdcea944fb3c5d9ee333e1e4ffacb",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "unknown",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "ClickFix",
+        "Efimer"
+      ],
+      "first_seen": "2026-08-19 03:52:10",
+      "reference": "https://bazaar.abuse.ch/sample/b3cb2c56122bbd0671e71b111ebe529a41bcdcea944fb3c5d9ee333e1e4ffacb/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
     {
       "id": "bf761fd6b16f480c",
       "source": "URLhaus",
@@ -400,6 +464,7 @@
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx"
       ],
       "first_seen": "2026-08-19 03:12:53",
@@ -786,6 +851,7 @@
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx"
       ],
       "first_seen": "2026-08-19 03:00:46",
@@ -2387,52 +2453,6 @@
       ],
       "first_seen": "2026-08-19 02:16:03",
       "reference": "https://bazaar.abuse.ch/sample/4e180156d2b0d6c13d57b65999cf45393afdaa1f3181e0aafc26686a4795f9e1/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "19da3cd69a1745d3",
-      "source": "MalwareBazaar",
-      "ioc": "5804e0484a0c90c431a77dd944e75eee7d42ea24ea86a4669dcc5050f63ce6da",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-19 02:15:45",
-      "reference": "https://bazaar.abuse.ch/sample/5804e0484a0c90c431a77dd944e75eee7d42ea24ea86a4669dcc5050f63ce6da/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "c5862c9057624f60",
-      "source": "MalwareBazaar",
-      "ioc": "6dc28fb34364707e34a0511d2d8d82fa1825ba273ad14ac4d73b88efa5579d0c",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "upx",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-19 02:15:35",
-      "reference": "https://bazaar.abuse.ch/sample/6dc28fb34364707e34a0511d2d8d82fa1825ba273ad14ac4d73b88efa5579d0c/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -4473,27 +4493,105 @@
       "country_code": "NL"
     },
     {
-      "id": "4c3a40db4cde3814",
-      "source": "URLhaus",
-      "ioc": "http://176.65.139.212/eclipse.armv7l",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "176-65-139-212, elf, mirai, ua-wget",
+      "id": "3af2305261faff27",
+      "source": "ThreatFox",
+      "ioc": "47.108.86.120:80",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
       "confidence": 100,
       "tags": [
-        "176-65-139-212",
-        "elf",
-        "mirai",
-        "ua-wget"
+        "CobaltStrike"
       ],
-      "first_seen": "2026-08-18 16:05:18 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905434/",
-      "ip": "176.65.139.212",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1881610/",
+      "ip": "47.108.86.120",
+      "asn": "AS37963",
+      "asn_org": "Aliyun Computing Co., LTD",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "b72d14774bdbe42a",
+      "source": "ThreatFox",
+      "ioc": "47.108.86.120:8080",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1881611/",
+      "ip": "47.108.86.120",
+      "asn": "AS37963",
+      "asn_org": "Aliyun Computing Co., LTD",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "b38123fcd370e565",
+      "source": "ThreatFox",
+      "ioc": "47.108.86.120:443",
+      "ioc_type": "ip:port",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Cobalt Strike",
+      "confidence": 100,
+      "tags": [
+        "CobaltStrike"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1881609/",
+      "ip": "47.108.86.120",
+      "asn": "AS37963",
+      "asn_org": "Aliyun Computing Co., LTD",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "7b2f3f3ac83fec86",
+      "source": "ThreatFox",
+      "ioc": "http://gofkaxz.click:8137/workspaces",
+      "ioc_type": "url",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Remus",
+      "confidence": 75,
+      "tags": [
+        "Remus"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1881608/",
+      "ip": null,
       "asn": null,
-      "asn_org": "Storm Industries LLC",
-      "country": "The Netherlands",
-      "country_code": "NL"
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "79b698136e44d4ab",
+      "source": "ThreatFox",
+      "ioc": "wanderingfoodie.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "ClickFix",
+        "compromised"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1881607/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "fa9dc085b807d95d",
@@ -9177,11 +9275,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1881393/",
-      "ip": "209.54.103.173",
-      "asn": "AS36352",
-      "asn_org": "HostPapa",
-      "country": "United States",
-      "country_code": "US"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "e6e9e49bf2bfd05b",
@@ -9199,11 +9297,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1881375/",
-      "ip": "91.92.120.61",
-      "asn": "AS44901",
-      "asn_org": "Amaze Internet Services",
-      "country": "Bulgaria",
-      "country_code": "BG"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "93c7d13187ca7087",
@@ -9683,11 +9781,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1881374/",
-      "ip": "91.92.120.61",
-      "asn": "AS44901",
-      "asn_org": "Amaze Internet Services",
-      "country": "Bulgaria",
-      "country_code": "BG"
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "5ea70b9f9d2aec35",
@@ -10753,112 +10851,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1881312/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7d8ab8c0a436f85a",
-      "source": "ThreatFox",
-      "ioc": "176.96.138.73:7000",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "PureHVNC",
-        "PureRAT",
-        "ResolverRAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1881309/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "8708bdbff917f0f6",
-      "source": "ThreatFox",
-      "ioc": "213.111.148.180:56003",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "PureHVNC",
-        "PureRAT",
-        "ResolverRAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1881310/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7cd00af3bf77d0ba",
-      "source": "ThreatFox",
-      "ioc": "85.209.129.102:56003",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "PureRAT",
-      "confidence": 75,
-      "tags": [
-        "PureHVNC",
-        "PureRAT",
-        "ResolverRAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1881311/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "f2649a2d93afe35c",
-      "source": "ThreatFox",
-      "ioc": "http://poagint.click:8592/payments",
-      "ioc_type": "url",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Remus",
-      "confidence": 75,
-      "tags": [
-        "Remus"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1881307/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "98086b938e7be322",
-      "source": "ThreatFox",
-      "ioc": "http://kupzovo.shop:7567/settings",
-      "ioc_type": "url",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Remus",
-      "confidence": 75,
-      "tags": [
-        "Remus"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1881308/",
       "ip": null,
       "asn": null,
       "asn_org": null,

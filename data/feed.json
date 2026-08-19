@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-19T22:51:02.847142+00:00",
+  "generated_at": "2026-08-19T23:21:43.434027+00:00",
   "stats": {
-    "total": 1596,
+    "total": 1590,
     "by_source": {
-      "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 1396
+      "MalwareBazaar": 100,
+      "ThreatFox": 1390
     },
     "by_threat_type": {
-      "payload": 335,
       "malware_download": 100,
-      "payload_delivery": 493,
-      "botnet_cc": 668
+      "payload": 335,
+      "botnet_cc": 668,
+      "payload_delivery": 487
     },
     "by_country": {
-      "CN": 31,
+      "CN": 32,
       "NL": 26,
-      "DE": 23,
+      "DE": 22,
       "US": 18,
       "VN": 10,
       "LT": 8,
@@ -26,9 +26,9 @@
       "FR": 4
     },
     "top_asns": {
-      "AS4837 China Unicom Henan Province Network": 10,
+      "AS4837 China Unicom Henan Province Network": 11,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 10,
       "AS135918 Cloud Viet ONE Member Company Limited": 10,
-      "AS4837 CNC Group CHINA169 Henan Province Network": 9,
       "AS267784 Xwin Universal LTD": 8,
       "AS7488 BSU.LEASE": 7,
       "AS214351 Femo IT Solutions Limited": 6,
@@ -37,9 +37,99 @@
       "AS44382 White Label Services, LLC": 5,
       "AS152194 CTG Server Ltd.": 4
     },
-    "generated_at": "2026-08-19T22:51:02.847142+00:00"
+    "generated_at": "2026-08-19T23:21:43.434027+00:00"
   },
   "items": [
+    {
+      "id": "80c6d56b21d13f11",
+      "source": "URLhaus",
+      "ioc": "http://103.249.199.3:45299/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, arm, elf, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 23:19:16 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905935/",
+      "ip": "103.249.199.3",
+      "asn": "AS151650",
+      "asn_org": "Switch Fiber",
+      "country": "Philippines",
+      "country_code": "PH"
+    },
+    {
+      "id": "ca275a1db2c9759c",
+      "source": "URLhaus",
+      "ioc": "http://42.238.169.48:54614/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 23:00:18 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905934/",
+      "ip": "42.238.169.48",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "ded3adb080ddc65a",
+      "source": "URLhaus",
+      "ioc": "http://31.58.171.194/data_mips",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "elf, mips, ua-wget",
+      "confidence": 50,
+      "tags": [
+        "elf",
+        "mips",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-19 22:58:36 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905933/",
+      "ip": "31.58.171.194",
+      "asn": "AS56971",
+      "asn_org": "CGI GLOBAL LIMITED",
+      "country": "Latvia",
+      "country_code": "LV"
+    },
+    {
+      "id": "ab207bb9b0904251",
+      "source": "URLhaus",
+      "ioc": "http://31.58.171.194/data_mipsel",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "elf, mips, ua-wget",
+      "confidence": 50,
+      "tags": [
+        "elf",
+        "mips",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-19 22:57:16 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905932/",
+      "ip": "31.58.171.194",
+      "asn": "AS56971",
+      "asn_org": "CGI GLOBAL LIMITED",
+      "country": "Latvia",
+      "country_code": "LV"
+    },
     {
       "id": "0678f6b43198a115",
       "source": "MalwareBazaar",
@@ -59,6 +149,29 @@
       "asn_org": null,
       "country": null,
       "country_code": null
+    },
+    {
+      "id": "e8ea9dc4eada5f80",
+      "source": "URLhaus",
+      "ioc": "http://222.140.197.114:37580/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 22:50:22 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905931/",
+      "ip": "222.140.197.114",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
     },
     {
       "id": "0a8cc2da5bf26260",
@@ -4228,115 +4341,25 @@
       "country_code": null
     },
     {
-      "id": "53f1ccd35bed6e7a",
-      "source": "URLhaus",
-      "ioc": "https://hypercorevector5.lol/noncrypt/21-32/bjbh.exe",
+      "id": "38bcac41df05902f",
+      "source": "ThreatFox",
+      "ioc": "http://dsfdsfs.xsph.ru/L1nc0In.php",
       "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "exe, opendir, RemusStealer",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "DCRat",
       "confidence": 100,
       "tags": [
-        "exe",
-        "opendir",
-        "RemusStealer"
+        "dcrat",
+        "RAT"
       ],
-      "first_seen": "2026-08-19 14:49:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905832/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882789/",
       "ip": null,
       "asn": null,
       "asn_org": null,
       "country": null,
       "country_code": null
-    },
-    {
-      "id": "c30d152d2d518719",
-      "source": "URLhaus",
-      "ioc": "https://hypercorevector5.lol/noncrypt/21-32/kJHGFDs.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "exe, opendir, RemusStealer",
-      "confidence": 100,
-      "tags": [
-        "exe",
-        "opendir",
-        "RemusStealer"
-      ],
-      "first_seen": "2026-08-19 14:49:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905833/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "d3c2cf48dee98b4f",
-      "source": "URLhaus",
-      "ioc": "https://hypercorevector5.lol/noncrypt/21-32/hnmh.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "exe, opendir, RemusStealer",
-      "confidence": 100,
-      "tags": [
-        "exe",
-        "opendir",
-        "RemusStealer"
-      ],
-      "first_seen": "2026-08-19 14:49:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905834/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "db7e81ebd17a99d1",
-      "source": "URLhaus",
-      "ioc": "https://hypercorevector5.lol/noncrypt/21-32/KJHJHKJKJH.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "exe, opendir, RemusStealer",
-      "confidence": 100,
-      "tags": [
-        "exe",
-        "opendir",
-        "RemusStealer"
-      ],
-      "first_seen": "2026-08-19 14:49:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905835/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "64c0e1108bca03ed",
-      "source": "URLhaus",
-      "ioc": "http://27.29.33.253:58457/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 50,
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-19 14:48:13 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905831/",
-      "ip": "27.29.33.253",
-      "asn": "AS4134",
-      "asn_org": "Chinanet HB",
-      "country": "China",
-      "country_code": "CN"
     },
     {
       "id": "8d43647b544db9cb",
@@ -10449,26 +10472,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1882495/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2d3ca50972a6844f",
-      "source": "ThreatFox",
-      "ioc": "bmnjhy.shop",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "tags": [
-        "sliverfox"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882487/",
       "ip": null,
       "asn": null,
       "asn_org": null,

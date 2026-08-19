@@ -1,45 +1,178 @@
 {
-  "generated_at": "2026-08-19T20:54:58.719097+00:00",
+  "generated_at": "2026-08-19T21:24:42.236116+00:00",
   "stats": {
-    "total": 1565,
+    "total": 1598,
     "by_source": {
-      "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 1365
+      "MalwareBazaar": 100,
+      "ThreatFox": 1398
     },
     "by_threat_type": {
-      "payload": 335,
       "malware_download": 100,
-      "payload_delivery": 462,
-      "botnet_cc": 668
+      "payload": 335,
+      "payload_delivery": 496,
+      "botnet_cc": 667
     },
     "by_country": {
-      "DE": 28,
+      "CN": 27,
       "NL": 26,
-      "CN": 23,
+      "DE": 25,
       "US": 19,
       "VN": 10,
       "SG": 9,
       "LT": 8,
-      "FR": 7,
-      "JP": 5,
-      "TR": 5
+      "FR": 6,
+      "FI": 6,
+      "JP": 5
     },
     "top_asns": {
       "AS135918 Cloud Viet ONE Member Company Limited": 10,
+      "AS4837 China Unicom Henan Province Network": 9,
       "AS267784 Xwin Universal LTD": 8,
-      "AS4837 China Unicom Henan Province Network": 7,
-      "AS214351 Femo IT Solutions Limited": 7,
       "AS4837 CNC Group CHINA169 Henan Province Network": 7,
-      "AS214036 UltaHost Inc": 7,
       "AS7488 BSU.LEASE": 7,
+      "AS214351 Femo IT Solutions Limited": 6,
+      "AS214036 UltaHost Inc": 5,
       "AS202412 Omegatech LTD": 5,
       "AS207043 Dedik Services Limited": 5,
       "AS44382 White Label Services, LLC": 5
     },
-    "generated_at": "2026-08-19T20:54:58.719097+00:00"
+    "generated_at": "2026-08-19T21:24:42.236116+00:00"
   },
   "items": [
+    {
+      "id": "59725766a754098e",
+      "source": "URLhaus",
+      "ioc": "http://182.123.210.94:55730/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 21:21:22 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905922/",
+      "ip": "182.123.210.94",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "d8997e1387fa8b1e",
+      "source": "MalwareBazaar",
+      "ioc": "d60a5dd9baf1be9ae780136c614bd4c51a26590fa327156d80763798a85f1741",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "sh",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "sh"
+      ],
+      "first_seen": "2026-08-19 21:09:03",
+      "reference": "https://bazaar.abuse.ch/sample/d60a5dd9baf1be9ae780136c614bd4c51a26590fa327156d80763798a85f1741/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "a476499dc2d3f97c",
+      "source": "URLhaus",
+      "ioc": "http://27.37.229.46:46712/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 21:08:21 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905921/",
+      "ip": "27.37.229.46",
+      "asn": "AS17816",
+      "asn_org": "China Unicom Guangdong Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "f3c96252d03cee57",
+      "source": "URLhaus",
+      "ioc": "http://42.231.218.95:36712/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 21:07:31 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905920/",
+      "ip": "42.231.218.95",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "6740dde813d2a3d1",
+      "source": "URLhaus",
+      "ioc": "http://27.37.229.46:46712/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-19 21:06:28 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3905919/",
+      "ip": "27.37.229.46",
+      "asn": "AS17816",
+      "asn_org": "China Unicom Guangdong Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "d46a21eb79e5983a",
+      "source": "MalwareBazaar",
+      "ioc": "0ff85f5f951339f6c7e77bfca8b4075722b76c1996ffbbf6c1819f813055e406",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai"
+      ],
+      "first_seen": "2026-08-19 20:56:54",
+      "reference": "https://bazaar.abuse.ch/sample/0ff85f5f951339f6c7e77bfca8b4075722b76c1996ffbbf6c1819f813055e406/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
     {
       "id": "136811fcbd78b2a0",
       "source": "MalwareBazaar",
@@ -560,6 +693,7 @@
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx"
       ],
       "first_seen": "2026-08-19 20:29:51",
@@ -668,6 +802,7 @@
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx"
       ],
       "first_seen": "2026-08-19 20:24:04",
@@ -772,6 +907,7 @@
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx"
       ],
       "first_seen": "2026-08-19 20:17:56",
@@ -886,6 +1022,7 @@
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx"
       ],
       "first_seen": "2026-08-19 20:06:15",
@@ -1793,7 +1930,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "AgentTesla",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "AgentTesla"
       ],
@@ -1813,7 +1950,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "AgentTesla",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "AgentTesla"
       ],
@@ -2452,48 +2589,6 @@
       ],
       "first_seen": "2026-08-19 18:30:26",
       "reference": "https://bazaar.abuse.ch/sample/1e4d72fcabed4e14fcc8b2e1b6a792beb72f3077ae03f91a76d040cb0c4520c7/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "f32e208113cfff53",
-      "source": "MalwareBazaar",
-      "ioc": "c9625bc5f9206bd253bb2826153db9d1184d0f0dbf1ac86fa34a185b99f4f929",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "ps1",
-      "malware": "Formbook",
-      "confidence": 100,
-      "tags": [
-        "Formbook",
-        "ps1"
-      ],
-      "first_seen": "2026-08-19 18:28:31",
-      "reference": "https://bazaar.abuse.ch/sample/c9625bc5f9206bd253bb2826153db9d1184d0f0dbf1ac86fa34a185b99f4f929/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "09065d2feb06c772",
-      "source": "MalwareBazaar",
-      "ioc": "856d8419d52c0368f4aab3c196c8360dbbd4ba67c74d230bd7e0082b8f004f71",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "ps1",
-      "malware": "Formbook",
-      "confidence": 100,
-      "tags": [
-        "Formbook",
-        "ps1"
-      ],
-      "first_seen": "2026-08-19 18:28:28",
-      "reference": "https://bazaar.abuse.ch/sample/856d8419d52c0368f4aab3c196c8360dbbd4ba67c74d230bd7e0082b8f004f71/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -3695,7 +3790,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -3740,12 +3835,13 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "32-bit, arm, elf, Mozi",
-      "confidence": 50,
+      "malware": "32-bit, arm, elf, mirai, Mozi",
+      "confidence": 100,
       "tags": [
         "32-bit",
         "arm",
         "elf",
+        "mirai",
         "Mozi"
       ],
       "first_seen": "2026-08-19 15:27:20 UTC",
@@ -3831,7 +3927,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "Mozi"
       ],
@@ -4245,94 +4341,927 @@
       "country_code": "DE"
     },
     {
-      "id": "d282e1f6d785ed42",
-      "source": "URLhaus",
-      "ioc": "https://84.200.80.106/bin/support.client.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "84-200-80-106, connectwise, exe, ua-wget",
-      "confidence": 100,
-      "tags": [
-        "84-200-80-106",
-        "connectwise",
-        "exe",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-19 14:39:15 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905822/",
-      "ip": "84.200.80.106",
-      "asn": "AS214036",
-      "asn_org": "UltaHost Inc",
-      "country": "Germany",
-      "country_code": "DE"
-    },
-    {
-      "id": "c2b257a05b86cb7b",
-      "source": "URLhaus",
-      "ioc": "https://84.200.80.106/Bin/ScreenConnect.ClientSetup.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "84-200-80-106, connectwise, exe, ua-wget",
-      "confidence": 100,
-      "tags": [
-        "84-200-80-106",
-        "connectwise",
-        "exe",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-19 14:39:12 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905821/",
-      "ip": "84.200.80.106",
-      "asn": "AS214036",
-      "asn_org": "UltaHost Inc",
-      "country": "Germany",
-      "country_code": "DE"
-    },
-    {
-      "id": "189d03307e663d9a",
-      "source": "URLhaus",
-      "ioc": "http://62.60.226.140/files/8133118018/7hc0ffr.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "d52f85, dropped-by-amadey",
+      "id": "01e736fba417a0a1",
+      "source": "ThreatFox",
+      "ioc": "ecoterica.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
       "confidence": 50,
       "tags": [
-        "d52f85",
-        "dropped-by-amadey"
+        "SocGholish"
       ],
-      "first_seen": "2026-08-19 14:36:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905820/",
-      "ip": "62.60.226.140",
-      "asn": "AS214351",
-      "asn_org": "Femo IT Solutions Limited",
-      "country": "Germany",
-      "country_code": "DE"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882761/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
-      "id": "1143b098a96bf1b7",
-      "source": "URLhaus",
-      "ioc": "http://104.249.10.74/Bin/ScreenConnect.ClientSetup.exe",
+      "id": "91d57238729d751e",
+      "source": "ThreatFox",
+      "ioc": "chrisparrycollection.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882762/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "91efecbfbb8300f3",
+      "source": "ThreatFox",
+      "ioc": "wolfenbard.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882763/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "19d506fe6c97f501",
+      "source": "ThreatFox",
+      "ioc": "gtpsostaric.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882764/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "f15d2626fe5327dd",
+      "source": "ThreatFox",
+      "ioc": "globalgsa.net",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882765/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "8d7d94f303bf3d11",
+      "source": "ThreatFox",
+      "ioc": "eldran.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882766/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "c1f2b74becc295b1",
+      "source": "ThreatFox",
+      "ioc": "de-learn.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882767/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3938f68e4e00fc28",
+      "source": "ThreatFox",
+      "ioc": "kamalrealestate.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882768/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ed430f8a6360cd5c",
+      "source": "ThreatFox",
+      "ioc": "nagrados.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882746/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "aafb648cbd16aade",
+      "source": "ThreatFox",
+      "ioc": "minjeff.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882747/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "dd23f83d308dd23c",
+      "source": "ThreatFox",
+      "ioc": "duquai.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882748/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "bead713ded61d69d",
+      "source": "ThreatFox",
+      "ioc": "robusttechhouse.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882749/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "fa4d557283d7ecc0",
+      "source": "ThreatFox",
+      "ioc": "poppyonmain.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882750/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "a76aa11bfea04119",
+      "source": "ThreatFox",
+      "ioc": "minushead.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882751/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "269bc61162ff0ee0",
+      "source": "ThreatFox",
+      "ioc": "jacommunicationsllc.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882752/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "737c08ab05f71c38",
+      "source": "ThreatFox",
+      "ioc": "galassiastudios.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882753/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7dc50d5feef5c2d3",
+      "source": "ThreatFox",
+      "ioc": "robinmeng.net",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882754/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "782056fd85fbc11c",
+      "source": "ThreatFox",
+      "ioc": "professionalauctioneer.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882755/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "2c2897128c381230",
+      "source": "ThreatFox",
+      "ioc": "naseaonline.org",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882756/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "b17ae07c9ff15a06",
+      "source": "ThreatFox",
+      "ioc": "evenements.sudouest.fr",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882757/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "8189da8fc216aa35",
+      "source": "ThreatFox",
+      "ioc": "flyinghighaerialimagery.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882758/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "79b3c75f7c576909",
+      "source": "ThreatFox",
+      "ioc": "fitnesslearningsystems.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882759/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "2ebe6d19c82618bc",
+      "source": "ThreatFox",
+      "ioc": "finomes.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882760/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3afe177450cb1502",
+      "source": "ThreatFox",
+      "ioc": "wildcatroofingtx.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882730/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "456a6becf71e19cc",
+      "source": "ThreatFox",
+      "ioc": "akdconception.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882731/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "98bb7898f1531713",
+      "source": "ThreatFox",
+      "ioc": "learningforlifecenter.org",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882732/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "0d0435c37759b560",
+      "source": "ThreatFox",
+      "ioc": "janverborg.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882733/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7b8bb91acbf687dd",
+      "source": "ThreatFox",
+      "ioc": "exdesa.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882734/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "f062e56b9e61d6d0",
+      "source": "ThreatFox",
+      "ioc": "rvweigh.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882735/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "19d1b48fa4b55bbe",
+      "source": "ThreatFox",
+      "ioc": "planetogg.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882736/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "958c97dfb4028809",
+      "source": "ThreatFox",
+      "ioc": "pj-soft.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882737/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "d27c34f41b34e690",
+      "source": "ThreatFox",
+      "ioc": "mobel.co.za",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882738/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "68898dac6450ff9a",
+      "source": "ThreatFox",
+      "ioc": "luvexoticz.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882739/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "6bc3e865229141f4",
+      "source": "ThreatFox",
+      "ioc": "proestetic.ro",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882740/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "18c834313dd93bb8",
+      "source": "ThreatFox",
+      "ioc": "musica-stnazaire.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882741/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7076ccb15b847fdb",
+      "source": "ThreatFox",
+      "ioc": "domaine-realestate.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882742/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ed5883a42af83234",
+      "source": "ThreatFox",
+      "ioc": "martyhigh.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882743/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "b891be1e7af98418",
+      "source": "ThreatFox",
+      "ioc": "charlesbenfield.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882744/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "07da8e8cdcb04b20",
+      "source": "ThreatFox",
+      "ioc": "kemlongkidsdental.org",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882745/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "e26272a0a08de590",
+      "source": "ThreatFox",
+      "ioc": "loanology.com.au",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "FAKEUPDATES",
+      "confidence": 50,
+      "tags": [
+        "SocGholish"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882729/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "aedd27c70c37295f",
+      "source": "ThreatFox",
+      "ioc": "https://anguiano.study/api/v1/verify",
       "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "104-249-10-74, connectwise, exe, ua-wget",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "KongTuke",
       "confidence": 100,
       "tags": [
-        "104-249-10-74",
-        "connectwise",
-        "exe",
-        "ua-wget"
+        "Kongtuke"
       ],
-      "first_seen": "2026-08-19 14:35:11 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3905819/",
-      "ip": "104.249.10.74",
-      "asn": "AS214961",
-      "asn_org": "Stellar Group",
-      "country": "France",
-      "country_code": "FR"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882728/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "73cf8611a90d896d",
+      "source": "ThreatFox",
+      "ioc": "https://anguiano.study/api/v1/session",
+      "ioc_type": "url",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "KongTuke",
+      "confidence": 100,
+      "tags": [
+        "Kongtuke"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882727/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "478222a9e5015694",
+      "source": "ThreatFox",
+      "ioc": "anguiano.study",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "KongTuke",
+      "confidence": 100,
+      "tags": [
+        "Kongtuke"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882726/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "534a11a61f295918",
+      "source": "ThreatFox",
+      "ioc": "aranmap.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882724/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7a29f0e93b0065a2",
+      "source": "ThreatFox",
+      "ioc": "theta-coaching.world",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882725/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "34079629d744cc07",
+      "source": "ThreatFox",
+      "ioc": "agroindustriaadl.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "tags": [
+        "compromised",
+        "etherhide"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1882723/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "f0cc909d5cff7e02",
@@ -9534,926 +10463,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1882442/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2d06a1e68dd3f3cd",
-      "source": "ThreatFox",
-      "ioc": "obesidadydiabetes.info",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882443/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "482eebb7b3cda386",
-      "source": "ThreatFox",
-      "ioc": "ofi-med.pl",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882444/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "0a735c46abb328ad",
-      "source": "ThreatFox",
-      "ioc": "onlinetarabar.ir",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882445/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2a6e88222b7df613",
-      "source": "ThreatFox",
-      "ioc": "openmedia.ro",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882446/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "4e952c39c3a4ee20",
-      "source": "ThreatFox",
-      "ioc": "ovarquitectura.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882447/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "58fac74453efbb33",
-      "source": "ThreatFox",
-      "ioc": "oztutustekstil.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882448/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7703c6d37ee2c09d",
-      "source": "ThreatFox",
-      "ioc": "pasoapasofam.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882449/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "e2a97d2e65d7001a",
-      "source": "ThreatFox",
-      "ioc": "polepsyepernon.fr",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882450/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "5e2ff1ed7999d088",
-      "source": "ThreatFox",
-      "ioc": "rotariosjurica.org",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882451/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "32cca65e046b45ac",
-      "source": "ThreatFox",
-      "ioc": "saatavukatlikburosu.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882452/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "4c232e0822e266e5",
-      "source": "ThreatFox",
-      "ioc": "sdoffice.com.br",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882453/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "d47850178a0fad49",
-      "source": "ThreatFox",
-      "ioc": "sevtapcapan.com.tr",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882454/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "e5a3155f3283a09e",
-      "source": "ThreatFox",
-      "ioc": "shopforet.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882455/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "be406c4679f90647",
-      "source": "ThreatFox",
-      "ioc": "sibilphone.ir",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882456/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b1fac5421119e401",
-      "source": "ThreatFox",
-      "ioc": "smartheartboardgame.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882457/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "ba40d58d029130da",
-      "source": "ThreatFox",
-      "ioc": "smdrsdptk.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882458/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "860b19b70e779186",
-      "source": "ThreatFox",
-      "ioc": "social-buddha.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882459/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "6939ed93634fbeb0",
-      "source": "ThreatFox",
-      "ioc": "sonalitraders.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882460/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "0f9f83c5e8653376",
-      "source": "ThreatFox",
-      "ioc": "spiritofadventureacademy.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882461/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7f41dffe851e57d1",
-      "source": "ThreatFox",
-      "ioc": "stomatolog-rybnik.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882462/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "f1499ae07dd7471a",
-      "source": "ThreatFox",
-      "ioc": "taogyogyitoszerelem.hu",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882463/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "9f14ec94d786cc8e",
-      "source": "ThreatFox",
-      "ioc": "tarahenovin.ir",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882464/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2d65ea3c187567d5",
-      "source": "ThreatFox",
-      "ioc": "theset.co.za",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882465/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "33de67ec09eee059",
-      "source": "ThreatFox",
-      "ioc": "thesomersetlocal.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882466/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "451173a06273317f",
-      "source": "ThreatFox",
-      "ioc": "tmtweld.pl",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882467/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "138172fc1db6ae69",
-      "source": "ThreatFox",
-      "ioc": "varzeshsb.ir",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882468/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "449fc75df0b08138",
-      "source": "ThreatFox",
-      "ioc": "veryanjones.co.uk",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882469/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1e8afe9a5d0347b4",
-      "source": "ThreatFox",
-      "ioc": "www.masartech.io",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882470/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "fcb572a00df5e1a2",
-      "source": "ThreatFox",
-      "ioc": "www.mciturkiye.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882471/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "39196117d6e5ffa0",
-      "source": "ThreatFox",
-      "ioc": "www.silviozamora.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882472/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7174a60e0daeb249",
-      "source": "ThreatFox",
-      "ioc": "www.sirtakinvest.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882473/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1f519804d4cde676",
-      "source": "ThreatFox",
-      "ioc": "agendaurbanaribeira.gal",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882413/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "01b05dac35b28072",
-      "source": "ThreatFox",
-      "ioc": "almomega.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882414/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "49de311668ae06a6",
-      "source": "ThreatFox",
-      "ioc": "ankaraliyiz.com.tr",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882415/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1c6c5542075203c8",
-      "source": "ThreatFox",
-      "ioc": "avsafiyeyilmaz.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882416/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "2bb68da25f74887c",
-      "source": "ThreatFox",
-      "ioc": "cantimgiasudanang.edu.vn",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882417/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "6ab7d01928b9631c",
-      "source": "ThreatFox",
-      "ioc": "centrumprojektowcad.pl",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882418/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "99af1ad4e24c31e1",
-      "source": "ThreatFox",
-      "ioc": "drdolati.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882419/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b7cd6fa23da4adce",
-      "source": "ThreatFox",
-      "ioc": "eskisehirgulusakademisi.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882420/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "a469d9f2077877e4",
-      "source": "ThreatFox",
-      "ioc": "fixthatappliance.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882421/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "77e2a18576129bcd",
-      "source": "ThreatFox",
-      "ioc": "fordankaraservisi.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882422/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "b58a6530b36e232f",
-      "source": "ThreatFox",
-      "ioc": "gettinwittywithit.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882423/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "46eadc68e3d3d270",
-      "source": "ThreatFox",
-      "ioc": "glenchua.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882424/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "7f92f256630231c1",
-      "source": "ThreatFox",
-      "ioc": "hicarebd.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882425/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "bf83c3d78a287641",
-      "source": "ThreatFox",
-      "ioc": "imaths.ir",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882426/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "59e46a8eba160764",
-      "source": "ThreatFox",
-      "ioc": "izmirdellservisi.com",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "IClickFix",
-      "confidence": 75,
-      "tags": [
-        "ClickFix"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1882427/",
       "ip": null,
       "asn": null,
       "asn_org": null,

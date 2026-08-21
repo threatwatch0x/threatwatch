@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-21T20:24:50.986220+00:00",
+  "generated_at": "2026-08-21T20:50:05.018412+00:00",
   "stats": {
-    "total": 716,
+    "total": 717,
     "by_source": {
       "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 516
+      "ThreatFox": 517
     },
     "by_threat_type": {
       "payload": 147,
       "malware_download": 100,
-      "botnet_cc": 257,
-      "payload_delivery": 212
+      "botnet_cc": 259,
+      "payload_delivery": 211
     },
     "by_country": {
       "CN": 58,
-      "NL": 52,
+      "NL": 50,
       "US": 15,
       "FR": 12,
       "HK": 10,
@@ -26,7 +26,7 @@
       "PK": 2
     },
     "top_asns": {
-      "AS219502 FOP Danik Vyacheslav Evgenievich": 23,
+      "AS219502 FOP Danik Vyacheslav Evgenievich": 21,
       "AS62068 SpectraIP B.V.": 12,
       "AS4837 CNC Group CHINA169 Henan Province Network": 10,
       "AS7488 BSU.LEASE": 7,
@@ -37,9 +37,587 @@
       "AS202412 Omegatech LTD": 5,
       "AS4134 Chinanet": 5
     },
-    "generated_at": "2026-08-21T20:24:50.986220+00:00"
+    "generated_at": "2026-08-21T20:50:05.018412+00:00"
   },
   "items": [
+    {
+      "id": "5e5d1509814134d1",
+      "source": "MalwareBazaar",
+      "ioc": "1491f7d136cc07fe8318b41b04a9f4c69308e6a4982c28978b03c2f6360e76c0",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:49:54",
+      "reference": "https://bazaar.abuse.ch/sample/1491f7d136cc07fe8318b41b04a9f4c69308e6a4982c28978b03c2f6360e76c0/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "315bdb36bf198522",
+      "source": "MalwareBazaar",
+      "ioc": "9c026b3876ff9686640704210b5f5232725406e23c47d61e9c67684bf25b9111",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "sh",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "sh"
+      ],
+      "first_seen": "2026-08-21 20:49:53",
+      "reference": "https://bazaar.abuse.ch/sample/9c026b3876ff9686640704210b5f5232725406e23c47d61e9c67684bf25b9111/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "21856385e11d9044",
+      "source": "MalwareBazaar",
+      "ioc": "f5668337f59dd490743b552f5ba05fd7e80c81eeb06febb844d1a58f35dacf9d",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:48:27",
+      "reference": "https://bazaar.abuse.ch/sample/f5668337f59dd490743b552f5ba05fd7e80c81eeb06febb844d1a58f35dacf9d/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7f8ca015b068b3dc",
+      "source": "MalwareBazaar",
+      "ioc": "4728a75c803915b154faf750fcc33ad0af04c01b069cd4311f0f37c48b2389d7",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:48:26",
+      "reference": "https://bazaar.abuse.ch/sample/4728a75c803915b154faf750fcc33ad0af04c01b069cd4311f0f37c48b2389d7/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "84a515d0e787e419",
+      "source": "MalwareBazaar",
+      "ioc": "06051047c29ef99822421c135473ee5b0fea49389d985da8c1945bdc5edaf0a2",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "upx-dec"
+      ],
+      "first_seen": "2026-08-21 20:46:31",
+      "reference": "https://bazaar.abuse.ch/sample/06051047c29ef99822421c135473ee5b0fea49389d985da8c1945bdc5edaf0a2/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "0f50b0585eaec1fe",
+      "source": "URLhaus",
+      "ioc": "http://105.158.197.238:53233/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "2026-08-21 20:46:15 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906646/",
+      "ip": "105.158.197.238",
+      "asn": "AS36903",
+      "asn_org": "ADSL Maroc telecom",
+      "country": "Morocco",
+      "country_code": "MA"
+    },
+    {
+      "id": "811b52c5e785c03e",
+      "source": "MalwareBazaar",
+      "ioc": "c5304f9e9717c7818eed2267d437f1dbcc4d593243ebbcfcb5fdddd3ea42a3c7",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "upx"
+      ],
+      "first_seen": "2026-08-21 20:45:29",
+      "reference": "https://bazaar.abuse.ch/sample/c5304f9e9717c7818eed2267d437f1dbcc4d593243ebbcfcb5fdddd3ea42a3c7/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "af47a81163c7b2c6",
+      "source": "MalwareBazaar",
+      "ioc": "5bb5669ddb294bd250442a391f62459824367b311d2c2dad7d3ac0928e4932ab",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai"
+      ],
+      "first_seen": "2026-08-21 20:42:29",
+      "reference": "https://bazaar.abuse.ch/sample/5bb5669ddb294bd250442a391f62459824367b311d2c2dad7d3ac0928e4932ab/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "356a3a758984f0f5",
+      "source": "MalwareBazaar",
+      "ioc": "6dddbd1e7d6e2ad50cf1de691f4a9f09453e57be302f4657de9ff3c71376b645",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:42:27",
+      "reference": "https://bazaar.abuse.ch/sample/6dddbd1e7d6e2ad50cf1de691f4a9f09453e57be302f4657de9ff3c71376b645/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3b3c3648d022b084",
+      "source": "MalwareBazaar",
+      "ioc": "b89208e9349d35fdc5074837e5a17de0bbd11d91630c8a6da4e3f897d10810f2",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai",
+        "upx-dec"
+      ],
+      "first_seen": "2026-08-21 20:41:23",
+      "reference": "https://bazaar.abuse.ch/sample/b89208e9349d35fdc5074837e5a17de0bbd11d91630c8a6da4e3f897d10810f2/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "cd0cb993c388e636",
+      "source": "MalwareBazaar",
+      "ioc": "34e511ff3dc026dd04f2de64e23ffd6f5fda98e3932770fce1894a6bfc6401c3",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "upx"
+      ],
+      "first_seen": "2026-08-21 20:40:54",
+      "reference": "https://bazaar.abuse.ch/sample/34e511ff3dc026dd04f2de64e23ffd6f5fda98e3932770fce1894a6bfc6401c3/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "de15e384a50aad28",
+      "source": "MalwareBazaar",
+      "ioc": "8ccfb0fc9b89e0b4290d7e5e2642bd243aa2d6eb96cd795e31f232a849348f14",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai",
+        "upx-dec"
+      ],
+      "first_seen": "2026-08-21 20:40:28",
+      "reference": "https://bazaar.abuse.ch/sample/8ccfb0fc9b89e0b4290d7e5e2642bd243aa2d6eb96cd795e31f232a849348f14/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3d4fd48ff35bc70b",
+      "source": "MalwareBazaar",
+      "ioc": "f57b82684a289d70d97901f6629ed609b918cf53723476d1de1640cb04ac03e9",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai",
+        "upx"
+      ],
+      "first_seen": "2026-08-21 20:39:27",
+      "reference": "https://bazaar.abuse.ch/sample/f57b82684a289d70d97901f6629ed609b918cf53723476d1de1640cb04ac03e9/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "79274153aa2f7ef9",
+      "source": "MalwareBazaar",
+      "ioc": "e17e1c26f60194844cfb1fe5724c48e306733404336d1c40ebfd932f8b89fa6e",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:39:26",
+      "reference": "https://bazaar.abuse.ch/sample/e17e1c26f60194844cfb1fe5724c48e306733404336d1c40ebfd932f8b89fa6e/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "5ec3c7fb7d9ce512",
+      "source": "MalwareBazaar",
+      "ioc": "7969018477397006b1291d3079f2976abcba52df71ff72b7b4a0c47e0f438b43",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:37:31",
+      "reference": "https://bazaar.abuse.ch/sample/7969018477397006b1291d3079f2976abcba52df71ff72b7b4a0c47e0f438b43/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "190d1ca3a78a5d10",
+      "source": "MalwareBazaar",
+      "ioc": "bd08f67afdeff78db1fb6421d92e98d75020019e39dbed867a038e0f82d2cc1c",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai"
+      ],
+      "first_seen": "2026-08-21 20:37:30",
+      "reference": "https://bazaar.abuse.ch/sample/bd08f67afdeff78db1fb6421d92e98d75020019e39dbed867a038e0f82d2cc1c/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "b1cb2dd98ae584a7",
+      "source": "MalwareBazaar",
+      "ioc": "f9d2a610e6d0a046e9d3b971b610accb70ec16731166660ef0607db9b9c1bef6",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:35:51",
+      "reference": "https://bazaar.abuse.ch/sample/f9d2a610e6d0a046e9d3b971b610accb70ec16731166660ef0607db9b9c1bef6/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "69edf551e2d3ce6e",
+      "source": "MalwareBazaar",
+      "ioc": "7508e05a43ca9a8000f243c977935ceb55aefe86b0475c904e8411d8e1e1334f",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai",
+        "upx-dec"
+      ],
+      "first_seen": "2026-08-21 20:35:34",
+      "reference": "https://bazaar.abuse.ch/sample/7508e05a43ca9a8000f243c977935ceb55aefe86b0475c904e8411d8e1e1334f/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "186d8cb70e8eb984",
+      "source": "MalwareBazaar",
+      "ioc": "2c3bac53bb98ce59ef40cb0e348b524aa32c7c3497d33feda98675d0135bc313",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai",
+        "upx"
+      ],
+      "first_seen": "2026-08-21 20:34:25",
+      "reference": "https://bazaar.abuse.ch/sample/2c3bac53bb98ce59ef40cb0e348b524aa32c7c3497d33feda98675d0135bc313/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "908f80852a8eaf55",
+      "source": "MalwareBazaar",
+      "ioc": "222f81da3c290de998ef508a2f484c76c1a848322362f43d6338ca922019744a",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:30:48",
+      "reference": "https://bazaar.abuse.ch/sample/222f81da3c290de998ef508a2f484c76c1a848322362f43d6338ca922019744a/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "cf442799c11e5064",
+      "source": "MalwareBazaar",
+      "ioc": "b5ab11dfc13305132e880b6ef9c7ae0b7e77c0926fdc77940b56a8382e5ff23a",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:30:47",
+      "reference": "https://bazaar.abuse.ch/sample/b5ab11dfc13305132e880b6ef9c7ae0b7e77c0926fdc77940b56a8382e5ff23a/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "8a057721b89dda87",
+      "source": "URLhaus",
+      "ioc": "https://mon-blanc-04.cfd/installer.exe",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "974b6b4ed30ddaa4b6f4ec27976e52d8, dropped-by-remus, rustystealer",
+      "confidence": 100,
+      "tags": [
+        "974b6b4ed30ddaa4b6f4ec27976e52d8",
+        "dropped-by-remus",
+        "rustystealer"
+      ],
+      "first_seen": "2026-08-21 20:29:10 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906645/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7facbe449f5f4419",
+      "source": "MalwareBazaar",
+      "ioc": "cbfb130de9c46cad99bc8ac1888f6993d5d0adf70853a90766c68244be44b75c",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "RustyStealer",
+      "confidence": 100,
+      "tags": [
+        "974b6b4ed30ddaa4b6f4ec27976e52d8",
+        "dropped-by-remus",
+        "exe",
+        "RustyStealer"
+      ],
+      "first_seen": "2026-08-21 20:28:48",
+      "reference": "https://bazaar.abuse.ch/sample/cbfb130de9c46cad99bc8ac1888f6993d5d0adf70853a90766c68244be44b75c/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "cc931a1dba550511",
+      "source": "MalwareBazaar",
+      "ioc": "8fb12b6ba01b0aa0f5950ff6bd8de15a7aab8b58f3c33088d32e45a7dfaf3ef0",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:28:41",
+      "reference": "https://bazaar.abuse.ch/sample/8fb12b6ba01b0aa0f5950ff6bd8de15a7aab8b58f3c33088d32e45a7dfaf3ef0/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "d94f1901063484f4",
+      "source": "MalwareBazaar",
+      "ioc": "a87170a81fc6344c298fc26421d051c4b8bdba6ab95b2f83858c17b90a9e0e9d",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:28:39",
+      "reference": "https://bazaar.abuse.ch/sample/a87170a81fc6344c298fc26421d051c4b8bdba6ab95b2f83858c17b90a9e0e9d/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "457d267c3b5600dc",
+      "source": "MalwareBazaar",
+      "ioc": "ef26ff7fa66425a55d18895e6798023d596c9324d9170f858c6396a157d3a3ff",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:28:38",
+      "reference": "https://bazaar.abuse.ch/sample/ef26ff7fa66425a55d18895e6798023d596c9324d9170f858c6396a157d3a3ff/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "0caa0d8934ad4651",
+      "source": "MalwareBazaar",
+      "ioc": "cbcab827c5fc2664cea06234d52f57da8d6b0c015a738c3102ff4a20af5570e8",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:28:36",
+      "reference": "https://bazaar.abuse.ch/sample/cbcab827c5fc2664cea06234d52f57da8d6b0c015a738c3102ff4a20af5570e8/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "bbb62fa570db8f20",
+      "source": "MalwareBazaar",
+      "ioc": "3d1e46e2a0dd560a70b22709df9325242a1166c2d10a8ea4e79bf6d35cf3a693",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "elf"
+      ],
+      "first_seen": "2026-08-21 20:24:48",
+      "reference": "https://bazaar.abuse.ch/sample/3d1e46e2a0dd560a70b22709df9325242a1166c2d10a8ea4e79bf6d35cf3a693/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
     {
       "id": "14650758d1a5ab00",
       "source": "MalwareBazaar",
@@ -127,9 +705,11 @@
       "ioc_type": "url",
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "malware": "Mozi",
       "confidence": 100,
-      "tags": [],
+      "tags": [
+        "Mozi"
+      ],
       "first_seen": "2026-08-21 20:21:07 UTC",
       "reference": "https://urlhaus.abuse.ch/url/3906644/",
       "ip": "123.8.162.45",
@@ -460,6 +1040,7 @@
       "confidence": 100,
       "tags": [
         "elf",
+        "Mirai",
         "upx"
       ],
       "first_seen": "2026-08-21 20:03:32",
@@ -685,7 +1266,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "6efb1e0ab361cda1dd534e37e543789c, dropped-by-remus",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "6efb1e0ab361cda1dd534e37e543789c",
         "dropped-by-remus"
@@ -2145,7 +2726,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, arm, elf, mirai, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "arm",
@@ -2264,7 +2845,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, arm, elf, mirai, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "arm",
@@ -2279,26 +2860,6 @@
       "asn_org": "Chinanet",
       "country": "China",
       "country_code": "CN"
-    },
-    {
-      "id": "bc450ac661501228",
-      "source": "MalwareBazaar",
-      "ioc": "c5ab38a8ac4c08eacb69b618398b2c13ceced91a37295fb1808401c473ebec34",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "sh",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "sh"
-      ],
-      "first_seen": "2026-08-21 14:10:44",
-      "reference": "https://bazaar.abuse.ch/sample/c5ab38a8ac4c08eacb69b618398b2c13ceced91a37295fb1808401c473ebec34/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     },
     {
       "id": "f3ede82113445aa0",
@@ -2322,46 +2883,6 @@
       "asn_org": "CNC Group CHINA169 Henan Province Network",
       "country": "China",
       "country_code": "CN"
-    },
-    {
-      "id": "79e83e13c9c0ef10",
-      "source": "MalwareBazaar",
-      "ioc": "ad6bdecf5f0241d8e2c919d613065ed6f202a4a77fc2058332aeebdc633c2235",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "sh",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "sh"
-      ],
-      "first_seen": "2026-08-21 14:04:30",
-      "reference": "https://bazaar.abuse.ch/sample/ad6bdecf5f0241d8e2c919d613065ed6f202a4a77fc2058332aeebdc633c2235/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "52bdb36763171aa7",
-      "source": "MalwareBazaar",
-      "ioc": "98ee8e1ced7b8174173a456490a683c04090048777ace8ec6d5de5273046cbf7",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "sh",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "sh"
-      ],
-      "first_seen": "2026-08-21 14:02:32",
-      "reference": "https://bazaar.abuse.ch/sample/98ee8e1ced7b8174173a456490a683c04090048777ace8ec6d5de5273046cbf7/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     },
     {
       "id": "3b5b520e8817d923",
@@ -2406,142 +2927,6 @@
       "country_code": "CN"
     },
     {
-      "id": "2965c29b149b997f",
-      "source": "MalwareBazaar",
-      "ioc": "f98e93275c5ae395f4dd14e759ba7293c0c05b10b43d1dfef887fe9b0d44150c",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 14:01:02",
-      "reference": "https://bazaar.abuse.ch/sample/f98e93275c5ae395f4dd14e759ba7293c0c05b10b43d1dfef887fe9b0d44150c/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "c1f5ee0f3b36783f",
-      "source": "MalwareBazaar",
-      "ioc": "96b493a9b4370f0ab27f10d084cbd640a13e460c86c2954e7f0b0c39df1d16b1",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "unknown",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "Efimer"
-      ],
-      "first_seen": "2026-08-21 13:52:13",
-      "reference": "https://bazaar.abuse.ch/sample/96b493a9b4370f0ab27f10d084cbd640a13e460c86c2954e7f0b0c39df1d16b1/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "07844908ca9f39c8",
-      "source": "MalwareBazaar",
-      "ioc": "22ca93f691d342cbf50165e97503d80911fa78343005896fbf0a40b5f8f29dac",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 13:51:05",
-      "reference": "https://bazaar.abuse.ch/sample/22ca93f691d342cbf50165e97503d80911fa78343005896fbf0a40b5f8f29dac/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "72594ac2ea4644a5",
-      "source": "MalwareBazaar",
-      "ioc": "52eab3b8a7fc2f62dd67068419b87b871fc2d77b947ab3228fc4f016a4543d11",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 13:50:59",
-      "reference": "https://bazaar.abuse.ch/sample/52eab3b8a7fc2f62dd67068419b87b871fc2d77b947ab3228fc4f016a4543d11/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "e017a014893ebf08",
-      "source": "MalwareBazaar",
-      "ioc": "19695b21ffdf08bd5764cb6ba35d80f8376bdf9bc38baf54f64ac98a0e9335af",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 13:46:07",
-      "reference": "https://bazaar.abuse.ch/sample/19695b21ffdf08bd5764cb6ba35d80f8376bdf9bc38baf54f64ac98a0e9335af/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "1f4b63308450da89",
-      "source": "MalwareBazaar",
-      "ioc": "7270a65f0be70dc8d3750ad6e230436188304641c03fb2aad8b30022024fa119",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 13:46:01",
-      "reference": "https://bazaar.abuse.ch/sample/7270a65f0be70dc8d3750ad6e230436188304641c03fb2aad8b30022024fa119/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "898792c829aeec30",
       "source": "URLhaus",
       "ioc": "http://115.194.179.106:52016/bin.sh",
@@ -2564,94 +2949,6 @@
       "asn_org": "Chinanet",
       "country": "China",
       "country_code": "CN"
-    },
-    {
-      "id": "0422a1f47aa18094",
-      "source": "MalwareBazaar",
-      "ioc": "5b896138d41d4662a93a7ebaf6e15cebdc5a2850e9343da05c2ab1862ec31a3f",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "dll",
-      "malware": "ValleyRAT",
-      "confidence": 100,
-      "tags": [
-        "dll",
-        "RAT",
-        "ValleyRAT"
-      ],
-      "first_seen": "2026-08-21 13:45:18",
-      "reference": "https://bazaar.abuse.ch/sample/5b896138d41d4662a93a7ebaf6e15cebdc5a2850e9343da05c2ab1862ec31a3f/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "46945e1818007d72",
-      "source": "MalwareBazaar",
-      "ioc": "1c35bb9e30c7b7b2a8f468de3562c8120bb284613465bf71a644a328e09e2f8d",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "sh",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "sh"
-      ],
-      "first_seen": "2026-08-21 13:43:35",
-      "reference": "https://bazaar.abuse.ch/sample/1c35bb9e30c7b7b2a8f468de3562c8120bb284613465bf71a644a328e09e2f8d/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "a4e47244f11382b4",
-      "source": "MalwareBazaar",
-      "ioc": "0b5deaf2954f3b87b6a21a886f59a41267541429e5164b2a374b6915c975c81f",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 13:41:34",
-      "reference": "https://bazaar.abuse.ch/sample/0b5deaf2954f3b87b6a21a886f59a41267541429e5164b2a374b6915c975c81f/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "f9273e426545fd9d",
-      "source": "MalwareBazaar",
-      "ioc": "ca40b2d13e014984d5c20369382afb36589072b0bf27a8229ecfad94d63f01b6",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 13:41:28",
-      "reference": "https://bazaar.abuse.ch/sample/ca40b2d13e014984d5c20369382afb36589072b0bf27a8229ecfad94d63f01b6/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     },
     {
       "id": "5a81e96ec2c2bb69",
@@ -2700,28 +2997,6 @@
       "country_code": "CN"
     },
     {
-      "id": "8fe18d965c5b607f",
-      "source": "MalwareBazaar",
-      "ioc": "85ad0b4124b657a35a01d820fff4325f5c4c3ceb60615ad54c4a0ddbcadd590c",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "DCRat",
-      "confidence": 100,
-      "tags": [
-        "DCRat",
-        "exe",
-        "RAT"
-      ],
-      "first_seen": "2026-08-21 13:35:06",
-      "reference": "https://bazaar.abuse.ch/sample/85ad0b4124b657a35a01d820fff4325f5c4c3ceb60615ad54c4a0ddbcadd590c/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "80a01066b5cfa36d",
       "source": "URLhaus",
       "ioc": "http://46.236.65.230:33052/i",
@@ -2766,51 +3041,6 @@
       "asn_org": "Bredband2",
       "country": "Sweden",
       "country_code": "SE"
-    },
-    {
-      "id": "554e615ac163fbe7",
-      "source": "MalwareBazaar",
-      "ioc": "431c0c23733381e927f9eeebd3b48eb3ad26df5aa381f55789d91772f7d804c0",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 13:26:02",
-      "reference": "https://bazaar.abuse.ch/sample/431c0c23733381e927f9eeebd3b48eb3ad26df5aa381f55789d91772f7d804c0/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "541c3f969df785fa",
-      "source": "MalwareBazaar",
-      "ioc": "82219b5a553e738d112f284da60fe7ba91b34d368dc3d155e6d6af6386711304",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "dll",
-      "malware": "ValleyRAT",
-      "confidence": 100,
-      "tags": [
-        "dll",
-        "RAT",
-        "ValleyRAT"
-      ],
-      "first_seen": "2026-08-21 13:20:08",
-      "reference": "https://bazaar.abuse.ch/sample/82219b5a553e738d112f284da60fe7ba91b34d368dc3d155e6d6af6386711304/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     },
     {
       "id": "1977070f73a5db3b",
@@ -2882,93 +3112,6 @@
       "country_code": "CN"
     },
     {
-      "id": "825c12aa923b8476",
-      "source": "MalwareBazaar",
-      "ioc": "30369de49e7a6afafaa7707088d6e2abdcf95ec57b729ff25f525011a5d25ad1",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "Mirai"
-      ],
-      "first_seen": "2026-08-21 13:00:21",
-      "reference": "https://bazaar.abuse.ch/sample/30369de49e7a6afafaa7707088d6e2abdcf95ec57b729ff25f525011a5d25ad1/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "6d3ebb70928c6157",
-      "source": "MalwareBazaar",
-      "ioc": "fecfd59e63c518834a601e32e782390f88c9749dcf1460c94a687d766c757718",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "CoinMiner",
-      "confidence": 100,
-      "tags": [
-        "CoinMiner",
-        "dropped-by-phorpiex",
-        "exe"
-      ],
-      "first_seen": "2026-08-21 12:55:39",
-      "reference": "https://bazaar.abuse.ch/sample/fecfd59e63c518834a601e32e782390f88c9749dcf1460c94a687d766c757718/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "f0c94cc84479ee1b",
-      "source": "MalwareBazaar",
-      "ioc": "19d2a10da88e962d187915a90e74e87dd30d385daa015c830a8bafb50b2c0bae",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "unknown",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "ClickFix",
-        "Efimer"
-      ],
-      "first_seen": "2026-08-21 12:52:13",
-      "reference": "https://bazaar.abuse.ch/sample/19d2a10da88e962d187915a90e74e87dd30d385daa015c830a8bafb50b2c0bae/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "00cfc287fbb87cac",
-      "source": "MalwareBazaar",
-      "ioc": "ae2ea23bf77f28d657af0f47d95148419de1ee37812504d61cac0c36dc38e701",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "RemusStealer",
-      "confidence": 100,
-      "tags": [
-        "dropped-by-OffLoader",
-        "exe",
-        "GCleaner",
-        "RemusStealer"
-      ],
-      "first_seen": "2026-08-21 12:52:06",
-      "reference": "https://bazaar.abuse.ch/sample/ae2ea23bf77f28d657af0f47d95148419de1ee37812504d61cac0c36dc38e701/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "398170427199988b",
       "source": "URLhaus",
       "ioc": "http://59.180.144.211:51836/bin.sh",
@@ -2987,50 +3130,6 @@
       "asn_org": "MTNL Mumbai",
       "country": "India",
       "country_code": "IN"
-    },
-    {
-      "id": "36644468cc1ba79d",
-      "source": "MalwareBazaar",
-      "ioc": "481f06563e0e63e5046ccb4549624e0df00ad8d80eb9a2b59d4af97bf6cd1412",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "exe",
-        "Mirai",
-        "whack.sh"
-      ],
-      "first_seen": "2026-08-21 12:51:07",
-      "reference": "https://bazaar.abuse.ch/sample/481f06563e0e63e5046ccb4549624e0df00ad8d80eb9a2b59d4af97bf6cd1412/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "34dcb7b1eb3e44c8",
-      "source": "MalwareBazaar",
-      "ioc": "fd7182f1cb5d62db33658e8c7cbedcc8fa08b279d37ad22b8edde310e0e9107c",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "Mirai"
-      ],
-      "first_seen": "2026-08-21 12:49:32",
-      "reference": "https://bazaar.abuse.ch/sample/fd7182f1cb5d62db33658e8c7cbedcc8fa08b279d37ad22b8edde310e0e9107c/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     },
     {
       "id": "d9949c3d4e3e7f86",
@@ -3119,75 +3218,6 @@
       "country_code": "CN"
     },
     {
-      "id": "60a65b5405dbe5e4",
-      "source": "MalwareBazaar",
-      "ioc": "0299c02d7a8f75eff82dc8de30997b3f81ce887efa8b75a96315a49c0b70975f",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "exe",
-        "SilverFox",
-        "Trojan/SilverFox.bg[qtsc]",
-        "ValleyRAT"
-      ],
-      "first_seen": "2026-08-21 12:25:12",
-      "reference": "https://bazaar.abuse.ch/sample/0299c02d7a8f75eff82dc8de30997b3f81ce887efa8b75a96315a49c0b70975f/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "15ac6a119c0b69b2",
-      "source": "MalwareBazaar",
-      "ioc": "0dfb74014c60e953d505c76ab981c55f90ab42f2ced57f34e4fa18cd69f83b99",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "exe",
-        "SilverFox",
-        "Trojan/SilverFox.bg[qtsc]",
-        "ValleyRAT"
-      ],
-      "first_seen": "2026-08-21 12:23:50",
-      "reference": "https://bazaar.abuse.ch/sample/0dfb74014c60e953d505c76ab981c55f90ab42f2ced57f34e4fa18cd69f83b99/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "30a49d4584e93cca",
-      "source": "MalwareBazaar",
-      "ioc": "e9d0b90379f9b64634720a9b1a6bf719a725f671b790bb65e340e0658cb516de",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "ValleyRAT",
-      "confidence": 100,
-      "tags": [
-        "exe",
-        "SilverFox",
-        "Trojan/SilverFox.sx",
-        "ValleyRAT"
-      ],
-      "first_seen": "2026-08-21 12:22:58",
-      "reference": "https://bazaar.abuse.ch/sample/e9d0b90379f9b64634720a9b1a6bf719a725f671b790bb65e340e0658cb516de/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "c4a30468649e57e5",
       "source": "URLhaus",
       "ioc": "http://163.142.94.220:54475/i",
@@ -3252,27 +3282,6 @@
       "asn_org": "Chinanet YN",
       "country": "China",
       "country_code": "CN"
-    },
-    {
-      "id": "d4be09f8b0af2918",
-      "source": "MalwareBazaar",
-      "ioc": "fd49082c1a601650525c3497fa5c10bad187a3862ebe371720658fa6f658e777",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "Mirai"
-      ],
-      "first_seen": "2026-08-21 12:07:20",
-      "reference": "https://bazaar.abuse.ch/sample/fd49082c1a601650525c3497fa5c10bad187a3862ebe371720658fa6f658e777/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     },
     {
       "id": "666b5e521991a9bd",
@@ -3820,7 +3829,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "elf, mips, Mozi, ua-wget",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "elf",
         "mips",
@@ -4340,50 +4349,44 @@
       "country_code": "NL"
     },
     {
-      "id": "bfbf234d12913971",
-      "source": "URLhaus",
-      "ioc": "http://94.154.43.181/bot.mips",
+      "id": "686c7d29f24850d2",
+      "source": "ThreatFox",
+      "ioc": "http://vexdico.shop:8539/videos",
       "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "94-154-43-181, elf, mirai, ua-wget",
-      "confidence": 100,
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Remus",
+      "confidence": 75,
       "tags": [
-        "94-154-43-181",
-        "elf",
-        "mirai",
-        "ua-wget"
+        "Remus"
       ],
-      "first_seen": "2026-08-21 11:28:21 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906538/",
-      "ip": "94.154.43.181",
-      "asn": "AS219502",
-      "asn_org": "FOP Danik Vyacheslav Evgenievich",
-      "country": "The Netherlands",
-      "country_code": "NL"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1883971/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
-      "id": "90ca072a2d96b738",
-      "source": "URLhaus",
-      "ioc": "http://94.154.43.181/bot.x86_64",
+      "id": "d9132946efd3d7b4",
+      "source": "ThreatFox",
+      "ioc": "http://kupzovo.shop:7567/payments",
       "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "94-154-43-181, elf, mirai, ua-wget",
-      "confidence": 100,
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Remus",
+      "confidence": 75,
       "tags": [
-        "94-154-43-181",
-        "elf",
-        "mirai",
-        "ua-wget"
+        "Remus"
       ],
-      "first_seen": "2026-08-21 11:28:21 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906539/",
-      "ip": "94.154.43.181",
-      "asn": "AS219502",
-      "asn_org": "FOP Danik Vyacheslav Evgenievich",
-      "country": "The Netherlands",
-      "country_code": "NL"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1883970/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "8ccc32168574c402",
@@ -10521,46 +10524,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1883671/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "cc1011ec067928b3",
-      "source": "ThreatFox",
-      "ioc": "https://zaf.11gokil.org/",
-      "ioc_type": "url",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Vidar",
-      "confidence": 100,
-      "tags": [
-        "Vidar"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1883672/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "29ab53d4536ba924",
-      "source": "ThreatFox",
-      "ioc": "https://tax.sm188dnsx.top/",
-      "ioc_type": "url",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Vidar",
-      "confidence": 100,
-      "tags": [
-        "Vidar"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1883667/",
       "ip": null,
       "asn": null,
       "asn_org": null,

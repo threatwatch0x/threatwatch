@@ -1,45 +1,225 @@
 {
-  "generated_at": "2026-08-22T11:20:10.237283+00:00",
+  "generated_at": "2026-08-22T11:45:25.570555+00:00",
   "stats": {
-    "total": 1007,
+    "total": 1011,
     "by_source": {
       "MalwareBazaar": 100,
       "URLhaus": 100,
-      "ThreatFox": 807
+      "ThreatFox": 811
     },
     "by_threat_type": {
       "payload": 429,
       "malware_download": 100,
-      "botnet_cc": 272,
-      "payload_delivery": 206
+      "botnet_cc": 274,
+      "payload_delivery": 208
     },
     "by_country": {
-      "CN": 58,
+      "CN": 59,
       "NL": 41,
       "US": 9,
-      "FR": 7,
       "HK": 6,
       "DE": 6,
       "RU": 5,
+      "FR": 4,
       "SI": 4,
-      "PK": 3,
+      "SG": 2,
       "IL": 2
     },
     "top_asns": {
       "AS62068 SpectraIP B.V.": 36,
-      "AS4837 CNC Group CHINA169 Henan Province Network": 12,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 13,
       "AS45090 Tencent Cloud Computing (Beijing) Co., Ltd": 10,
-      "AS4837 China Unicom Henan Province Network": 8,
-      "AS4837 China Unicom Liaoning Province Network": 7,
+      "AS4837 China Unicom Henan Province Network": 9,
+      "AS4837 China Unicom Liaoning Province Network": 6,
       "AS56046 China Mobile": 4,
-      "AS4837 CNC Group CHINA169 Liaoning Province Network": 4,
       "AS197769 VPS Dedicated LLC": 4,
       "AS55933 VH Global Limited": 4,
-      "AS399486 Virtuo Networks France SAS": 3
+      "AS4837 CNC Group CHINA169 Liaoning Province Network": 3,
+      "AS214961 Individual entrepreneur Dyachenko Valentina Ivanovna": 3
     },
-    "generated_at": "2026-08-22T11:20:10.237283+00:00"
+    "generated_at": "2026-08-22T11:45:25.570555+00:00"
   },
   "items": [
+    {
+      "id": "bf45d5cba003d212",
+      "source": "MalwareBazaar",
+      "ioc": "f21f40790351316ca82f1a5f343e24afb202d9e85f52dbadca6f807c5d8bec70",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "exe"
+      ],
+      "first_seen": "2026-08-22 11:43:53",
+      "reference": "https://bazaar.abuse.ch/sample/f21f40790351316ca82f1a5f343e24afb202d9e85f52dbadca6f807c5d8bec70/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "5db57f7e03c387f1",
+      "source": "URLhaus",
+      "ioc": "http://182.127.168.179:52810/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-22 11:37:12 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906947/",
+      "ip": "182.127.168.179",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "14ea429b3561850a",
+      "source": "URLhaus",
+      "ioc": "https://deliverymailreport.co.za/img_043051.png",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "rat, RemcosRAT",
+      "confidence": 100,
+      "tags": [
+        "rat",
+        "RemcosRAT"
+      ],
+      "first_seen": "2026-08-22 11:25:12 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906946/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "238f366dad0e87e8",
+      "source": "URLhaus",
+      "ioc": "https://deliverymailreport.co.za/img_003735.png",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "2026-08-22 11:24:12 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906944/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ecaa41c07c102174",
+      "source": "URLhaus",
+      "ioc": "https://deliverymailreport.co.za/img_003940.png",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "2026-08-22 11:24:12 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906945/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "e998dd8104221d8f",
+      "source": "URLhaus",
+      "ioc": "https://deliverymailreport.co.za/img_043509.png",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "2026-08-22 11:23:14 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906943/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "dd960f9b79754092",
+      "source": "URLhaus",
+      "ioc": "https://deliverymailreport.co.za/MSI_PRO.png",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "rat, RemcosRAT",
+      "confidence": 100,
+      "tags": [
+        "rat",
+        "RemcosRAT"
+      ],
+      "first_seen": "2026-08-22 11:23:12 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906942/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "af6e265b91cb607c",
+      "source": "URLhaus",
+      "ioc": "https://deliverymailreport.co.za/img_043346.png",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "rat, RemcosRAT",
+      "confidence": 100,
+      "tags": [
+        "rat",
+        "RemcosRAT"
+      ],
+      "first_seen": "2026-08-22 11:23:11 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906941/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "f8e97d9aa0d13fd6",
+      "source": "URLhaus",
+      "ioc": "http://61.53.123.190:47054/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Mozi",
+      "confidence": 100,
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-22 11:22:06 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3906940/",
+      "ip": "61.53.123.190",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
     {
       "id": "6152b24830318637",
       "source": "MalwareBazaar",
@@ -47,9 +227,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "vbe",
-      "malware": "Unknown",
+      "malware": "Formbook",
       "confidence": 100,
       "tags": [
+        "Formbook",
         "vbe"
       ],
       "first_seen": "2026-08-22 11:14:51",
@@ -173,10 +354,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-22 11:13:25",
       "reference": "https://bazaar.abuse.ch/sample/db24a5d663e5610ef9ef9af63bc2d74a76676a1e913255766c6186cea4eb93a7/",
@@ -213,9 +395,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "Formbook",
       "confidence": 100,
       "tags": [
+        "Formbook",
         "js"
       ],
       "first_seen": "2026-08-22 11:13:17",
@@ -339,9 +522,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "Formbook",
       "confidence": 100,
       "tags": [
+        "Formbook",
         "js"
       ],
       "first_seen": "2026-08-22 11:12:09",
@@ -399,10 +583,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "MassLogger",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "MassLogger"
       ],
       "first_seen": "2026-08-22 11:12:00",
       "reference": "https://bazaar.abuse.ch/sample/f794036bb19b2c3880020071c559a1ae4879a7f8c6bf251b12ad6e662ee5c6f1/",
@@ -419,10 +604,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "XWorm",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "XWorm"
       ],
       "first_seen": "2026-08-22 11:11:35",
       "reference": "https://bazaar.abuse.ch/sample/97a35cf451a8a0174b5773ce8349e41323251a62ca254ede4f92db9c44ac9656/",
@@ -460,9 +646,10 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "AsyncRAT",
       "confidence": 100,
       "tags": [
+        "AsyncRAT",
         "js"
       ],
       "first_seen": "2026-08-22 11:11:17",
@@ -480,10 +667,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-22 11:11:14",
       "reference": "https://bazaar.abuse.ch/sample/8269329f3e039a5a9be71e1da551631ca9bfaf9789b174bcd48aa3265db32a44/",
@@ -521,10 +709,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-22 11:11:08",
       "reference": "https://bazaar.abuse.ch/sample/4d4d7060d42e3af469334e5edc72faf6f2112f66eaaf8ef8c84428b728caac07/",
@@ -541,10 +730,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-22 11:11:06",
       "reference": "https://bazaar.abuse.ch/sample/5bb8708fbbe90aef30743bb0d2e8a0ca4e7de1c208c2eae49a076ce1891b7753/",
@@ -561,10 +751,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-22 11:11:05",
       "reference": "https://bazaar.abuse.ch/sample/7df7a7cf2e7cf5e29a1526cc55ee3885bd86354def46fc198c43ab6732f270ea/",
@@ -644,10 +835,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-22 11:10:47",
       "reference": "https://bazaar.abuse.ch/sample/2723ad931713fed865e1434a01b6c2b4815941d561b0bc7c72e3116fb54094de/",
@@ -664,10 +856,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "LxBaseRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "LxBaseRAT"
       ],
       "first_seen": "2026-08-22 11:10:45",
       "reference": "https://bazaar.abuse.ch/sample/c72b068a373a355c85590ed296395d21559cd3841acfb4f372d453ccc6ac0097/",
@@ -705,10 +898,11 @@
       "ioc_type": "sha256_hash",
       "threat_type": "payload",
       "threat_type_description": "js",
-      "malware": "Unknown",
+      "malware": "RemcosRAT",
       "confidence": 100,
       "tags": [
-        "js"
+        "js",
+        "RemcosRAT"
       ],
       "first_seen": "2026-08-22 11:10:26",
       "reference": "https://bazaar.abuse.ch/sample/70104e137ae9052e19695a023252f50c4d9ce7098852a979b010a38611f3042a/",
@@ -2791,158 +2985,6 @@
       "country_code": "CN"
     },
     {
-      "id": "7e7a366970451594",
-      "source": "URLhaus",
-      "ioc": "http://193.163.187.73:41788/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "mirai",
-      "confidence": 100,
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-08-22 10:01:19 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906865/",
-      "ip": "193.163.187.73",
-      "asn": "AS211356",
-      "asn_org": "MyTv-Alb SH.P.K",
-      "country": "Albania",
-      "country_code": "AL"
-    },
-    {
-      "id": "edd69f21e88d89a4",
-      "source": "URLhaus",
-      "ioc": "http://42.177.182.116:42583/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-08-22 10:01:18 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906846/",
-      "ip": "42.177.182.116",
-      "asn": "AS4837",
-      "asn_org": "China Unicom Liaoning Province Network",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "e5e16747936ae72f",
-      "source": "URLhaus",
-      "ioc": "http://203.101.187.14:53741/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Mozi",
-      "confidence": 100,
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-22 10:01:17 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906845/",
-      "ip": "203.101.187.14",
-      "asn": "AS9541",
-      "asn_org": "Broadband Services",
-      "country": "Pakistan",
-      "country_code": "PK"
-    },
-    {
-      "id": "42dbbac715880bd7",
-      "source": "URLhaus",
-      "ioc": "http://112.248.189.106:45073/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Mozi",
-      "confidence": 100,
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-22 10:00:38 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906844/",
-      "ip": "112.248.189.106",
-      "asn": "AS4837",
-      "asn_org": "China Unicom CHINA169 Shandong Province Network",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "b522b53136480881",
-      "source": "URLhaus",
-      "ioc": "http://113.239.116.131:52454/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
-      "confidence": 50,
-      "tags": [],
-      "first_seen": "2026-08-22 10:00:29 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906843/",
-      "ip": "113.239.116.131",
-      "asn": "AS4837",
-      "asn_org": "CNC Group CHINA169 Liaoning Province Network",
-      "country": "China",
-      "country_code": "CN"
-    },
-    {
-      "id": "8a88da0b6da0e64c",
-      "source": "URLhaus",
-      "ioc": "http://194.59.30.63:56439/b/amd64",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-08-22 10:00:16 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906839/",
-      "ip": "194.59.30.63",
-      "asn": "AS399486",
-      "asn_org": "Virtuo Networks France SAS",
-      "country": "France",
-      "country_code": "FR"
-    },
-    {
-      "id": "df08999722124be9",
-      "source": "URLhaus",
-      "ioc": "http://194.59.30.63:56439/b/kswpad",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "BillGates",
-      "confidence": 100,
-      "tags": [
-        "BillGates"
-      ],
-      "first_seen": "2026-08-22 10:00:16 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906840/",
-      "ip": "194.59.30.63",
-      "asn": "AS399486",
-      "asn_org": "Virtuo Networks France SAS",
-      "country": "France",
-      "country_code": "FR"
-    },
-    {
-      "id": "8fb5f1f3eab50bcd",
-      "source": "URLhaus",
-      "ioc": "http://194.59.30.63:56439/b/linux",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-08-22 10:00:16 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906841/",
-      "ip": "194.59.30.63",
-      "asn": "AS399486",
-      "asn_org": "Virtuo Networks France SAS",
-      "country": "France",
-      "country_code": "FR"
-    },
-    {
       "id": "c0b5c09b4ad2a100",
       "source": "MalwareBazaar",
       "ioc": "0638be794bcc72c65d713483753dfd9b67a0af6095c90e0437c4e164a0eb0ec9",
@@ -4082,19 +4124,124 @@
       "country_code": null
     },
     {
-      "id": "03df727dd79e8750",
-      "source": "MalwareBazaar",
-      "ioc": "b90640b392827b4f2d280f6cf67860862953331917d42df23e1653a92f2f98ad",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Unknown",
+      "id": "354357d652d23a89",
+      "source": "ThreatFox",
+      "ioc": "harp.poconodessertco.com",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "elf"
+        "ClearFake",
+        "ClickFix",
+        "etherhiding"
       ],
-      "first_seen": "2026-08-22 02:03:52",
-      "reference": "https://bazaar.abuse.ch/sample/b90640b392827b4f2d280f6cf67860862953331917d42df23e1653a92f2f98ad/",
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1884593/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "cea2a69b62270660",
+      "source": "ThreatFox",
+      "ioc": "cat.jumpskyhigh.com",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "ClickFix",
+        "etherhiding"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1884592/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "12ce97140b2ef958",
+      "source": "ThreatFox",
+      "ioc": "6zhtzixq.en-en-us-geniusbrainsignal.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "ClearFake",
+        "mac-0x0f14",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1884591/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "843d87f572d3a10c",
+      "source": "ThreatFox",
+      "ioc": "en-en-us-geniusbrainsignal.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "tags": [
+        "22August2026",
+        "ClearFake",
+        "Commandline",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1884590/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "3e6467a8e297a726",
+      "source": "ThreatFox",
+      "ioc": "report.pantrystudio18.lol",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1884589/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "43e95d041cc16f54",
+      "source": "ThreatFox",
+      "ioc": "hoanzawojux.lol",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 100,
+      "tags": [],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1884588/",
       "ip": null,
       "asn": null,
       "asn_org": null,
@@ -9538,126 +9685,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1884290/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "06c739ed12e3380b",
-      "source": "ThreatFox",
-      "ioc": "wqhuc2gq08020426mws.cfd",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ACR Stealer",
-      "confidence": 100,
-      "tags": [
-        "ACRStealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884291/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "6bbfb57c57573ea7",
-      "source": "ThreatFox",
-      "ioc": "y87fvt1g020426i.cfd",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ACR Stealer",
-      "confidence": 100,
-      "tags": [
-        "ACRStealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884292/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "eb9c99d713c0bf3f",
-      "source": "ThreatFox",
-      "ioc": "ykize140825p.cfd",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ACR Stealer",
-      "confidence": 100,
-      "tags": [
-        "ACRStealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884293/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "bf87438b1a85fcc4",
-      "source": "ThreatFox",
-      "ioc": "zzxryguzfq02042676.cfd",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ACR Stealer",
-      "confidence": 100,
-      "tags": [
-        "ACRStealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884294/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "e11cf56c42106a1d",
-      "source": "ThreatFox",
-      "ioc": "o1n09oad7b170425rx.cfd",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ACR Stealer",
-      "confidence": 100,
-      "tags": [
-        "ACRStealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884271/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "64109caeff1d1edc",
-      "source": "ThreatFox",
-      "ioc": "olrs9vga020426we5.cfd",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "ACR Stealer",
-      "confidence": 100,
-      "tags": [
-        "ACRStealer"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884272/",
       "ip": null,
       "asn": null,
       "asn_org": null,

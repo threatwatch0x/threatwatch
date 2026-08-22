@@ -1,45 +1,155 @@
 {
-  "generated_at": "2026-08-22T22:20:59.258956+00:00",
+  "generated_at": "2026-08-22T22:48:20.045513+00:00",
   "stats": {
-    "total": 1018,
+    "total": 993,
     "by_source": {
       "URLhaus": 100,
       "MalwareBazaar": 100,
-      "ThreatFox": 818
+      "ThreatFox": 793
     },
     "by_threat_type": {
       "malware_download": 100,
       "payload": 431,
-      "botnet_cc": 261,
-      "payload_delivery": 226
+      "botnet_cc": 237,
+      "payload_delivery": 225
     },
     "by_country": {
-      "CN": 79,
+      "CN": 80,
       "NL": 17,
-      "FR": 13,
+      "FR": 11,
       "HK": 9,
-      "US": 6,
+      "US": 7,
+      "RU": 3,
       "GB": 3,
-      "RU": 2,
       "CA": 2,
       "DE": 2,
       "BR": 1
     },
     "top_asns": {
-      "AS4837 CNC Group CHINA169 Henan Province Network": 26,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 27,
       "AS4837 China Unicom Henan Province Network": 21,
-      "AS4837 China Unicom Liaoning Province Network": 8,
+      "AS4837 China Unicom Liaoning Province Network": 7,
       "AS214961 Pitline Ltd": 6,
-      "AS214961 Individual entrepreneur Dyachenko Valentina Ivanovna": 6,
       "AS45753 SIMCENTRIC": 6,
       "AS4837 CNC Group CHINA169 Liaoning Province Network": 5,
+      "AS214961 Individual entrepreneur Dyachenko Valentina Ivanovna": 4,
       "AS14061 DigitalOcean, LLC": 4,
       "AS45090 Tencent Cloud Computing (Beijing) Co., Ltd": 4,
       "AS4837 China Unicom Shandong Province Network": 3
     },
-    "generated_at": "2026-08-22T22:20:59.258956+00:00"
+    "generated_at": "2026-08-22T22:48:20.045513+00:00"
   },
   "items": [
+    {
+      "id": "d24c209a65339b1f",
+      "source": "URLhaus",
+      "ioc": "http://116.138.47.10:38730/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-22 22:31:15 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3907072/",
+      "ip": "116.138.47.10",
+      "asn": "AS4837",
+      "asn_org": "China United Network Communications Corporation Limited",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "1d0911d7c432d685",
+      "source": "URLhaus",
+      "ioc": "http://115.58.88.2:47310/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Mozi",
+      "confidence": 100,
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-22 22:31:07 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3907071/",
+      "ip": "115.58.88.2",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "7778f3c5324c9cab",
+      "source": "MalwareBazaar",
+      "ioc": "7c1e63840584f07bd1e1436a02c7b65375fbf6c80ab289aaf2a5d16d63804737",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "9d2ca3",
+        "dropped-by-Amadey",
+        "exe",
+        "signed"
+      ],
+      "first_seen": "2026-08-22 22:30:54",
+      "reference": "https://bazaar.abuse.ch/sample/7c1e63840584f07bd1e1436a02c7b65375fbf6c80ab289aaf2a5d16d63804737/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "2634dcff82a84c07",
+      "source": "MalwareBazaar",
+      "ioc": "62ee3a4c45d77d8f65685307846669a9dfae14703d17a1f0a3d139d6354ea9a0",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "exe",
+        "whack.sh"
+      ],
+      "first_seen": "2026-08-22 22:26:33",
+      "reference": "https://bazaar.abuse.ch/sample/62ee3a4c45d77d8f65685307846669a9dfae14703d17a1f0a3d139d6354ea9a0/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "c4b78fb891be6426",
+      "source": "URLhaus",
+      "ioc": "http://185.233.94.151:57893/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, elf, mips, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-22 22:26:12 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3907070/",
+      "ip": "185.233.94.151",
+      "asn": "AS29076",
+      "asn_org": "Filanco Spb ltd",
+      "country": "Russia",
+      "country_code": "RU"
+    },
     {
       "id": "6dcdc27c417af0a5",
       "source": "URLhaus",
@@ -3604,46 +3714,6 @@
       "country_code": null
     },
     {
-      "id": "278c2fbecd6bb54b",
-      "source": "MalwareBazaar",
-      "ioc": "8468464e919df9940a3a2b8ef1a940a6602dfc34d330f66a83e3f98cb6c534a6",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "elf"
-      ],
-      "first_seen": "2026-08-22 15:09:54",
-      "reference": "https://bazaar.abuse.ch/sample/8468464e919df9940a3a2b8ef1a940a6602dfc34d330f66a83e3f98cb6c534a6/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "bc7373fde6adc68a",
-      "source": "MalwareBazaar",
-      "ioc": "da5ded844caad46899d858541dc95d567907efe4e3aff681d73eb0352b29738b",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Unknown",
-      "confidence": 100,
-      "tags": [
-        "elf"
-      ],
-      "first_seen": "2026-08-22 15:08:28",
-      "reference": "https://bazaar.abuse.ch/sample/da5ded844caad46899d858541dc95d567907efe4e3aff681d73eb0352b29738b/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "602a877e65113baf",
       "source": "URLhaus",
       "ioc": "http://174.105.154.212:55690/bin.sh",
@@ -4394,73 +4464,30 @@
       "country_code": "NL"
     },
     {
-      "id": "b23762831ef25e57",
-      "source": "URLhaus",
-      "ioc": "https://94.154.32.34/bin/support.client.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "94-154-32-34, connectwise, exe, ua-wget",
+      "id": "3247d14b815aad0a",
+      "source": "ThreatFox",
+      "ioc": "vyjinygo.workers.dev",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "php.shin_webshell",
       "confidence": 50,
       "tags": [
-        "94-154-32-34",
-        "connectwise",
-        "exe",
-        "ua-wget"
+        "Cloudflare",
+        "gif",
+        "PHP",
+        "webshell",
+        "WordPress",
+        "workers.dev",
+        "wp-admin"
       ],
-      "first_seen": "2026-08-22 13:47:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906971/",
-      "ip": "94.154.32.34",
-      "asn": "AS214961",
-      "asn_org": "Individual entrepreneur Dyachenko Valentina Ivanovna",
-      "country": "France",
-      "country_code": "FR"
-    },
-    {
-      "id": "df92619d43b1f75e",
-      "source": "URLhaus",
-      "ioc": "https://94.154.32.34/Bin/ScreenConnect.ClientSetup.exe",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "94-154-32-34, connectwise, exe, ua-wget",
-      "confidence": 50,
-      "tags": [
-        "94-154-32-34",
-        "connectwise",
-        "exe",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-22 13:47:07 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906972/",
-      "ip": "94.154.32.34",
-      "asn": "AS214961",
-      "asn_org": "Individual entrepreneur Dyachenko Valentina Ivanovna",
-      "country": "France",
-      "country_code": "FR"
-    },
-    {
-      "id": "eab5ab35b308e58e",
-      "source": "URLhaus",
-      "ioc": "http://175.165.85.188:32874/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-22 13:43:14 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3906970/",
-      "ip": "175.165.85.188",
-      "asn": "AS4837",
-      "asn_org": "China Unicom Liaoning Province Network",
-      "country": "China",
-      "country_code": "CN"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1884748/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "fb8a0aafab7c0bab",
@@ -6813,11 +6840,11 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1884633/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
+      "ip": "104.168.19.222",
+      "asn": "AS36352",
+      "asn_org": "RackNerd LLC",
+      "country": "United States",
+      "country_code": "US"
     },
     {
       "id": "5cb608ec24c2c047",
@@ -10376,24 +10403,6 @@
       "tags": [],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1884448/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "a76d905d7e000c7e",
-      "source": "ThreatFox",
-      "ioc": "38d66258740611f96675c49c6bb9f27d",
-      "ioc_type": "md5_hash",
-      "threat_type": "payload",
-      "threat_type_description": "",
-      "malware": "Venus Stealer",
-      "confidence": 95,
-      "tags": [],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884449/",
       "ip": null,
       "asn": null,
       "asn_org": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T08:29:01.474546+00:00",
+  "generated_at": "2026-08-23T08:59:40.254749+00:00",
   "stats": {
     "total": 1249,
     "by_source": {
@@ -10,11 +10,11 @@
     "by_threat_type": {
       "payload": 390,
       "malware_download": 100,
-      "payload_delivery": 514,
-      "botnet_cc": 245
+      "botnet_cc": 247,
+      "payload_delivery": 512
     },
     "by_country": {
-      "CN": 102,
+      "CN": 101,
       "US": 9,
       "RU": 4,
       "SG": 4,
@@ -22,11 +22,11 @@
       "IN": 3,
       "CA": 2,
       "FR": 2,
-      "AU": 1,
-      "SE": 1
+      "PK": 1,
+      "AU": 1
     },
     "top_asns": {
-      "AS4837 CNC Group CHINA169 Henan Province Network": 35,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 34,
       "AS4837 China Unicom Henan Province Network": 22,
       "AS4837 China Unicom Liaoning Province Network": 7,
       "AS4837 China Unicom Shandong Province Network": 5,
@@ -37,9 +37,54 @@
       "AS37963 Aliyun Computing Co., LTD": 3,
       "AS49468 Magitst SRL": 3
     },
-    "generated_at": "2026-08-23T08:29:01.474546+00:00"
+    "generated_at": "2026-08-23T08:59:40.254749+00:00"
   },
   "items": [
+    {
+      "id": "e2978b6484d34d41",
+      "source": "MalwareBazaar",
+      "ioc": "4087611fa576cfc9c7a57db435793cd6821b7e79dd315e1734085dd1db155073",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "unknown",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "ClickFix",
+        "Efimer"
+      ],
+      "first_seen": "2026-08-23 08:52:11",
+      "reference": "https://bazaar.abuse.ch/sample/4087611fa576cfc9c7a57db435793cd6821b7e79dd315e1734085dd1db155073/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "435359684c830dca",
+      "source": "URLhaus",
+      "ioc": "http://103.151.43.183:45405/bin.sh",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, arm, elf, mirai, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-23 08:31:19 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3907133/",
+      "ip": "103.151.43.183",
+      "asn": "AS151330",
+      "asn_org": "MIAN SIDDIQUE NETWORKS (PRIVATE) LIMITED",
+      "country": "Pakistan",
+      "country_code": "PK"
+    },
     {
       "id": "2c8118c130ae97c9",
       "source": "MalwareBazaar",
@@ -1289,7 +1334,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -1644,7 +1689,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -1956,7 +2001,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -2992,28 +3037,6 @@
       "country_code": "CN"
     },
     {
-      "id": "f25cd5bae0fcfe07",
-      "source": "MalwareBazaar",
-      "ioc": "9e0b0b6805a0576e808368ca435cb3bbfa1876fed2b33523cb9a09554b7590cf",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "elf",
-      "malware": "Mirai",
-      "confidence": 100,
-      "tags": [
-        "elf",
-        "Mirai",
-        "upx-dec"
-      ],
-      "first_seen": "2026-08-23 03:03:24",
-      "reference": "https://bazaar.abuse.ch/sample/9e0b0b6805a0576e808368ca435cb3bbfa1876fed2b33523cb9a09554b7590cf/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "b70e9adfab6419af",
       "source": "URLhaus",
       "ioc": "http://113.239.223.142:55389/i",
@@ -3383,7 +3406,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -3522,7 +3545,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "32-bit, elf, mips, Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "32-bit",
         "elf",
@@ -3833,7 +3856,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "Mozi"
       ],
@@ -4168,7 +4191,7 @@
       "threat_type": "malware_download",
       "threat_type_description": "Malware distribution URL",
       "malware": "Mozi",
-      "confidence": 100,
+      "confidence": 50,
       "tags": [
         "Mozi"
       ],
@@ -4426,27 +4449,98 @@
       "country_code": "CA"
     },
     {
-      "id": "70907214be1cd715",
-      "source": "URLhaus",
-      "ioc": "http://222.140.183.70:34777/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "32-bit, elf, mips, Mozi",
+      "id": "5fb273c477e3d9a0",
+      "source": "ThreatFox",
+      "ioc": "qyxequro.workers.dev",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "tags": [
+        "Cloudflare",
+        "gif",
+        "PHP",
+        "webshell",
+        "WordPress",
+        "workers.dev",
+        "wp-admin"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1885179/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "64d827faf3da1aec",
+      "source": "ThreatFox",
+      "ioc": "adzvd59352.workers.dev",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "tags": [
+        "Cloudflare",
+        "gif",
+        "PHP",
+        "webshell",
+        "WordPress",
+        "workers.dev",
+        "wp-admin"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1885178/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "f0c8cc94775e9d2a",
+      "source": "ThreatFox",
+      "ioc": "p4m4q08g.eng--neurowave.us",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
       "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
+        "ClearFake",
+        "mac-0x0f14",
+        "macOS"
       ],
-      "first_seen": "2026-08-22 18:46:17 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3907033/",
-      "ip": "222.140.183.70",
-      "asn": "AS4837",
-      "asn_org": "CNC Group CHINA169 Henan Province Network",
-      "country": "China",
-      "country_code": "CN"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1885177/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "ca1815faba970694",
+      "source": "ThreatFox",
+      "ioc": "https://royalvet.es/",
+      "ioc_type": "url",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "Unknown malware",
+      "confidence": 90,
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1885176/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "a82e2a94b474e288",
@@ -10825,90 +10919,6 @@
       ],
       "first_seen": "",
       "reference": "https://threatfox.abuse.ch/ioc/1884876/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "93ad5e0f2493f756",
-      "source": "ThreatFox",
-      "ioc": "grootvollander.be",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "chain-staged",
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884877/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "805b032b1b71bf85",
-      "source": "ThreatFox",
-      "ioc": "groschen-design.de",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "chain-staged",
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884878/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "0b0e6eaab9e18016",
-      "source": "ThreatFox",
-      "ioc": "hartmann-immo-ffb.de",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "chain-staged",
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884879/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "52d21fa0b8f64bab",
-      "source": "ThreatFox",
-      "ioc": "hbabd.net",
-      "ioc_type": "domain",
-      "threat_type": "payload_delivery",
-      "threat_type_description": "",
-      "malware": "Unknown Loader",
-      "confidence": 100,
-      "tags": [
-        "chain-staged",
-        "etherhiding"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1884880/",
       "ip": null,
       "asn": null,
       "asn_org": null,

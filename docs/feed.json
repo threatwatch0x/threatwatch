@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-25T23:26:10.911407+00:00",
+  "generated_at": "2026-08-25T23:49:38.682804+00:00",
   "stats": {
-    "total": 1597,
+    "total": 1593,
     "by_source": {
       "URLhaus": 100,
       "MalwareBazaar": 100,
-      "ThreatFox": 1397
+      "ThreatFox": 1393
     },
     "by_threat_type": {
       "malware_download": 100,
       "payload": 298,
-      "botnet_cc": 755,
-      "payload_delivery": 443,
+      "botnet_cc": 750,
+      "payload_delivery": 444,
       "cc_skimming": 1
     },
     "by_country": {
-      "CN": 59,
+      "CN": 61,
       "US": 13,
       "NL": 9,
       "DE": 9,
@@ -23,24 +23,110 @@
       "PH": 4,
       "RU": 4,
       "GB": 4,
-      "TW": 3,
-      "SG": 3
+      "SG": 3,
+      "FR": 3
     },
     "top_asns": {
-      "AS4837 CNC Group CHINA169 Henan Province Network": 22,
-      "AS4837 China Unicom Henan Province Network": 14,
+      "AS4837 CNC Group CHINA169 Henan Province Network": 23,
+      "AS4837 China Unicom Henan Province Network": 15,
       "AS198550 Node Host Limited": 7,
       "AS202412 Omegatech LTD": 5,
       "AS132199 Globe Telecom": 3,
-      "AS9924 Taiwan Telecommunication Network Services Co., LTD.": 3,
       "AS4134 Chinanet HN": 3,
       "AS215674 Brookplus Limited": 3,
       "AS4837 CNC Group CHINA169 Shandong Province Network": 2,
-      "AS4837 China Unicom Shandong Province Network": 2
+      "AS4837 China Unicom Shandong Province Network": 2,
+      "AS4134 Chinanet GD": 2
     },
-    "generated_at": "2026-08-25T23:26:10.911407+00:00"
+    "generated_at": "2026-08-25T23:49:38.682804+00:00"
   },
   "items": [
+    {
+      "id": "a9cb5dc843edcddc",
+      "source": "URLhaus",
+      "ioc": "http://123.10.70.54:56681/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "32-bit, arm, elf, mirai, Mozi",
+      "confidence": 100,
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-25 23:38:16 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3908140/",
+      "ip": "123.10.70.54",
+      "asn": "AS4837",
+      "asn_org": "CNC Group CHINA169 Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
+    {
+      "id": "64eab82b69721ddf",
+      "source": "MalwareBazaar",
+      "ioc": "aba358640bb22278bedb810bd3bdf43a501ddf66f7d74a4903b326cb96495fe9",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "exe",
+      "malware": "Unknown",
+      "confidence": 100,
+      "tags": [
+        "exe",
+        "whack.sh"
+      ],
+      "first_seen": "2026-08-25 23:30:37",
+      "reference": "https://bazaar.abuse.ch/sample/aba358640bb22278bedb810bd3bdf43a501ddf66f7d74a4903b326cb96495fe9/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "149bd26c6bff06ce",
+      "source": "MalwareBazaar",
+      "ioc": "7e9021ac82cbaefd4f3916d788e68b3fd9e479239511d9e2e5ca87016cb720b2",
+      "ioc_type": "sha256_hash",
+      "threat_type": "payload",
+      "threat_type_description": "elf",
+      "malware": "Mirai",
+      "confidence": 100,
+      "tags": [
+        "elf",
+        "Mirai"
+      ],
+      "first_seen": "2026-08-25 23:27:17",
+      "reference": "https://bazaar.abuse.ch/sample/7e9021ac82cbaefd4f3916d788e68b3fd9e479239511d9e2e5ca87016cb720b2/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "7f6e1242553b58b6",
+      "source": "URLhaus",
+      "ioc": "http://42.239.231.76:37945/i",
+      "ioc_type": "url",
+      "threat_type": "malware_download",
+      "threat_type_description": "Malware distribution URL",
+      "malware": "Mozi",
+      "confidence": 100,
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-25 23:26:09 UTC",
+      "reference": "https://urlhaus.abuse.ch/url/3908139/",
+      "ip": "42.239.231.76",
+      "asn": "AS4837",
+      "asn_org": "China Unicom Henan Province Network",
+      "country": "China",
+      "country_code": "CN"
+    },
     {
       "id": "6312eb5c2dffd4db",
       "source": "URLhaus",
@@ -2723,56 +2809,6 @@
       "country_code": null
     },
     {
-      "id": "c6969ae4ce0d6644",
-      "source": "MalwareBazaar",
-      "ioc": "0beaf7839d3a1b2e0c86566fd597c159da9f154e2be236d482ecb2c9ff32e225",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "RemusStealer",
-      "confidence": 100,
-      "tags": [
-        "ClickFraud",
-        "exe",
-        "GCleaner",
-        "RemusStealer",
-        "sfx",
-        "unluckytool-com"
-      ],
-      "first_seen": "2026-08-25 20:18:21",
-      "reference": "https://bazaar.abuse.ch/sample/0beaf7839d3a1b2e0c86566fd597c159da9f154e2be236d482ecb2c9ff32e225/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "4cd75c32400ca86d",
-      "source": "MalwareBazaar",
-      "ioc": "86f27425624e99fca1a6735b4ed5e192f575794e57f16c47a1e068bb1e608d6a",
-      "ioc_type": "sha256_hash",
-      "threat_type": "payload",
-      "threat_type_description": "exe",
-      "malware": "RemusStealer",
-      "confidence": 100,
-      "tags": [
-        "ClickFraud",
-        "exe",
-        "GCleaner",
-        "RemusStealer",
-        "sfx",
-        "unluckytool-com"
-      ],
-      "first_seen": "2026-08-25 20:17:07",
-      "reference": "https://bazaar.abuse.ch/sample/86f27425624e99fca1a6735b4ed5e192f575794e57f16c47a1e068bb1e608d6a/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
       "id": "4d243ae9ea77a27a",
       "source": "URLhaus",
       "ioc": "http://27.219.44.37:46482/bin.sh",
@@ -4441,42 +4477,78 @@
       "country_code": "CN"
     },
     {
-      "id": "e3e16208e5d3b67c",
-      "source": "URLhaus",
-      "ioc": "http://210.208.111.74:41375/bin.sh",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "mirai",
-      "confidence": 100,
+      "id": "8cb8c1b9d230545a",
+      "source": "ThreatFox",
+      "ioc": "snpsghohha.workers.dev",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
       "tags": [
-        "mirai"
+        "Cloudflare",
+        "gif",
+        "PHP",
+        "webshell",
+        "WordPress",
+        "workers.dev",
+        "wp-admin"
       ],
-      "first_seen": "2026-08-25 10:01:49 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3908031/",
-      "ip": "210.208.111.74",
-      "asn": "AS9924",
-      "asn_org": "Taiwan Telecommunication Network Services Co., LTD.",
-      "country": "Taiwan",
-      "country_code": "TW"
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1887879/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
-      "id": "1c4460de0daeb254",
-      "source": "URLhaus",
-      "ioc": "http://43.252.159.79:56994/i",
-      "ioc_type": "url",
-      "threat_type": "malware_download",
-      "threat_type_description": "Malware distribution URL",
-      "malware": "Unknown",
+      "id": "1f8493a72eb48062",
+      "source": "ThreatFox",
+      "ioc": "5bkoqvfp.eng--memorylift.com",
+      "ioc_type": "domain",
+      "threat_type": "payload_delivery",
+      "threat_type_description": "",
+      "malware": "ClearFake",
       "confidence": 100,
-      "tags": [],
-      "first_seen": "2026-08-25 10:01:49 UTC",
-      "reference": "https://urlhaus.abuse.ch/url/3908032/",
-      "ip": "43.252.159.79",
-      "asn": "AS149746",
-      "asn_org": "Gmedia ID Bali",
-      "country": "Indonesia",
-      "country_code": "ID"
+      "tags": [
+        "ClearFake",
+        "mac-0x68dc",
+        "macOS"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1887878/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
+    },
+    {
+      "id": "81c80a5bbe9d24f6",
+      "source": "ThreatFox",
+      "ioc": "vecinu.workers.dev",
+      "ioc_type": "domain",
+      "threat_type": "botnet_cc",
+      "threat_type_description": "",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "tags": [
+        "Cloudflare",
+        "gif",
+        "PHP",
+        "webshell",
+        "WordPress",
+        "workers.dev",
+        "wp-admin"
+      ],
+      "first_seen": "",
+      "reference": "https://threatfox.abuse.ch/ioc/1887877/",
+      "ip": null,
+      "asn": null,
+      "asn_org": null,
+      "country": null,
+      "country_code": null
     },
     {
       "id": "be82a495eaae4011",
@@ -10231,67 +10303,6 @@
       "asn_org": "VMISS Inc",
       "country": "Hong Kong",
       "country_code": "HK"
-    },
-    {
-      "id": "db3fd7666f7d6cc7",
-      "source": "ThreatFox",
-      "ioc": "202.79.173.2:443",
-      "ioc_type": "ip:port",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "ValleyRAT",
-      "confidence": 100,
-      "tags": [
-        "RAT",
-        "ValleyRAT"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1887579/",
-      "ip": "202.79.173.2",
-      "asn": "AS152194",
-      "asn_org": "Rackip Consultancy Pte. LTD",
-      "country": "South Korea",
-      "country_code": "KR"
-    },
-    {
-      "id": "3075225c4c88369b",
-      "source": "ThreatFox",
-      "ioc": "http://cloudscrsolutions.com/v8sjh3hs8/index.php",
-      "ioc_type": "url",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Amadey",
-      "confidence": 100,
-      "tags": [
-        "Amadey"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1887578/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
-    },
-    {
-      "id": "6cae9602f31f5ed2",
-      "source": "ThreatFox",
-      "ioc": "http://atraflaxtt.com/g9sjh3djv/index.php",
-      "ioc_type": "url",
-      "threat_type": "botnet_cc",
-      "threat_type_description": "",
-      "malware": "Amadey",
-      "confidence": 100,
-      "tags": [
-        "Amadey"
-      ],
-      "first_seen": "",
-      "reference": "https://threatfox.abuse.ch/ioc/1887577/",
-      "ip": null,
-      "asn": null,
-      "asn_org": null,
-      "country": null,
-      "country_code": null
     }
   ]
 }
